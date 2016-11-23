@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title><![CDATA[Walter Nascimento - WebDeveloper]]></title>
+  
+  <link href="/atom.xml" rel="self"/>
+  <link href="http://walternascimento.com.br/"/>
+  <updated>2016-11-23T03:46:07.573Z</updated>
+  <id>http://walternascimento.com.br/</id>
+  
+  <author>
+    <name><![CDATA[Walter Nascimento]]></name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[Criando pendrive bootavel no Linux]]></title>
+    <link href="http://walternascimento.com.br/2016/11/22/Pendrive-bootavel-no-Linux/"/>
+    <id>http://walternascimento.com.br/2016/11/22/Pendrive-bootavel-no-Linux/</id>
+    <published>2016-11-23T03:11:38.000Z</published>
+    <updated>2016-11-23T03:46:07.573Z</updated>
+    <content type="html"><![CDATA[<p>Dica Rapida e super util, de como instalar o linux em um pendrive deixando bootavel.<br><a id="more"></a><br>Existem varios programas graficos para criar o pendrive bootavel, mas a graça é usar um programa que ja vem por padrao no linux e usar no terminal.</p>
+<figure class="highlight stylus"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ sudo <span class="selector-tag">dd</span> <span class="keyword">if</span>=imagem_linux<span class="selector-class">.iso</span> of=/dev/onde_esta_o_pendrive</div></pre></td></tr></table></figure>
+<p>Para descobrir onde esta sua unidade do pendrive pode usar o comando</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ sudo fdisk <span class="_">-l</span></div></pre></td></tr></table></figure>
+<p>na maioria das vezes (pelo menos pra min) é /dev/sdb para ter certeza basta desconectar o pendrive e conectar denovo e ver o que muda, pronto agora que sabe qual a sua unidade use o comando dd</p>
+<p>a tela ficara preta so com a seta piscando, vai demorar um pouco(muito dependendo da sua maquina) e pronto, pendrive bootavel criado ;)</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>Dica Rapida e super util, de como instalar o linux em um pendrive deixando bootavel.<br>]]>
+    
+    </summary>
+    
+      <category term="Linux" scheme="http://walternascimento.com.br/tags/Linux/"/>
+    
+      <category term="Terminal" scheme="http://walternascimento.com.br/tags/Terminal/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[CSS Tools]]></title>
+    <link href="http://walternascimento.com.br/2016/07/12/CSS-Tools/"/>
+    <id>http://walternascimento.com.br/2016/07/12/CSS-Tools/</id>
+    <published>2016-07-13T02:23:17.000Z</published>
+    <updated>2016-11-22T20:50:54.391Z</updated>
+    <content type="html"><![CDATA[<p>Today, CSS is at an incredible level, to create the wonderful things, the only limit is creativity, and to help both the creation and inspiration come to bring some tools.<br><a id="more"></a></p>
+<h2 id="Hamburgers-CSS"><a href="#Hamburgers-CSS" class="headerlink" title="Hamburgers CSS"></a>Hamburgers CSS</h2><p>This is one of the very cool tool, with it you can add quickly and with various effects the menu icon, go to the link below and see for yourself;)<br><a href="https://jonsuh.com/hamburgers/" target="_blank" rel="external">https://jonsuh.com/hamburgers/</a></p>
+<h2 id="Center-with-CSS"><a href="#Center-with-CSS" class="headerlink" title="Center with CSS"></a>Center with CSS</h2><p>It is very annoying to centralizing the elements, but to solve this problem was the site created below and it vc easily centralize any element<br><a href="http://howtocenterincss.com/" target="_blank" rel="external">http://howtocenterincss.com/</a></p>
+<h2 id="Inspirations-CSS"><a href="#Inspirations-CSS" class="headerlink" title="Inspirations CSS"></a>Inspirations CSS</h2><p>And to show that the only limit is your creativity follows two links to examples of different things with CSS<br><a href="http://www.cssflow.com/" target="_blank" rel="external">http://www.cssflow.com/</a><br><a href="http://cssdeck.com/" target="_blank" rel="external">http://cssdeck.com/</a></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>Today, CSS is at an incredible level, to create the wonderful things, the only limit is creativity, and to help both the creation and inspiration come to bring some tools.<br>]]>
+    
+    </summary>
+    
+      <category term="Front End" scheme="http://walternascimento.com.br/tags/Front-End/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Ferramentas CSS]]></title>
+    <link href="http://walternascimento.com.br/2016/07/12/Ferramentas-CSS/"/>
+    <id>http://walternascimento.com.br/2016/07/12/Ferramentas-CSS/</id>
+    <published>2016-07-13T02:14:14.000Z</published>
+    <updated>2016-11-22T20:50:54.395Z</updated>
+    <content type="html"><![CDATA[<p>Hoje o CSS esta em um nivel incrivel, da para criar coisas maravilhosas, o limite é apenas a criatividade, e para ajudar tanto na criação quanto com inspiração venho trazer algumas ferramentas.<br><a id="more"></a></p>
+<h2 id="Hamburgers-CSS"><a href="#Hamburgers-CSS" class="headerlink" title="Hamburgers CSS"></a>Hamburgers CSS</h2><p>Essa é uma das ferramentas muito legal, com ela você poderá adicionar de forma rapida e com varios efeitos o icone de menu, acesse o link abaixo e veja por você mesmo ;)<br><a href="https://jonsuh.com/hamburgers/" target="_blank" rel="external">https://jonsuh.com/hamburgers/</a></p>
+<h2 id="Centralizar-com-CSS"><a href="#Centralizar-com-CSS" class="headerlink" title="Centralizar com CSS"></a>Centralizar com CSS</h2><p>É muito chato ficar centralizando os elementos, mas para resolver esse problema foi criado o site abaixo e com ele vc facilmente centraliza qualquer elemento<br><a href="http://howtocenterincss.com/" target="_blank" rel="external">http://howtocenterincss.com/</a></p>
+<h2 id="Inspiracoes-com-CSS"><a href="#Inspiracoes-com-CSS" class="headerlink" title="Inspirações com CSS"></a>Inspirações com CSS</h2><p>E para mostrar que o limite é apenas a sua criatividade segue dois links com diversos exemplos com css de diversas coisas<br><a href="http://www.cssflow.com/" target="_blank" rel="external">http://www.cssflow.com/</a><br><a href="http://cssdeck.com/" target="_blank" rel="external">http://cssdeck.com/</a></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>Hoje o CSS esta em um nivel incrivel, da para criar coisas maravilhosas, o limite é apenas a criatividade, e para ajudar tanto na criação quanto com inspiração venho trazer algumas ferramentas.<br>]]>
+    
+    </summary>
+    
+      <category term="Front End" scheme="http://walternascimento.com.br/tags/Front-End/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Example chat]]></title>
+    <link href="http://walternascimento.com.br/2016/07/11/Example-chat/"/>
+    <id>http://walternascimento.com.br/2016/07/11/Example-chat/</id>
+    <published>2016-07-12T01:42:14.000Z</published>
+    <updated>2016-11-22T20:50:54.395Z</updated>
+    <content type="html"><![CDATA[<p>It is very common to have many the will and ideas to create various projects, and one of the most common is that of a chat, but I’m not a great front end, for so I always end using templats, and today’s tip is very simple, one site with several chat templats<br><a id="more"></a><br>Visit the website <a href="http://www.bypeople.com/" target="_blank" rel="external">ByPeople</a>, there exist several examples of codes and an ingenious section is the chat, follow the link below:<br><a href="http://www.bypeople.com/css-chat/" target="_blank" rel="external">http://www.bypeople.com/css-chat/</a></p>
+<p>I really liked the site. : D</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>It is very common to have many the will and ideas to create various projects, and one of the most common is that of a chat, but I’m not a great front end, for so I always end using templats, and today’s tip is very simple, one site with several chat templats<br>]]>
+    
+    </summary>
+    
+      <category term="Front End" scheme="http://walternascimento.com.br/tags/Front-End/"/>
+    
+      <category term="Templat" scheme="http://walternascimento.com.br/tags/Templat/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Exemplo de chat]]></title>
+    <link href="http://walternascimento.com.br/2016/07/11/Exemplo-de-chat/"/>
+    <id>http://walternascimento.com.br/2016/07/11/Exemplo-de-chat/</id>
+    <published>2016-07-12T01:34:55.000Z</published>
+    <updated>2016-11-22T20:50:54.395Z</updated>
+    <content type="html"><![CDATA[<p>É muito comum termos diversos a vontade e ideias de criar diversos projetos, e um dos mais comuns é o de um chat, porém não sou um excelente front end, por tanto acabo sempre recorrendo a templats, e hoje a dica é bem simples, um site com varios templats de chat<br><a id="more"></a><br>Acesse o site <a href="http://www.bypeople.com/" target="_blank" rel="external">ByPeople</a>, lá existe diversos exemplos de codigos e uma seção genial é a de chat, segue o link abaixo:<br><a href="http://www.bypeople.com/css-chat/" target="_blank" rel="external">http://www.bypeople.com/css-chat/</a></p>
+<p>Gostei bastante do site. :D</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>É muito comum termos diversos a vontade e ideias de criar diversos projetos, e um dos mais comuns é o de um chat, porém não sou um excelente front end, por tanto acabo sempre recorrendo a templats, e hoje a dica é bem simples, um site com varios templats de chat<br>]]>
+    
+    </summary>
+    
+      <category term="Front End" scheme="http://walternascimento.com.br/tags/Front-End/"/>
+    
+      <category term="Templat" scheme="http://walternascimento.com.br/tags/Templat/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Brincando com arduino]]></title>
+    <link href="http://walternascimento.com.br/2016/05/19/Brincando-com-arduino/"/>
+    <id>http://walternascimento.com.br/2016/05/19/Brincando-com-arduino/</id>
+    <published>2016-05-20T00:55:35.000Z</published>
+    <updated>2016-11-22T20:50:54.391Z</updated>
+    <content type="html"><![CDATA[<p>Olá, estive um pouco fora pois tou ocupado com algumas atividades, mas para voltar e voltar com força total, vou falar um pouco sobre arduino.<br><a id="more"></a><br>Se você gosta de programação e de eletronica, então você precisa conhecer o arduino, hoje diria que ele ja é algo bem antigo, mas é muito diverto brinca com ele, e é possivel fazer diversas coisas super interessantes.</p>
+<p>Para comprar um arduino se você esta começando recomendo comprar o arduino uno R3 (esse é o meu), você consegue compra-lo em diversas lojas (não vou indicar uma especifica para nao fazer propaganda :D ), como mercado livre, ebay, aliexpress, entre outras.</p>
+<p>Após ter o arduino, pode comecar a seguir tutoriais pela internet, eu consegui um livro sobre arduino bem basico com diversos projetos e conforme eu for concluindo o projeto vou disponibilizando o codigo no meu github (<a href="https://github.com/walternascimentobarroso/arduino-basico" target="_blank" rel="external">https://github.com/walternascimentobarroso/arduino-basico</a>).</p>
+<p>Então adquira o seu e diverta-se.</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>Olá, estive um pouco fora pois tou ocupado com algumas atividades, mas para voltar e voltar com força total, vou falar um pouco sobre arduino.<br>]]>
+    
+    </summary>
+    
+      <category term="Arduino" scheme="http://walternascimento.com.br/tags/Arduino/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Playing with arduino]]></title>
+    <link href="http://walternascimento.com.br/2016/05/19/Playing-with-arduino/"/>
+    <id>http://walternascimento.com.br/2016/05/19/Playing-with-arduino/</id>
+    <published>2016-05-20T00:55:35.000Z</published>
+    <updated>2016-11-22T20:50:54.395Z</updated>
+    <content type="html"><![CDATA[<p>Hello, I’ve been a little off since tou busy with some activities, but to come back and come back with full force, I will talk a little about Arduino.<br><a id="more"></a><br>If you like programming and electronics, then you need to know the Arduino, now say he is already something very old, but it is very diverto play with it, and it is possible to make several super interesting things.</p>
+<p>To buy an Arduino if you are starting recommend buying the one arduino R3 (this is mine), you can buy it in several stores (I will not indicate a specific order not to advertise: D), as a free market, ebay, aliexpress , among others.</p>
+<p>After the Arduino, you can begin to follow tutorials on the internet, I got a book on good basic arduino with various projects and as I am completing the project will providing the code on my github (<a href="https://github.com/walternascimentobarroso/arduino-basico" target="_blank" rel="external">https://github.com/walternascimentobarroso/arduino-basico</a>).</p>
+<p>Then get your and amuse themselves.</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>Hello, I’ve been a little off since tou busy with some activities, but to come back and come back with full force, I will talk a little about Arduino.<br>]]>
+    
+    </summary>
+    
+      <category term="Arduino" scheme="http://walternascimento.com.br/tags/Arduino/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Discovering the maximum memory on Linux]]></title>
+    <link href="http://walternascimento.com.br/2016/04/21/Discovering-the-maximum-memory-on-Linux/"/>
+    <id>http://walternascimento.com.br/2016/04/21/Discovering-the-maximum-memory-on-Linux/</id>
+    <published>2016-04-21T13:57:09.000Z</published>
+    <updated>2016-11-22T20:50:54.395Z</updated>
+    <content type="html"><![CDATA[<p>A few days ago I was to find out how much memory my notebook stand, despite being a simple command, I had to browse many sites to discover.<br><a id="more"></a><br>I found diversar way and several new Linux commands, but will only show what really solved my problem</p>
+<p>Open Terminal and type:<br><figure class="highlight excel"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo dmidecode -<span class="built_in">t</span> <span class="number">16</span></div></pre></td></tr></table></figure></p>
+<p>will show various information<br><figure class="highlight gauss"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"><span class="meta"># dmidecode 2.12</span></div><div class="line">SMBIOS <span class="number">2.7</span> present.</div><div class="line"></div><div class="line">Handle <span class="number">0x0019</span>, DMI <span class="built_in">type</span> <span class="number">16</span>, <span class="number">23</span> bytes</div><div class="line">Physical Memory Array</div><div class="line">	Location: <span class="keyword">System</span> Board <span class="keyword">Or</span> Motherboard</div><div class="line">	<span class="keyword">Use</span>: <span class="keyword">System</span> Memory</div><div class="line">	<span class="built_in">Error</span> Correction <span class="built_in">Type</span>: None</div><div class="line">	Maximum Capacity: <span class="number">32</span> GB</div><div class="line">	<span class="built_in">Error</span> Information Handle: No <span class="built_in">Error</span></div><div class="line">	Number Of Devices: <span class="number">2</span></div></pre></td></tr></table></figure></p>
+<p>but if you want to know is the maximum memory is then only look where ta written <code>Maximum</code> to facilitate you can use the command:<br><figure class="highlight 1c"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo dmidecode -t <span class="number">16</span> <span class="string">| grep Maximum</span></div></pre></td></tr></table></figure></p>
+<p>and it will show just what you are looking for.</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>A few days ago I was to find out how much memory my notebook stand, despite being a simple command, I had to browse many sites to discover.<br>]]>
+    
+    </summary>
+    
+      <category term="Linux" scheme="http://walternascimento.com.br/tags/Linux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Descobrindo o máximo de memória no Linux]]></title>
+    <link href="http://walternascimento.com.br/2016/04/21/Descobrindo-o-maximo-de-memoria-no-Linux/"/>
+    <id>http://walternascimento.com.br/2016/04/21/Descobrindo-o-maximo-de-memoria-no-Linux/</id>
+    <published>2016-04-21T13:57:09.000Z</published>
+    <updated>2016-11-22T20:50:54.395Z</updated>
+    <content type="html"><![CDATA[<p>A alguns dias estive atras de descobrir quanto de memória meu notebook suportava, apesar de ser um comando simples, precisei navegar em muitos sites para descobri.<br><a id="more"></a><br>Descobri diversar forma e varios novos comandos do linux, mas vou mostrar apenas o que realmente solucionou meu problema</p>
+<p>Abra o terminal e digite:<br><figure class="highlight excel"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo dmidecode -<span class="built_in">t</span> <span class="number">16</span></div></pre></td></tr></table></figure></p>
+<p>vai aparecer diversas informações<br><figure class="highlight gauss"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"><span class="meta"># dmidecode 2.12</span></div><div class="line">SMBIOS <span class="number">2.7</span> present.</div><div class="line"></div><div class="line">Handle <span class="number">0x0019</span>, DMI <span class="built_in">type</span> <span class="number">16</span>, <span class="number">23</span> bytes</div><div class="line">Physical Memory Array</div><div class="line">	Location: <span class="keyword">System</span> Board <span class="keyword">Or</span> Motherboard</div><div class="line">	<span class="keyword">Use</span>: <span class="keyword">System</span> Memory</div><div class="line">	<span class="built_in">Error</span> Correction <span class="built_in">Type</span>: None</div><div class="line">	Maximum Capacity: <span class="number">32</span> GB</div><div class="line">	<span class="built_in">Error</span> Information Handle: No <span class="built_in">Error</span></div><div class="line">	Number Of Devices: <span class="number">2</span></div></pre></td></tr></table></figure></p>
+<p>mas se o que deseja saber é o máximo de memoria então é so olhar onde ta escrito <code>Maximum</code>, para facilitar você pode usar o comando:<br><figure class="highlight 1c"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo dmidecode -t <span class="number">16</span> <span class="string">| grep Maximum</span></div></pre></td></tr></table></figure></p>
+<p>e com isso vai exibir apenas o que você procura.</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>A alguns dias estive atras de descobrir quanto de memória meu notebook suportava, apesar de ser um comando simples, precisei navegar em muitos sites para descobri.<br>]]>
+    
+    </summary>
+    
+      <category term="Linux" scheme="http://walternascimento.com.br/tags/Linux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[English is Fundamental]]></title>
+    <link href="http://walternascimento.com.br/2016/04/20/English-is-Fundamental/"/>
+    <id>http://walternascimento.com.br/2016/04/20/English-is-Fundamental/</id>
+    <published>2016-04-20T16:23:42.000Z</published>
+    <updated>2016-11-22T20:50:54.395Z</updated>
+    <content type="html"><![CDATA[<p>If you are a person who likes to know then you noticed that today is essential inlês<br><a id="more"></a><br>So essential that independete your area of expertise you need it, and to learn a new language is a bit complicated and we must dedicate ourselves a lot, so I decided to share a very cool site that use to study the <a href="http://duolingo.com/" title="Official Site" target="_blank" rel="external">Duolingo</a>.</p>
+<p>The <a href="http://duolingo.com/" title="Official Site" target="_blank" rel="external">Duolingo</a> is an excellent website that helps and motivates you to study daily, with it you can stay focused, but it is not something miraculous, it’s just a addition to your study hours, is free and fun, go there ;)</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>If you are a person who likes to know then you noticed that today is essential inlês<br>]]>
+    
+    </summary>
+    
+      <category term="Knowledge" scheme="http://walternascimento.com.br/tags/Knowledge/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Inglês é Fundamental]]></title>
+    <link href="http://walternascimento.com.br/2016/04/20/Ingles-e-fundamental/"/>
+    <id>http://walternascimento.com.br/2016/04/20/Ingles-e-fundamental/</id>
+    <published>2016-04-20T16:23:42.000Z</published>
+    <updated>2016-11-22T20:50:54.395Z</updated>
+    <content type="html"><![CDATA[<p>Se você é uma pessoa que gosta de conhecimento então já percebeu que hoje o inlês é essencial<br><a id="more"></a><br>Tão essencial que independete da sua área de conhecimento você precisa dele, e para aprender um novo idioma é um pouco complicado e precisamos nos dedicar muito, por isso resolvi compartilhar um site muito legal que uso para estudar o <a href="http://duolingo.com/" title="Site Oficial" target="_blank" rel="external">Duolingo</a>.</p>
+<p>O <a href="http://duolingo.com/" title="Site Oficial" target="_blank" rel="external">Duolingo</a> é um excelente site que lhe ajuda e motiva a estudar diariamente, com ele você consegue manter o foco, mas ele não é algo milagroso, ele é apenas um complemento para suas horas de estudo, é gratis e muito divertido, vai lá ;)</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>Se você é uma pessoa que gosta de conhecimento então já percebeu que hoje o inlês é essencial<br>]]>
+    
+    </summary>
+    
+      <category term="Knowledge" scheme="http://walternascimento.com.br/tags/Knowledge/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Aprendendo Xadrez]]></title>
+    <link href="http://walternascimento.com.br/2016/04/19/Aprendendo-Xadrez/"/>
+    <id>http://walternascimento.com.br/2016/04/19/Aprendendo-Xadrez/</id>
+    <published>2016-04-19T16:23:42.000Z</published>
+    <updated>2016-11-22T20:50:54.391Z</updated>
+    <content type="html"><![CDATA[<p>Xadrez o jogo dos reis, desde a antiguidade é jogando, se você gosta e quer conhecer mais, então indico continuar lendo esse post<br><a id="more"></a><br>Xadrez alem de ser um otimo jogo ele é excelente para aumentar o raciocinio logico, se você tem curiosidade e deseja aprender mais sobre xadrez, indico o site do <a href="https://www.chesscademy.com/" title="Site Oficial" target="_blank" rel="external">Chesscademy</a>.</p>
+<p>Se quiser entrar como meu amigo use o link abaixo<br><a href="http://chscd.me/invitations/WalterNascimento" target="_blank" rel="external">http://chscd.me/invitations/WalterNascimento</a></p>
+<p>La tem curso do básico ao avançado para todos os gosto, se você é fã de xadrez, iniciante ou até mesmo avançado, recomendo da uma olhada ;)</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>Xadrez o jogo dos reis, desde a antiguidade é jogando, se você gosta e quer conhecer mais, então indico continuar lendo esse post<br>]]>
+    
+    </summary>
+    
+      <category term="Knowledge" scheme="http://walternascimento.com.br/tags/Knowledge/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Learning Chess]]></title>
+    <link href="http://walternascimento.com.br/2016/04/19/Learning-Chess/"/>
+    <id>http://walternascimento.com.br/2016/04/19/Learning-Chess/</id>
+    <published>2016-04-19T16:23:42.000Z</published>
+    <updated>2016-11-22T20:50:54.395Z</updated>
+    <content type="html"><![CDATA[<p>Chess the game of kings, since antiquity is playing, if you like and want to know more, then continue reading this post indicate<br><a id="more"></a><br>Chess besides being a great game it is great to increase the logical reasoning, if you are curious and want to learn more about chess, indicate the site <a href="https://www.chesscademy.com/" title="Official Site" target="_blank" rel="external">Chesscademy</a> .</p>
+<p>If you want to go to my friend use the link below<br><a href="http://chscd.me/invitations/WalterNascimento" target="_blank" rel="external">http://chscd.me/invitations/WalterNascimento</a></p>
+<p>It is basic to advanced course for every taste, whether you are a chess fan, beginner or even advanced, recommend a look of ;)</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>Chess the game of kings, since antiquity is playing, if you like and want to know more, then continue reading this post indicate<br>]]>
+    
+    </summary>
+    
+      <category term="Knowledge" scheme="http://walternascimento.com.br/tags/Knowledge/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Aprendendo Matemática com o KhanAcademy]]></title>
+    <link href="http://walternascimento.com.br/2016/04/18/Aprendendo-Matematica-com-o-KhanAcademy/"/>
+    <id>http://walternascimento.com.br/2016/04/18/Aprendendo-Matematica-com-o-KhanAcademy/</id>
+    <published>2016-04-18T16:23:42.000Z</published>
+    <updated>2016-11-22T20:50:54.391Z</updated>
+    <content type="html"><![CDATA[<p>Todos que gostam da area de TI tem uma certa quedinha pela matematica, mas matematica é igual programação, precisamos praticar e ter uma boa base, e se você assim que nem eu, esta a algum tempo parado, então indico continuar lendo esse post<br><a id="more"></a><br>O <a href="https://pt.khanacademy.org/" title="Site Oficial" target="_blank" rel="external">Khanacademy</a> é um excelente site para que desejar atualizar seus conhecimentos em matematica e/ou queira revisar</p>
+<p>Além de ser uma excelente plataforma para aprender matematica, o <a href="https://pt.khanacademy.org/" title="Site Oficial" target="_blank" rel="external">Khanacademy</a> dispoem de varias outras materias, vai la aproveite ;)</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>Todos que gostam da area de TI tem uma certa quedinha pela matematica, mas matematica é igual programação, precisamos praticar e ter uma boa base, e se você assim que nem eu, esta a algum tempo parado, então indico continuar lendo esse post<br>]]>
+    
+    </summary>
+    
+      <category term="Knowledge" scheme="http://walternascimento.com.br/tags/Knowledge/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Learning Mathematics with the Khan Academy]]></title>
+    <link href="http://walternascimento.com.br/2016/04/18/Learning-Math-with-KhanAcademy/"/>
+    <id>http://walternascimento.com.br/2016/04/18/Learning-Math-with-KhanAcademy/</id>
+    <published>2016-04-18T16:23:42.000Z</published>
+    <updated>2016-11-22T20:50:54.395Z</updated>
+    <content type="html"><![CDATA[<p>All who like the IT area has a certain taste for the mathematics, but mathematics is the same programming, we need to practice and have a good base, and if you so like me, this is the time stopped, then indicate keep reading this post<br><a id="more"></a><br>The <a href="https://khanacademy.org/" title="Official Site" target="_blank" rel="external">Khan Academy</a> is an excellent site that you want to update their knowledge in mathematics and / or want to review</p>
+<p>Besides being an excellent platform to learn mathematics, the <a href="https://khanacademy.org/" title="Official Site" target="_blank" rel="external">Khan Academy</a> have a number of other matters, you will enjoy;)</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>All who like the IT area has a certain taste for the mathematics, but mathematics is the same programming, we need to practice and have a good base, and if you so like me, this is the time stopped, then indicate keep reading this post<br>]]>
+    
+    </summary>
+    
+      <category term="Knowledge" scheme="http://walternascimento.com.br/tags/Knowledge/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Transferindo arquivo com SCP]]></title>
+    <link href="http://walternascimento.com.br/2016/04/17/Transferindo-arquivo-com-SCP/"/>
+    <id>http://walternascimento.com.br/2016/04/17/Transferindo-arquivo-com-SCP/</id>
+    <published>2016-04-17T13:29:49.000Z</published>
+    <updated>2016-11-22T20:50:54.395Z</updated>
+    <content type="html"><![CDATA[<p>Ao utilizar o ssh conseguimos nos conectar em uma maquina e fazer tudo como se tivéssemos em frente dela, mas chega um momento que queremos copiar algo da maquina que estamos para a maquina remota ou vice-versa, e nesse momento entra o <a href="https://pt.wikipedia.org/wiki/Unix_SCP" title="Wikipédia" target="_blank" rel="external">SCP</a>.<br><a id="more"></a><br>Se estamos em nossa maquina e temos que enviar um arquivo basta digitar o comando abaixo:<br><figure class="highlight elixir"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="variable">$ </span>scp /home/usuario/texto.txt servidor<span class="variable">@192</span>.<span class="number">168.0</span>.<span class="number">1</span><span class="symbol">:/home/servidor</span></div></pre></td></tr></table></figure></p>
+<p>Com isso o arquivo <code>texto.txt</code> será copiado para a maquina <code>192.168.0.1</code> no diretorio <code>/home/servidor</code>.</p>
+<p>Para fazer o inverso basta digita o comando abaixo:<br><figure class="highlight elixir"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="variable">$ </span>scp servidor<span class="variable">@192</span>.<span class="number">168.0</span>.<span class="number">1</span><span class="symbol">:/home/servidor/texto</span>.txt /home/usuario/</div></pre></td></tr></table></figure></p>
+<p>Com isso o arquivo <code>texto.txt</code> será copiado para a maquina local no diretorio <code>/home/usuario</code>.</p>
+<p>Para mais informações sobre o comando digite:<br><figure class="highlight elixir"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="variable">$ </span>man scp</div></pre></td></tr></table></figure></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>Ao utilizar o ssh conseguimos nos conectar em uma maquina e fazer tudo como se tivéssemos em frente dela, mas chega um momento que queremos copiar algo da maquina que estamos para a maquina remota ou vice-versa, e nesse momento entra o <a href="https://pt.wikipedia.org/wiki/Unix_SCP" title="Wikipédia">SCP</a>.<br>]]>
+    
+    </summary>
+    
+      <category term="Development" scheme="http://walternascimento.com.br/tags/Development/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Transferring file with SCP]]></title>
+    <link href="http://walternascimento.com.br/2016/04/17/Transferring-file-with-SCP/"/>
+    <id>http://walternascimento.com.br/2016/04/17/Transferring-file-with-SCP/</id>
+    <published>2016-04-17T13:29:49.000Z</published>
+    <updated>2016-11-22T20:50:54.395Z</updated>
+    <content type="html"><![CDATA[<p>When using ssh able to connect to a machine and do everything like we had in front of her, but there comes a time that we want to copy something from the machine that we are for the remote machine or vice versa, and at that time enters the <a href="https://wikipedia.org/wiki/Unix_SCP" title="Wikipedia" target="_blank" rel="external">SCP</a>.<br><a id="more"></a><br>If we are in our machine and we have to send a file simply type the following command:<br><figure class="highlight elixir"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="variable">$ </span>scp /home/usuario/texto.txt servidor<span class="variable">@192</span>.<span class="number">168.0</span>.<span class="number">1</span><span class="symbol">:/home/servidor</span></div></pre></td></tr></table></figure></p>
+<p>Thus the <code>texto.txt</code> file will be copied to the machine<code>192.168.0.1</code> in the directory <code>/home/servidor</code>.</p>
+<p>To retrace just type the following command:<br><figure class="highlight elixir"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="variable">$ </span>scp servidor<span class="variable">@192</span>.<span class="number">168.0</span>.<span class="number">1</span><span class="symbol">:/home/servidor/texto</span>.txt /home/usuario/</div></pre></td></tr></table></figure></p>
+<p>Thus the <code>texto.txt</code> file is copied to the local machine in the directory <code>/home/usuario</code>.</p>
+<p>For more information about the type command:<br><figure class="highlight elixir"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="variable">$ </span>man scp</div></pre></td></tr></table></figure></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>When using ssh able to connect to a machine and do everything like we had in front of her, but there comes a time that we want to copy something from the machine that we are for the remote machine or vice versa, and at that time enters the <a href="https://wikipedia.org/wiki/Unix_SCP" title="Wikipedia">SCP</a>.<br>]]>
+    
+    </summary>
+    
+      <category term="Development" scheme="http://walternascimento.com.br/tags/Development/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Practicing programming with UriOnlineJudge]]></title>
+    <link href="http://walternascimento.com.br/2016/04/16/Practicing-programming-with-UriOnlineJudge/"/>
+    <id>http://walternascimento.com.br/2016/04/16/Practicing-programming-with-UriOnlineJudge/</id>
+    <published>2016-04-16T14:01:15.000Z</published>
+    <updated>2016-11-22T20:50:54.395Z</updated>
+    <content type="html"><![CDATA[<p>The site <a href="http://www.urionlinejudge.com.br/" title="Official Site" target="_blank" rel="external">UriOnlineJudge</a> is an online judge who evaluates the soloções sent to the various problems in different languages.<br><a id="more"></a><br>There are several online judges of codes, but the <a href="http://www.urionlinejudge.com.br/" title="Official Site" target="_blank" rel="external">UriOnlineJudge</a> has several advantages:</p>
+<ul>
+<li>In Portuguese;</li>
+<li>Online;</li>
+<li>Supports multiple languages;<ul>
+<li>C;</li>
+<li>C ++;</li>
+<li>Java;</li>
+<li>Python;</li>
+</ul>
+</li>
+<li>It has over a thousand problems;</li>
+<li>From the university to use;</li>
+<li>among others…</li>
+</ul>
+<p>If you do not know then run it to register and start to rise in rank.</p>
+<p>the <a href="http://www.urionlinejudge.com.br/" title="Official Site" target="_blank" rel="external">UriOnlineJudge</a> is a fantastic tool, I believe that every developer should use something to improve more always their codes.</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>The site <a href="http://www.urionlinejudge.com.br/" title="Official Site">UriOnlineJudge</a> is an online judge who evaluates the soloções sent to the various problems in different languages.<br>]]>
+    
+    </summary>
+    
+      <category term="Development" scheme="http://walternascimento.com.br/tags/Development/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Praticando programação com o UriOnlineJudge]]></title>
+    <link href="http://walternascimento.com.br/2016/04/16/Praticando-programacao-com-o-UriOnlineJudge/"/>
+    <id>http://walternascimento.com.br/2016/04/16/Praticando-programacao-com-o-UriOnlineJudge/</id>
+    <published>2016-04-16T14:01:15.000Z</published>
+    <updated>2016-11-22T20:50:54.395Z</updated>
+    <content type="html"><![CDATA[<p>O site <a href="http://www.urionlinejudge.com.br/" title="Site Oficial" target="_blank" rel="external">UriOnlineJudge</a> é um juiz online que avalia as soloções enviadas para os diversos problemas em diversas linguagens.<br><a id="more"></a><br>Existem varios juizes onlines de codigos, mas o <a href="http://www.urionlinejudge.com.br/" title="Site Oficial" target="_blank" rel="external">UriOnlineJudge</a> tem diversas vantagens:</p>
+<ul>
+<li>Em portugues;</li>
+<li>Online;</li>
+<li>Aceita diversas linguagens;<ul>
+<li>C;</li>
+<li>C++;</li>
+<li>Java;</li>
+<li>Python;</li>
+</ul>
+</li>
+<li>Tem mais de mil problemas;</li>
+<li>Da para usar na universidade;</li>
+<li>entre outros…</li>
+</ul>
+<p>Se você não conhece então corre la se inscreva e comece a subir no rank.</p>
+<p>o <a href="http://www.urionlinejudge.com.br/" title="Site Oficial" target="_blank" rel="external">UriOnlineJudge</a> é uma ferramenta fantastica, creio que todo desenvolvedor devia usar algo do tipo para aprimorar mais sempre seus códigos.</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>O site <a href="http://www.urionlinejudge.com.br/" title="Site Oficial">UriOnlineJudge</a> é um juiz online que avalia as soloções enviadas para os diversos problemas em diversas linguagens.<br>]]>
+    
+    </summary>
+    
+      <category term="Development" scheme="http://walternascimento.com.br/tags/Development/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Organizando projeto com trello]]></title>
+    <link href="http://walternascimento.com.br/2016/04/15/Organizando-projeto-com-trello/"/>
+    <id>http://walternascimento.com.br/2016/04/15/Organizando-projeto-com-trello/</id>
+    <published>2016-04-15T13:33:51.000Z</published>
+    <updated>2016-11-22T20:50:54.395Z</updated>
+    <content type="html"><![CDATA[<p>Se você assim que nem eu tem problemas com organização então você precisa conhecer o <a href="https://trello.com" target="_blank" rel="external">Trello</a><br><a id="more"></a></p>
+<h2 id="O-que-e"><a href="#O-que-e" class="headerlink" title="O que é?"></a>O que é?</h2><p>O <a href="https://trello.com" target="_blank" rel="external">Trello</a> é uma ferramenta gratuita que veio substituir o quadro onde colocamos post-its, deixando tudo digital, é muito utilizado para melhorar o desenvolvimento.</p>
+<h2 id="Como-usar"><a href="#Como-usar" class="headerlink" title="Como usar?"></a>Como usar?</h2><p>É muito simples, basta acessar o site <a href="https://trello.com" target="_blank" rel="external">https://trello.com</a> crie uma conta e pronto agora você tem apenas que criar seus boards e incluir suas atividades.</p>
+<p>O <a href="https://trello.com" target="_blank" rel="external">Trello</a> é uma ferramenta muito simples e de facil uso, se você ja é um usario do scrum então não terá problema algum em se adaptar com o <a href="https://trello.com" target="_blank" rel="external">trello</a>, mas mesmo que não use metodologias ageis, sabe pelo menos como funciona lhe ajuda no momento de integrar com uma equipe que ja utiliza.</p>
+<p>O melhor de tudo é que a ferramenta alem de ser gratuita, esta em português, então não existe desculpa para você não começar utilizar agora mesmo.</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>Se você assim que nem eu tem problemas com organização então você precisa conhecer o <a href="https://trello.com">Trello</a><br>]]>
+    
+    </summary>
+    
+      <category term="Development" scheme="http://walternascimento.com.br/tags/Development/"/>
+    
+  </entry>
+  
+</feed>
