@@ -2,12 +2,17 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://walternascimento.com.br/2016/11/23/Diagrama-de-Sequencia-rapido-e-facil/</loc>
+    <lastmod>2016-11-24T00:38:48.825Z</lastmod>
+  </url>
+  
+  <url>
     <loc>http://walternascimento.com.br/2016/11/22/Pendrive-bootavel-no-Linux/</loc>
     <lastmod>2016-11-23T03:46:07.573Z</lastmod>
   </url>
   
   <url>
-    <loc>http://walternascimento.com.br/2016/04/13/Gulp-task-Automator/</loc>
+    <loc>http://walternascimento.com.br/2016/04/03/Using-Bower/</loc>
     <lastmod>2016-11-22T20:50:54.395Z</lastmod>
   </url>
   
@@ -62,7 +67,7 @@
   </url>
   
   <url>
-    <loc>http://walternascimento.com.br/2016/04/14/Playing-with-Angular-Material/</loc>
+    <loc>http://walternascimento.com.br/2016/04/13/Gulp-task-Automator/</loc>
     <lastmod>2016-11-22T20:50:54.395Z</lastmod>
   </url>
   
@@ -122,7 +127,7 @@
   </url>
   
   <url>
-    <loc>http://walternascimento.com.br/2016/04/03/Using-Bower/</loc>
+    <loc>http://walternascimento.com.br/2016/04/14/Playing-with-Angular-Material/</loc>
     <lastmod>2016-11-22T20:50:54.395Z</lastmod>
   </url>
   
@@ -147,17 +152,17 @@
   </url>
   
   <url>
-    <loc>http://walternascimento.com.br/2016/04/01/Installing-nodejs/</loc>
-    <lastmod>2016-11-22T20:50:54.395Z</lastmod>
-  </url>
-  
-  <url>
     <loc>http://walternascimento.com.br/2016/04/10/Learn-how-to-use-VIM/</loc>
     <lastmod>2016-11-22T20:50:54.395Z</lastmod>
   </url>
   
   <url>
     <loc>http://walternascimento.com.br/2016/04/19/Learning-Chess/</loc>
+    <lastmod>2016-11-22T20:50:54.395Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://walternascimento.com.br/2016/04/01/Installing-nodejs/</loc>
     <lastmod>2016-11-22T20:50:54.395Z</lastmod>
   </url>
   
@@ -182,7 +187,7 @@
   </url>
   
   <url>
-    <loc>http://walternascimento.com.br/2016/04/05/Browser-sync-a-perfect-livereload/</loc>
+    <loc>http://walternascimento.com.br/2016/04/05/Browser-sync-um-livereload-perfeito/</loc>
     <lastmod>2016-11-22T20:50:54.391Z</lastmod>
   </url>
   
@@ -202,12 +207,12 @@
   </url>
   
   <url>
-    <loc>http://walternascimento.com.br/2016/07/12/CSS-Tools/</loc>
+    <loc>http://walternascimento.com.br/2016/04/14/Brincando-com-o-Angular-Material/</loc>
     <lastmod>2016-11-22T20:50:54.391Z</lastmod>
   </url>
   
   <url>
-    <loc>http://walternascimento.com.br/2016/04/05/Browser-sync-um-livereload-perfeito/</loc>
+    <loc>http://walternascimento.com.br/2016/07/12/CSS-Tools/</loc>
     <lastmod>2016-11-22T20:50:54.391Z</lastmod>
   </url>
   
@@ -217,7 +222,7 @@
   </url>
   
   <url>
-    <loc>http://walternascimento.com.br/2016/04/14/Brincando-com-o-Angular-Material/</loc>
+    <loc>http://walternascimento.com.br/2016/04/05/Browser-sync-a-perfect-livereload/</loc>
     <lastmod>2016-11-22T20:50:54.391Z</lastmod>
   </url>
   

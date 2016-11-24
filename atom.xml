@@ -4,7 +4,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://walternascimento.com.br/"/>
-  <updated>2016-11-23T03:46:07.573Z</updated>
+  <updated>2016-11-24T00:38:48.825Z</updated>
   <id>http://walternascimento.com.br/</id>
   
   <author>
@@ -13,6 +13,24 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[Diagrama de Sequencia rápido e fácil]]></title>
+    <link href="http://walternascimento.com.br/2016/11/23/Diagrama-de-Sequencia-rapido-e-facil/"/>
+    <id>http://walternascimento.com.br/2016/11/23/Diagrama-de-Sequencia-rapido-e-facil/</id>
+    <published>2016-11-24T00:43:17.000Z</published>
+    <updated>2016-11-24T00:38:48.825Z</updated>
+    <content type="html"><![CDATA[<p>Quando se está estudando UML na faculdade e o professor vem pedindo para fazer-mos o diagrama de sequencia, o mais é algo chato, mas para facilitar, neste post rapido vou apresentar um site que facilitara toda a vida.<br><a id="more"></a><br>acesse:<br><a href="https://www.websequencediagrams.com/" target="_blank" rel="external">https://www.websequencediagrams.com/</a></p>
+<p>Neste site você pode não so desenhar o diagrama, mas tambem pode “programar”, quando esta no site, tem uma parte lateral com um pequeno diagrama ja pronto para teste, seguindo ele, da para entender rápido e fácil como funciona a ferramenta, e criar de forma descomplicada seu diagrama.</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>Quando se está estudando UML na faculdade e o professor vem pedindo para fazer-mos o diagrama de sequencia, o mais é algo chato, mas para facilitar, neste post rapido vou apresentar um site que facilitara toda a vida.<br>]]>
+    
+    </summary>
+    
+      <category term="Development" scheme="http://walternascimento.com.br/tags/Development/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[Criando pendrive bootavel no Linux]]></title>
@@ -201,24 +219,6 @@
   </entry>
   
   <entry>
-    <title><![CDATA[English is Fundamental]]></title>
-    <link href="http://walternascimento.com.br/2016/04/20/English-is-Fundamental/"/>
-    <id>http://walternascimento.com.br/2016/04/20/English-is-Fundamental/</id>
-    <published>2016-04-20T16:23:42.000Z</published>
-    <updated>2016-11-22T20:50:54.395Z</updated>
-    <content type="html"><![CDATA[<p>If you are a person who likes to know then you noticed that today is essential inlês<br><a id="more"></a><br>So essential that independete your area of expertise you need it, and to learn a new language is a bit complicated and we must dedicate ourselves a lot, so I decided to share a very cool site that use to study the <a href="http://duolingo.com/" title="Official Site" target="_blank" rel="external">Duolingo</a>.</p>
-<p>The <a href="http://duolingo.com/" title="Official Site" target="_blank" rel="external">Duolingo</a> is an excellent website that helps and motivates you to study daily, with it you can stay focused, but it is not something miraculous, it’s just a addition to your study hours, is free and fun, go there ;)</p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p>If you are a person who likes to know then you noticed that today is essential inlês<br>]]>
-    
-    </summary>
-    
-      <category term="Knowledge" scheme="http://walternascimento.com.br/tags/Knowledge/"/>
-    
-  </entry>
-  
-  <entry>
     <title><![CDATA[Inglês é Fundamental]]></title>
     <link href="http://walternascimento.com.br/2016/04/20/Ingles-e-fundamental/"/>
     <id>http://walternascimento.com.br/2016/04/20/Ingles-e-fundamental/</id>
@@ -229,6 +229,24 @@
 ]]></content>
     <summary type="html">
     <![CDATA[<p>Se você é uma pessoa que gosta de conhecimento então já percebeu que hoje o inlês é essencial<br>]]>
+    
+    </summary>
+    
+      <category term="Knowledge" scheme="http://walternascimento.com.br/tags/Knowledge/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[English is Fundamental]]></title>
+    <link href="http://walternascimento.com.br/2016/04/20/English-is-Fundamental/"/>
+    <id>http://walternascimento.com.br/2016/04/20/English-is-Fundamental/</id>
+    <published>2016-04-20T16:23:42.000Z</published>
+    <updated>2016-11-22T20:50:54.395Z</updated>
+    <content type="html"><![CDATA[<p>If you are a person who likes to know then you noticed that today is essential inlês<br><a id="more"></a><br>So essential that independete your area of expertise you need it, and to learn a new language is a bit complicated and we must dedicate ourselves a lot, so I decided to share a very cool site that use to study the <a href="http://duolingo.com/" title="Official Site" target="_blank" rel="external">Duolingo</a>.</p>
+<p>The <a href="http://duolingo.com/" title="Official Site" target="_blank" rel="external">Duolingo</a> is an excellent website that helps and motivates you to study daily, with it you can stay focused, but it is not something miraculous, it’s just a addition to your study hours, is free and fun, go there ;)</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>If you are a person who likes to know then you noticed that today is essential inlês<br>]]>
     
     </summary>
     
@@ -275,24 +293,6 @@
   </entry>
   
   <entry>
-    <title><![CDATA[Aprendendo Matemática com o KhanAcademy]]></title>
-    <link href="http://walternascimento.com.br/2016/04/18/Aprendendo-Matematica-com-o-KhanAcademy/"/>
-    <id>http://walternascimento.com.br/2016/04/18/Aprendendo-Matematica-com-o-KhanAcademy/</id>
-    <published>2016-04-18T16:23:42.000Z</published>
-    <updated>2016-11-22T20:50:54.391Z</updated>
-    <content type="html"><![CDATA[<p>Todos que gostam da area de TI tem uma certa quedinha pela matematica, mas matematica é igual programação, precisamos praticar e ter uma boa base, e se você assim que nem eu, esta a algum tempo parado, então indico continuar lendo esse post<br><a id="more"></a><br>O <a href="https://pt.khanacademy.org/" title="Site Oficial" target="_blank" rel="external">Khanacademy</a> é um excelente site para que desejar atualizar seus conhecimentos em matematica e/ou queira revisar</p>
-<p>Além de ser uma excelente plataforma para aprender matematica, o <a href="https://pt.khanacademy.org/" title="Site Oficial" target="_blank" rel="external">Khanacademy</a> dispoem de varias outras materias, vai la aproveite ;)</p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p>Todos que gostam da area de TI tem uma certa quedinha pela matematica, mas matematica é igual programação, precisamos praticar e ter uma boa base, e se você assim que nem eu, esta a algum tempo parado, então indico continuar lendo esse post<br>]]>
-    
-    </summary>
-    
-      <category term="Knowledge" scheme="http://walternascimento.com.br/tags/Knowledge/"/>
-    
-  </entry>
-  
-  <entry>
     <title><![CDATA[Learning Mathematics with the Khan Academy]]></title>
     <link href="http://walternascimento.com.br/2016/04/18/Learning-Math-with-KhanAcademy/"/>
     <id>http://walternascimento.com.br/2016/04/18/Learning-Math-with-KhanAcademy/</id>
@@ -311,23 +311,20 @@
   </entry>
   
   <entry>
-    <title><![CDATA[Transferindo arquivo com SCP]]></title>
-    <link href="http://walternascimento.com.br/2016/04/17/Transferindo-arquivo-com-SCP/"/>
-    <id>http://walternascimento.com.br/2016/04/17/Transferindo-arquivo-com-SCP/</id>
-    <published>2016-04-17T13:29:49.000Z</published>
-    <updated>2016-11-22T20:50:54.395Z</updated>
-    <content type="html"><![CDATA[<p>Ao utilizar o ssh conseguimos nos conectar em uma maquina e fazer tudo como se tivéssemos em frente dela, mas chega um momento que queremos copiar algo da maquina que estamos para a maquina remota ou vice-versa, e nesse momento entra o <a href="https://pt.wikipedia.org/wiki/Unix_SCP" title="Wikipédia" target="_blank" rel="external">SCP</a>.<br><a id="more"></a><br>Se estamos em nossa maquina e temos que enviar um arquivo basta digitar o comando abaixo:<br><figure class="highlight elixir"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="variable">$ </span>scp /home/usuario/texto.txt servidor<span class="variable">@192</span>.<span class="number">168.0</span>.<span class="number">1</span><span class="symbol">:/home/servidor</span></div></pre></td></tr></table></figure></p>
-<p>Com isso o arquivo <code>texto.txt</code> será copiado para a maquina <code>192.168.0.1</code> no diretorio <code>/home/servidor</code>.</p>
-<p>Para fazer o inverso basta digita o comando abaixo:<br><figure class="highlight elixir"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="variable">$ </span>scp servidor<span class="variable">@192</span>.<span class="number">168.0</span>.<span class="number">1</span><span class="symbol">:/home/servidor/texto</span>.txt /home/usuario/</div></pre></td></tr></table></figure></p>
-<p>Com isso o arquivo <code>texto.txt</code> será copiado para a maquina local no diretorio <code>/home/usuario</code>.</p>
-<p>Para mais informações sobre o comando digite:<br><figure class="highlight elixir"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="variable">$ </span>man scp</div></pre></td></tr></table></figure></p>
+    <title><![CDATA[Aprendendo Matemática com o KhanAcademy]]></title>
+    <link href="http://walternascimento.com.br/2016/04/18/Aprendendo-Matematica-com-o-KhanAcademy/"/>
+    <id>http://walternascimento.com.br/2016/04/18/Aprendendo-Matematica-com-o-KhanAcademy/</id>
+    <published>2016-04-18T16:23:42.000Z</published>
+    <updated>2016-11-22T20:50:54.391Z</updated>
+    <content type="html"><![CDATA[<p>Todos que gostam da area de TI tem uma certa quedinha pela matematica, mas matematica é igual programação, precisamos praticar e ter uma boa base, e se você assim que nem eu, esta a algum tempo parado, então indico continuar lendo esse post<br><a id="more"></a><br>O <a href="https://pt.khanacademy.org/" title="Site Oficial" target="_blank" rel="external">Khanacademy</a> é um excelente site para que desejar atualizar seus conhecimentos em matematica e/ou queira revisar</p>
+<p>Além de ser uma excelente plataforma para aprender matematica, o <a href="https://pt.khanacademy.org/" title="Site Oficial" target="_blank" rel="external">Khanacademy</a> dispoem de varias outras materias, vai la aproveite ;)</p>
 ]]></content>
     <summary type="html">
-    <![CDATA[<p>Ao utilizar o ssh conseguimos nos conectar em uma maquina e fazer tudo como se tivéssemos em frente dela, mas chega um momento que queremos copiar algo da maquina que estamos para a maquina remota ou vice-versa, e nesse momento entra o <a href="https://pt.wikipedia.org/wiki/Unix_SCP" title="Wikipédia">SCP</a>.<br>]]>
+    <![CDATA[<p>Todos que gostam da area de TI tem uma certa quedinha pela matematica, mas matematica é igual programação, precisamos praticar e ter uma boa base, e se você assim que nem eu, esta a algum tempo parado, então indico continuar lendo esse post<br>]]>
     
     </summary>
     
-      <category term="Development" scheme="http://walternascimento.com.br/tags/Development/"/>
+      <category term="Knowledge" scheme="http://walternascimento.com.br/tags/Knowledge/"/>
     
   </entry>
   
@@ -345,6 +342,27 @@
 ]]></content>
     <summary type="html">
     <![CDATA[<p>When using ssh able to connect to a machine and do everything like we had in front of her, but there comes a time that we want to copy something from the machine that we are for the remote machine or vice versa, and at that time enters the <a href="https://wikipedia.org/wiki/Unix_SCP" title="Wikipedia">SCP</a>.<br>]]>
+    
+    </summary>
+    
+      <category term="Development" scheme="http://walternascimento.com.br/tags/Development/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Transferindo arquivo com SCP]]></title>
+    <link href="http://walternascimento.com.br/2016/04/17/Transferindo-arquivo-com-SCP/"/>
+    <id>http://walternascimento.com.br/2016/04/17/Transferindo-arquivo-com-SCP/</id>
+    <published>2016-04-17T13:29:49.000Z</published>
+    <updated>2016-11-22T20:50:54.395Z</updated>
+    <content type="html"><![CDATA[<p>Ao utilizar o ssh conseguimos nos conectar em uma maquina e fazer tudo como se tivéssemos em frente dela, mas chega um momento que queremos copiar algo da maquina que estamos para a maquina remota ou vice-versa, e nesse momento entra o <a href="https://pt.wikipedia.org/wiki/Unix_SCP" title="Wikipédia" target="_blank" rel="external">SCP</a>.<br><a id="more"></a><br>Se estamos em nossa maquina e temos que enviar um arquivo basta digitar o comando abaixo:<br><figure class="highlight elixir"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="variable">$ </span>scp /home/usuario/texto.txt servidor<span class="variable">@192</span>.<span class="number">168.0</span>.<span class="number">1</span><span class="symbol">:/home/servidor</span></div></pre></td></tr></table></figure></p>
+<p>Com isso o arquivo <code>texto.txt</code> será copiado para a maquina <code>192.168.0.1</code> no diretorio <code>/home/servidor</code>.</p>
+<p>Para fazer o inverso basta digita o comando abaixo:<br><figure class="highlight elixir"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="variable">$ </span>scp servidor<span class="variable">@192</span>.<span class="number">168.0</span>.<span class="number">1</span><span class="symbol">:/home/servidor/texto</span>.txt /home/usuario/</div></pre></td></tr></table></figure></p>
+<p>Com isso o arquivo <code>texto.txt</code> será copiado para a maquina local no diretorio <code>/home/usuario</code>.</p>
+<p>Para mais informações sobre o comando digite:<br><figure class="highlight elixir"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="variable">$ </span>man scp</div></pre></td></tr></table></figure></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>Ao utilizar o ssh conseguimos nos conectar em uma maquina e fazer tudo como se tivéssemos em frente dela, mas chega um momento que queremos copiar algo da maquina que estamos para a maquina remota ou vice-versa, e nesse momento entra o <a href="https://pt.wikipedia.org/wiki/Unix_SCP" title="Wikipédia">SCP</a>.<br>]]>
     
     </summary>
     
@@ -411,27 +429,6 @@
 ]]></content>
     <summary type="html">
     <![CDATA[<p>O site <a href="http://www.urionlinejudge.com.br/" title="Site Oficial">UriOnlineJudge</a> é um juiz online que avalia as soloções enviadas para os diversos problemas em diversas linguagens.<br>]]>
-    
-    </summary>
-    
-      <category term="Development" scheme="http://walternascimento.com.br/tags/Development/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[Organizando projeto com trello]]></title>
-    <link href="http://walternascimento.com.br/2016/04/15/Organizando-projeto-com-trello/"/>
-    <id>http://walternascimento.com.br/2016/04/15/Organizando-projeto-com-trello/</id>
-    <published>2016-04-15T13:33:51.000Z</published>
-    <updated>2016-11-22T20:50:54.395Z</updated>
-    <content type="html"><![CDATA[<p>Se você assim que nem eu tem problemas com organização então você precisa conhecer o <a href="https://trello.com" target="_blank" rel="external">Trello</a><br><a id="more"></a></p>
-<h2 id="O-que-e"><a href="#O-que-e" class="headerlink" title="O que é?"></a>O que é?</h2><p>O <a href="https://trello.com" target="_blank" rel="external">Trello</a> é uma ferramenta gratuita que veio substituir o quadro onde colocamos post-its, deixando tudo digital, é muito utilizado para melhorar o desenvolvimento.</p>
-<h2 id="Como-usar"><a href="#Como-usar" class="headerlink" title="Como usar?"></a>Como usar?</h2><p>É muito simples, basta acessar o site <a href="https://trello.com" target="_blank" rel="external">https://trello.com</a> crie uma conta e pronto agora você tem apenas que criar seus boards e incluir suas atividades.</p>
-<p>O <a href="https://trello.com" target="_blank" rel="external">Trello</a> é uma ferramenta muito simples e de facil uso, se você ja é um usario do scrum então não terá problema algum em se adaptar com o <a href="https://trello.com" target="_blank" rel="external">trello</a>, mas mesmo que não use metodologias ageis, sabe pelo menos como funciona lhe ajuda no momento de integrar com uma equipe que ja utiliza.</p>
-<p>O melhor de tudo é que a ferramenta alem de ser gratuita, esta em português, então não existe desculpa para você não começar utilizar agora mesmo.</p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p>Se você assim que nem eu tem problemas com organização então você precisa conhecer o <a href="https://trello.com">Trello</a><br>]]>
     
     </summary>
     
