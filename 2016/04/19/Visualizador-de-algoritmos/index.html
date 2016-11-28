@@ -3,21 +3,18 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Gulp task Automator | Walter Nascimento - WebDeveloper</title>
+  <title>Visualizador de algoritmos | Walter Nascimento - WebDeveloper</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="The Gulp came to help automate the tasks of developers Front End.
-If you already work with front end development for some time already should be using various technologies such as Sass, live and reloa">
+  <meta name="description" content="Você ja teve aquela aula da qual é necessario entender o fluxo de algoritmo e mesmo quando é falado varias vezes ainda não consegui entender?">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Gulp task Automator">
-<meta property="og:url" content="http://walternascimento.com.br/2016/04/13/Gulp-task-Automator/index.html">
+<meta property="og:title" content="Visualizador de algoritmos">
+<meta property="og:url" content="http://walternascimento.com.br/2016/04/19/Visualizador-de-algoritmos/index.html">
 <meta property="og:site_name" content="Walter Nascimento - WebDeveloper">
-<meta property="og:description" content="The Gulp came to help automate the tasks of developers Front End.
-If you already work with front end development for some time already should be using various technologies such as Sass, live and reloa">
-<meta property="og:updated_time" content="2016-11-22T20:50:54.395Z">
+<meta property="og:description" content="Você ja teve aquela aula da qual é necessario entender o fluxo de algoritmo e mesmo quando é falado varias vezes ainda não consegui entender?">
+<meta property="og:updated_time" content="2016-11-28T03:03:12.204Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Gulp task Automator">
-<meta name="twitter:description" content="The Gulp came to help automate the tasks of developers Front End.
-If you already work with front end development for some time already should be using various technologies such as Sass, live and reloa">
+<meta name="twitter:title" content="Visualizador de algoritmos">
+<meta name="twitter:description" content="Você ja teve aquela aula da qual é necessario entender o fluxo de algoritmo e mesmo quando é falado varias vezes ainda não consegui entender?">
   
     <link rel="alternative" href="/atom.xml" title="Walter Nascimento - WebDeveloper" type="application/atom+xml">
   
@@ -231,11 +228,11 @@ If you already work with front end development for some time already should be u
         </header>                
     </div>
 </nav>
-      <div class="body-wrap"><article id="post-Gulp-task-Automator" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-Visualizador-de-algoritmos" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2016/04/13/Gulp-task-Automator/" class="article-date">
-      <time datetime="2016-04-13T14:24:47.000Z" itemprop="datePublished">13/04/2016</time>
+      <a href="/2016/04/19/Visualizador-de-algoritmos/" class="article-date">
+      <time datetime="2016-04-19T16:23:42.000Z" itemprop="datePublished">19/04/2016</time>
 </a>
     </div>
   
@@ -248,7 +245,7 @@ If you already work with front end development for some time already should be u
         
   
     <h1 class="article-title" itemprop="name">
-      Gulp task Automator
+      Visualizador de algoritmos
     </h1>
   
 
@@ -259,7 +256,7 @@ If you already work with front end development for some time already should be u
 
         
     <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Development/">Development</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Front-End/">Front End</a></li></ul>
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Knowledge/">Knowledge</a></li></ul>
     </div>
 
         <div class="clearfix"></div>
@@ -269,23 +266,9 @@ If you already work with front end development for some time already should be u
     <div class="article-entry" itemprop="articleBody">
       
           
-        <p>The <a href="http://gulpjs.com/" title="Official Site" target="_blank" rel="external">Gulp</a> came to help automate the tasks of developers Front End.</p>
-<p>If you already work with front end development for some time already should be using various technologies such as Sass, live and reload etc., <a href="http://gulpjs.com/" title="Official Site" target="_blank" rel="external">gulp</a> vei to put it all together in a only.<br><a id="more"></a><br>There are others, but I like the gulp and I will focus on it</p>
-<h2 id="Installation"><a href="#Installation" class="headerlink" title="Installation"></a>Installation</h2><p>First installed the <a href="/2016/04/01/Installing-nodejs/" title="Installing nodejs">nodejs</a>, then enter the command:<br><figure class="highlight cmake"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm <span class="keyword">install</span> -g gulp</div></pre></td></tr></table></figure></p>
-<p>After installation, we will start to use it<br><figure class="highlight coffeescript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">npm</span> init</div></pre></td></tr></table></figure></p>
-<p>doing this way will create a file <code>package.json</code>, which will help in the project versioning, if you do not want to tell anything can go just pressing enter</p>
-<h2 id="Modules"><a href="#Modules" class="headerlink" title="Modules"></a>Modules</h2><p>This is where the magic begins, you will put all the tasks you want to automate, example:<br><figure class="highlight sql"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ npm <span class="keyword">install</span> browser-<span class="keyword">sync</span> gulp <span class="comment">--save-dev</span></div></pre></td></tr></table></figure></p>
-<p>Just one example of installation</p>
-<p>After that simply create the <code>gulpfile.js</code><br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> gulp        = <span class="built_in">require</span>(<span class="string">'gulp'</span>);</div><div class="line"><span class="keyword">var</span> browserSync = <span class="built_in">require</span>(<span class="string">'browser-sync'</span>).create();</div><div class="line"></div><div class="line">gulp.task(<span class="string">'browserSync'</span>, <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">    browserSync(&#123;</div><div class="line">        <span class="attr">server</span>: &#123;</div><div class="line">            <span class="attr">baseDir</span>: <span class="string">"src/"</span></div><div class="line">        &#125;,</div><div class="line">        <span class="attr">options</span>: &#123;</div><div class="line">            <span class="attr">reloadDelay</span>: <span class="number">250</span></div><div class="line">        &#125;,</div><div class="line">        <span class="attr">notify</span>: <span class="literal">false</span></div><div class="line">    &#125;);</div><div class="line">&#125;);</div></pre></td></tr></table></figure></p>
-<p>Just type <code>gulp browserSync</code> the terminal and ready is using browserSync with gulp.</p>
-<h2 id="Using-the-harvest"><a href="#Using-the-harvest" class="headerlink" title="Using the harvest"></a>Using the harvest</h2><p>There is many plugins to let the most powerful gulp if you want to take a look at the visit <a href="https://www.npmjs.com/" target="_blank" rel="external">https://www.npmjs.com/</a> site I use some specific, however as I am lazy, I just found something wondrous the <a href="http://www.ryanbensonmedia.com/harvest" title="Official Site" target="_blank" rel="external">Harvest</a>, he already has everything ready (broserSync, sass, css minificador, javascript and images), just download or clone the project, then type:<br><figure class="highlight cmake"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ npm <span class="keyword">install</span></div></pre></td></tr></table></figure></p>
-<p>then type in the terminal:<br><figure class="highlight elixir"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="variable">$ </span>gulp</div></pre></td></tr></table></figure></p>
-<p>You will display a url for all features, if you have finished the project or want to publish type<br><figure class="highlight elixir"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="variable">$ </span>gulp deploy</div></pre></td></tr></table></figure></p>
-<p>so you will create a folder with all files minicados ready for production</p>
-<blockquote>
-<p>Obs .: when I started using gave a error to correct type <code>npm install --save-dev es6-promise</code> and in the <code>gulpfile.js</code> adicine <code>require(&#39;es6-promise&#39;).polyfill();</code> and can run pro hug</p>
-</blockquote>
-<p>To have a better understanding you have to practice a lot with time you will create your own way to make your deployment and everything, but with this you will have a good starting point</p>
+        <p>Você ja teve aquela aula da qual é necessario entender o fluxo de algoritmo e mesmo quando é falado varias vezes ainda não consegui entender?<br><a id="more"></a><br>Seus problemas acabaram (hahahah, parece ate que estou vendendo algo :D ), o projeto <a href="http://algo-visualizer.jasonpark.me" target="_blank" rel="external">http://algo-visualizer.jasonpark.me</a>  que esta disponivel no github <a href="https://github.com/parkjs814/AlgorithmVisualizer" target="_blank" rel="external">https://github.com/parkjs814/AlgorithmVisualizer</a> tem varios algoritmos(ordenação, arvore e outros).</p>
+<p>É um site excelente, você pode ir la e tirar duvidas ou relembrar a implementação de algum algoritmo, ou mesmo contribuir com alguma melhoria.</p>
+<p>Outro excelente site é o <a href="https://www.cs.usfca.edu/~galles/visualization/about.html" target="_blank" rel="external">https://www.cs.usfca.edu/~galles/visualization/about.html</a> nele tambem tem varias implementações e é possivel ver o algoritmo sendo executado</p>
 
       
     </div>
@@ -294,13 +277,13 @@ If you already work with front end development for some time already should be u
   
     
     <div class="copyright">
-        <p><span>本文标题:</span><a href="/2016/04/13/Gulp-task-Automator/">Gulp task Automator</a></p>
+        <p><span>本文标题:</span><a href="/2016/04/19/Visualizador-de-algoritmos/">Visualizador de algoritmos</a></p>
         <p><span>文章作者:</span><a href="/" title="访问 Walter Nascimento 的个人博客">Walter Nascimento</a></p>
-        <p><span>发布时间:</span>2016年04月13日 - 10时24分</p>
-        <p><span>最后更新:</span>2016年11月22日 - 16时50分</p>
+        <p><span>发布时间:</span>2016年04月19日 - 12时23分</p>
+        <p><span>最后更新:</span>2016年11月27日 - 23时03分</p>
         <p>
-            <span>原始链接:</span><a class="post-url" href="/2016/04/13/Gulp-task-Automator/" title="Gulp task Automator">http://walternascimento.com.br/2016/04/13/Gulp-task-Automator/</a>
-            <span class="copy-path" data-clipboard-text="原文: http://walternascimento.com.br/2016/04/13/Gulp-task-Automator/　　作者: Walter Nascimento" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <span>原始链接:</span><a class="post-url" href="/2016/04/19/Visualizador-de-algoritmos/" title="Visualizador de algoritmos">http://walternascimento.com.br/2016/04/19/Visualizador-de-algoritmos/</a>
+            <span class="copy-path" data-clipboard-text="原文: http://walternascimento.com.br/2016/04/19/Visualizador-de-algoritmos/　　作者: Walter Nascimento" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
             <script src="/js/clipboard.min.js"></script>
             <script> var clipboard = new Clipboard('.copy-path'); </script>
         </p>
@@ -313,18 +296,18 @@ If you already work with front end development for some time already should be u
 
 <nav id="article-nav">
   
-    <a href="/2016/04/14/Playing-with-Angular-Material/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2016/04/19/Learning-Chess/" id="article-nav-newer" class="article-nav-link-wrap">
       <strong class="article-nav-caption"><</strong>
       <div class="article-nav-title">
         
-          Playing with Angular Material
+          Learning Chess
         
       </div>
     </a>
   
   
-    <a href="/2016/04/13/Gulp-Automatizador-de-tarefas/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">Gulp Automatizador de tarefas</div>
+    <a href="/2016/04/19/Aprendendo-Xadrez/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Aprendendo Xadrez</div>
       <strong class="article-nav-caption">></strong>
     </a>
   
@@ -335,7 +318,7 @@ If you already work with front end development for some time already should be u
 
     <div id="toc" class="toc-article">
     <strong class="toc-title">文章目录</strong>
-    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Installation"><span class="toc-number">1.</span> <span class="toc-text">Installation</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Modules"><span class="toc-number">2.</span> <span class="toc-text">Modules</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Using-the-harvest"><span class="toc-number">3.</span> <span class="toc-text">Using the harvest</span></a></li></ol>
+    
 </div>
 <input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
 
@@ -383,7 +366,7 @@ If you already work with front end development for some time already should be u
     
       <div class="duoshuo" id="comments">
     <!-- 多说评论框 start -->
-    <div class="ds-thread" data-thread-key="2016/04/13/Gulp-task-Automator/" data-title="Gulp task Automator" data-url="http://walternascimento.com.br/2016/04/13/Gulp-task-Automator/"></div>
+    <div class="ds-thread" data-thread-key="2016/04/19/Visualizador-de-algoritmos/" data-title="Visualizador de algoritmos" data-url="http://walternascimento.com.br/2016/04/19/Visualizador-de-algoritmos/"></div>
     <!-- 多说评论框 end -->
     <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
     <script type="text/javascript">
@@ -406,13 +389,13 @@ If you already work with front end development for some time already should be u
 
     <div class="scroll" id="post-nav-button">
         
-            <a href="/2016/04/14/Playing-with-Angular-Material/" title="上一篇: Playing with Angular Material">
+            <a href="/2016/04/19/Learning-Chess/" title="上一篇: Learning Chess">
                 <i class="fa fa-angle-left"></i>
             </a>
         
         <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
         
-            <a href="/2016/04/13/Gulp-Automatizador-de-tarefas/" title="下一篇: Gulp Automatizador de tarefas">
+            <a href="/2016/04/19/Aprendendo-Xadrez/" title="下一篇: Aprendendo Xadrez">
                 <i class="fa fa-angle-right"></i>
             </a>
         

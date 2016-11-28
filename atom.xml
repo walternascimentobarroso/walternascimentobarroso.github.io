@@ -255,25 +255,6 @@
   </entry>
   
   <entry>
-    <title><![CDATA[Aprendendo Xadrez]]></title>
-    <link href="http://walternascimento.com.br/2016/04/19/Aprendendo-Xadrez/"/>
-    <id>http://walternascimento.com.br/2016/04/19/Aprendendo-Xadrez/</id>
-    <published>2016-04-19T16:23:42.000Z</published>
-    <updated>2016-11-22T20:50:54.391Z</updated>
-    <content type="html"><![CDATA[<p>Xadrez o jogo dos reis, desde a antiguidade é jogando, se você gosta e quer conhecer mais, então indico continuar lendo esse post<br><a id="more"></a><br>Xadrez alem de ser um otimo jogo ele é excelente para aumentar o raciocinio logico, se você tem curiosidade e deseja aprender mais sobre xadrez, indico o site do <a href="https://www.chesscademy.com/" title="Site Oficial" target="_blank" rel="external">Chesscademy</a>.</p>
-<p>Se quiser entrar como meu amigo use o link abaixo<br><a href="http://chscd.me/invitations/WalterNascimento" target="_blank" rel="external">http://chscd.me/invitations/WalterNascimento</a></p>
-<p>La tem curso do básico ao avançado para todos os gosto, se você é fã de xadrez, iniciante ou até mesmo avançado, recomendo da uma olhada ;)</p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p>Xadrez o jogo dos reis, desde a antiguidade é jogando, se você gosta e quer conhecer mais, então indico continuar lendo esse post<br>]]>
-    
-    </summary>
-    
-      <category term="Knowledge" scheme="http://walternascimento.com.br/tags/Knowledge/"/>
-    
-  </entry>
-  
-  <entry>
     <title><![CDATA[Learning Chess]]></title>
     <link href="http://walternascimento.com.br/2016/04/19/Learning-Chess/"/>
     <id>http://walternascimento.com.br/2016/04/19/Learning-Chess/</id>
@@ -285,6 +266,44 @@
 ]]></content>
     <summary type="html">
     <![CDATA[<p>Chess the game of kings, since antiquity is playing, if you like and want to know more, then continue reading this post indicate<br>]]>
+    
+    </summary>
+    
+      <category term="Knowledge" scheme="http://walternascimento.com.br/tags/Knowledge/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Visualizador de algoritmos]]></title>
+    <link href="http://walternascimento.com.br/2016/04/19/Visualizador-de-algoritmos/"/>
+    <id>http://walternascimento.com.br/2016/04/19/Visualizador-de-algoritmos/</id>
+    <published>2016-04-19T16:23:42.000Z</published>
+    <updated>2016-11-28T03:03:12.204Z</updated>
+    <content type="html"><![CDATA[<p>Você ja teve aquela aula da qual é necessario entender o fluxo de algoritmo e mesmo quando é falado varias vezes ainda não consegui entender?<br><a id="more"></a><br>Seus problemas acabaram (hahahah, parece ate que estou vendendo algo :D ), o projeto <a href="http://algo-visualizer.jasonpark.me" target="_blank" rel="external">http://algo-visualizer.jasonpark.me</a>  que esta disponivel no github <a href="https://github.com/parkjs814/AlgorithmVisualizer" target="_blank" rel="external">https://github.com/parkjs814/AlgorithmVisualizer</a> tem varios algoritmos(ordenação, arvore e outros).</p>
+<p>É um site excelente, você pode ir la e tirar duvidas ou relembrar a implementação de algum algoritmo, ou mesmo contribuir com alguma melhoria.</p>
+<p>Outro excelente site é o <a href="https://www.cs.usfca.edu/~galles/visualization/about.html" target="_blank" rel="external">https://www.cs.usfca.edu/~galles/visualization/about.html</a> nele tambem tem varias implementações e é possivel ver o algoritmo sendo executado</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>Você ja teve aquela aula da qual é necessario entender o fluxo de algoritmo e mesmo quando é falado varias vezes ainda não consegui entender?<br>]]>
+    
+    </summary>
+    
+      <category term="Knowledge" scheme="http://walternascimento.com.br/tags/Knowledge/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Aprendendo Xadrez]]></title>
+    <link href="http://walternascimento.com.br/2016/04/19/Aprendendo-Xadrez/"/>
+    <id>http://walternascimento.com.br/2016/04/19/Aprendendo-Xadrez/</id>
+    <published>2016-04-19T16:23:42.000Z</published>
+    <updated>2016-11-22T20:50:54.391Z</updated>
+    <content type="html"><![CDATA[<p>Xadrez o jogo dos reis, desde a antiguidade é jogando, se você gosta e quer conhecer mais, então indico continuar lendo esse post<br><a id="more"></a><br>Xadrez alem de ser um otimo jogo ele é excelente para aumentar o raciocinio logico, se você tem curiosidade e deseja aprender mais sobre xadrez, indico o site do <a href="https://www.chesscademy.com/" title="Site Oficial" target="_blank" rel="external">Chesscademy</a>.</p>
+<p>Se quiser entrar como meu amigo use o link abaixo<br><a href="http://chscd.me/invitations/WalterNascimento" target="_blank" rel="external">http://chscd.me/invitations/WalterNascimento</a></p>
+<p>La tem curso do básico ao avançado para todos os gosto, se você é fã de xadrez, iniciante ou até mesmo avançado, recomendo da uma olhada ;)</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>Xadrez o jogo dos reis, desde a antiguidade é jogando, se você gosta e quer conhecer mais, então indico continuar lendo esse post<br>]]>
     
     </summary>
     
@@ -329,27 +348,6 @@
   </entry>
   
   <entry>
-    <title><![CDATA[Transferring file with SCP]]></title>
-    <link href="http://walternascimento.com.br/2016/04/17/Transferring-file-with-SCP/"/>
-    <id>http://walternascimento.com.br/2016/04/17/Transferring-file-with-SCP/</id>
-    <published>2016-04-17T13:29:49.000Z</published>
-    <updated>2016-11-22T20:50:54.395Z</updated>
-    <content type="html"><![CDATA[<p>When using ssh able to connect to a machine and do everything like we had in front of her, but there comes a time that we want to copy something from the machine that we are for the remote machine or vice versa, and at that time enters the <a href="https://wikipedia.org/wiki/Unix_SCP" title="Wikipedia" target="_blank" rel="external">SCP</a>.<br><a id="more"></a><br>If we are in our machine and we have to send a file simply type the following command:<br><figure class="highlight elixir"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="variable">$ </span>scp /home/usuario/texto.txt servidor<span class="variable">@192</span>.<span class="number">168.0</span>.<span class="number">1</span><span class="symbol">:/home/servidor</span></div></pre></td></tr></table></figure></p>
-<p>Thus the <code>texto.txt</code> file will be copied to the machine<code>192.168.0.1</code> in the directory <code>/home/servidor</code>.</p>
-<p>To retrace just type the following command:<br><figure class="highlight elixir"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="variable">$ </span>scp servidor<span class="variable">@192</span>.<span class="number">168.0</span>.<span class="number">1</span><span class="symbol">:/home/servidor/texto</span>.txt /home/usuario/</div></pre></td></tr></table></figure></p>
-<p>Thus the <code>texto.txt</code> file is copied to the local machine in the directory <code>/home/usuario</code>.</p>
-<p>For more information about the type command:<br><figure class="highlight elixir"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="variable">$ </span>man scp</div></pre></td></tr></table></figure></p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p>When using ssh able to connect to a machine and do everything like we had in front of her, but there comes a time that we want to copy something from the machine that we are for the remote machine or vice versa, and at that time enters the <a href="https://wikipedia.org/wiki/Unix_SCP" title="Wikipedia">SCP</a>.<br>]]>
-    
-    </summary>
-    
-      <category term="Development" scheme="http://walternascimento.com.br/tags/Development/"/>
-    
-  </entry>
-  
-  <entry>
     <title><![CDATA[Transferindo arquivo com SCP]]></title>
     <link href="http://walternascimento.com.br/2016/04/17/Transferindo-arquivo-com-SCP/"/>
     <id>http://walternascimento.com.br/2016/04/17/Transferindo-arquivo-com-SCP/</id>
@@ -363,6 +361,27 @@
 ]]></content>
     <summary type="html">
     <![CDATA[<p>Ao utilizar o ssh conseguimos nos conectar em uma maquina e fazer tudo como se tivéssemos em frente dela, mas chega um momento que queremos copiar algo da maquina que estamos para a maquina remota ou vice-versa, e nesse momento entra o <a href="https://pt.wikipedia.org/wiki/Unix_SCP" title="Wikipédia">SCP</a>.<br>]]>
+    
+    </summary>
+    
+      <category term="Development" scheme="http://walternascimento.com.br/tags/Development/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Transferring file with SCP]]></title>
+    <link href="http://walternascimento.com.br/2016/04/17/Transferring-file-with-SCP/"/>
+    <id>http://walternascimento.com.br/2016/04/17/Transferring-file-with-SCP/</id>
+    <published>2016-04-17T13:29:49.000Z</published>
+    <updated>2016-11-22T20:50:54.395Z</updated>
+    <content type="html"><![CDATA[<p>When using ssh able to connect to a machine and do everything like we had in front of her, but there comes a time that we want to copy something from the machine that we are for the remote machine or vice versa, and at that time enters the <a href="https://wikipedia.org/wiki/Unix_SCP" title="Wikipedia" target="_blank" rel="external">SCP</a>.<br><a id="more"></a><br>If we are in our machine and we have to send a file simply type the following command:<br><figure class="highlight elixir"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="variable">$ </span>scp /home/usuario/texto.txt servidor<span class="variable">@192</span>.<span class="number">168.0</span>.<span class="number">1</span><span class="symbol">:/home/servidor</span></div></pre></td></tr></table></figure></p>
+<p>Thus the <code>texto.txt</code> file will be copied to the machine<code>192.168.0.1</code> in the directory <code>/home/servidor</code>.</p>
+<p>To retrace just type the following command:<br><figure class="highlight elixir"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="variable">$ </span>scp servidor<span class="variable">@192</span>.<span class="number">168.0</span>.<span class="number">1</span><span class="symbol">:/home/servidor/texto</span>.txt /home/usuario/</div></pre></td></tr></table></figure></p>
+<p>Thus the <code>texto.txt</code> file is copied to the local machine in the directory <code>/home/usuario</code>.</p>
+<p>For more information about the type command:<br><figure class="highlight elixir"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="variable">$ </span>man scp</div></pre></td></tr></table></figure></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>When using ssh able to connect to a machine and do everything like we had in front of her, but there comes a time that we want to copy something from the machine that we are for the remote machine or vice versa, and at that time enters the <a href="https://wikipedia.org/wiki/Unix_SCP" title="Wikipedia">SCP</a>.<br>]]>
     
     </summary>
     
@@ -396,39 +415,6 @@
 ]]></content>
     <summary type="html">
     <![CDATA[<p>The site <a href="http://www.urionlinejudge.com.br/" title="Official Site">UriOnlineJudge</a> is an online judge who evaluates the soloções sent to the various problems in different languages.<br>]]>
-    
-    </summary>
-    
-      <category term="Development" scheme="http://walternascimento.com.br/tags/Development/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[Praticando programação com o UriOnlineJudge]]></title>
-    <link href="http://walternascimento.com.br/2016/04/16/Praticando-programacao-com-o-UriOnlineJudge/"/>
-    <id>http://walternascimento.com.br/2016/04/16/Praticando-programacao-com-o-UriOnlineJudge/</id>
-    <published>2016-04-16T14:01:15.000Z</published>
-    <updated>2016-11-22T20:50:54.395Z</updated>
-    <content type="html"><![CDATA[<p>O site <a href="http://www.urionlinejudge.com.br/" title="Site Oficial" target="_blank" rel="external">UriOnlineJudge</a> é um juiz online que avalia as soloções enviadas para os diversos problemas em diversas linguagens.<br><a id="more"></a><br>Existem varios juizes onlines de codigos, mas o <a href="http://www.urionlinejudge.com.br/" title="Site Oficial" target="_blank" rel="external">UriOnlineJudge</a> tem diversas vantagens:</p>
-<ul>
-<li>Em portugues;</li>
-<li>Online;</li>
-<li>Aceita diversas linguagens;<ul>
-<li>C;</li>
-<li>C++;</li>
-<li>Java;</li>
-<li>Python;</li>
-</ul>
-</li>
-<li>Tem mais de mil problemas;</li>
-<li>Da para usar na universidade;</li>
-<li>entre outros…</li>
-</ul>
-<p>Se você não conhece então corre la se inscreva e comece a subir no rank.</p>
-<p>o <a href="http://www.urionlinejudge.com.br/" title="Site Oficial" target="_blank" rel="external">UriOnlineJudge</a> é uma ferramenta fantastica, creio que todo desenvolvedor devia usar algo do tipo para aprimorar mais sempre seus códigos.</p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p>O site <a href="http://www.urionlinejudge.com.br/" title="Site Oficial">UriOnlineJudge</a> é um juiz online que avalia as soloções enviadas para os diversos problemas em diversas linguagens.<br>]]>
     
     </summary>
     
