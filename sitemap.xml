@@ -2,8 +2,8 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://walternascimento.com.br/2016/04/19/Visualizador-de-algoritmos/</loc>
-    <lastmod>2016-11-28T03:03:12.204Z</lastmod>
+    <loc>http://walternascimento.com.br/2016/11/27/Visualizador-de-algoritmos/</loc>
+    <lastmod>2016-11-28T03:07:41.498Z</lastmod>
   </url>
   
   <url>
@@ -22,7 +22,7 @@
   </url>
   
   <url>
-    <loc>http://walternascimento.com.br/2016/04/07/Hexo-to-staticos-blogs/</loc>
+    <loc>http://walternascimento.com.br/2016/04/13/Gulp-task-Automator/</loc>
     <lastmod>2016-11-22T20:50:54.395Z</lastmod>
   </url>
   
@@ -37,12 +37,12 @@
   </url>
   
   <url>
-    <loc>http://walternascimento.com.br/2016/04/17/Transferring-file-with-SCP/</loc>
+    <loc>http://walternascimento.com.br/2016/04/17/Transferindo-arquivo-com-SCP/</loc>
     <lastmod>2016-11-22T20:50:54.395Z</lastmod>
   </url>
   
   <url>
-    <loc>http://walternascimento.com.br/2016/04/17/Transferindo-arquivo-com-SCP/</loc>
+    <loc>http://walternascimento.com.br/2016/04/17/Transferring-file-with-SCP/</loc>
     <lastmod>2016-11-22T20:50:54.395Z</lastmod>
   </url>
   
@@ -52,17 +52,17 @@
   </url>
   
   <url>
-    <loc>http://walternascimento.com.br/2016/04/16/Praticando-programacao-com-o-UriOnlineJudge/</loc>
-    <lastmod>2016-11-22T20:50:54.395Z</lastmod>
-  </url>
-  
-  <url>
     <loc>http://walternascimento.com.br/2016/04/02/SSH-Connection/</loc>
     <lastmod>2016-11-22T20:50:54.395Z</lastmod>
   </url>
   
   <url>
-    <loc>http://walternascimento.com.br/2016/04/14/Playing-with-Angular-Material/</loc>
+    <loc>http://walternascimento.com.br/2016/04/16/Praticando-programacao-com-o-UriOnlineJudge/</loc>
+    <lastmod>2016-11-22T20:50:54.395Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://walternascimento.com.br/2016/04/16/Practicing-programming-with-UriOnlineJudge/</loc>
     <lastmod>2016-11-22T20:50:54.395Z</lastmod>
   </url>
   
@@ -72,12 +72,17 @@
   </url>
   
   <url>
-    <loc>http://walternascimento.com.br/2016/04/21/Descobrindo-o-maximo-de-memoria-no-Linux/</loc>
+    <loc>http://walternascimento.com.br/2016/04/11/Descobrindo-o-AngularJs/</loc>
     <lastmod>2016-11-22T20:50:54.395Z</lastmod>
   </url>
   
   <url>
-    <loc>http://walternascimento.com.br/2016/04/11/Descobrindo-o-AngularJs/</loc>
+    <loc>http://walternascimento.com.br/2016/04/03/Using-Bower/</loc>
+    <lastmod>2016-11-22T20:50:54.395Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://walternascimento.com.br/2016/04/21/Descobrindo-o-maximo-de-memoria-no-Linux/</loc>
     <lastmod>2016-11-22T20:50:54.395Z</lastmod>
   </url>
   
@@ -122,22 +127,22 @@
   </url>
   
   <url>
-    <loc>http://walternascimento.com.br/2016/04/13/Gulp-task-Automator/</loc>
-    <lastmod>2016-11-22T20:50:54.395Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://walternascimento.com.br/2016/04/16/Practicing-programming-with-UriOnlineJudge/</loc>
-    <lastmod>2016-11-22T20:50:54.395Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://walternascimento.com.br/2016/04/20/Ingles-e-fundamental/</loc>
+    <loc>http://walternascimento.com.br/2016/05/19/Playing-with-arduino/</loc>
     <lastmod>2016-11-22T20:50:54.395Z</lastmod>
   </url>
   
   <url>
     <loc>http://walternascimento.com.br/2016/04/07/Hexo-para-blogs-staticos/</loc>
+    <lastmod>2016-11-22T20:50:54.395Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://walternascimento.com.br/2016/04/07/Hexo-to-staticos-blogs/</loc>
+    <lastmod>2016-11-22T20:50:54.395Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://walternascimento.com.br/2016/04/20/Ingles-e-fundamental/</loc>
     <lastmod>2016-11-22T20:50:54.395Z</lastmod>
   </url>
   
@@ -152,12 +157,12 @@
   </url>
   
   <url>
-    <loc>http://walternascimento.com.br/2016/04/19/Learning-Chess/</loc>
+    <loc>http://walternascimento.com.br/2016/04/10/Learn-how-to-use-VIM/</loc>
     <lastmod>2016-11-22T20:50:54.395Z</lastmod>
   </url>
   
   <url>
-    <loc>http://walternascimento.com.br/2016/04/10/Learn-how-to-use-VIM/</loc>
+    <loc>http://walternascimento.com.br/2016/04/19/Learning-Chess/</loc>
     <lastmod>2016-11-22T20:50:54.395Z</lastmod>
   </url>
   
@@ -172,11 +177,6 @@
   </url>
   
   <url>
-    <loc>http://walternascimento.com.br/2016/04/03/Using-Bower/</loc>
-    <lastmod>2016-11-22T20:50:54.395Z</lastmod>
-  </url>
-  
-  <url>
     <loc>http://walternascimento.com.br/2016/04/15/Organizando-projeto-com-trello/</loc>
     <lastmod>2016-11-22T20:50:54.395Z</lastmod>
   </url>
@@ -187,7 +187,7 @@
   </url>
   
   <url>
-    <loc>http://walternascimento.com.br/2016/05/19/Playing-with-arduino/</loc>
+    <loc>http://walternascimento.com.br/2016/04/14/Playing-with-Angular-Material/</loc>
     <lastmod>2016-11-22T20:50:54.395Z</lastmod>
   </url>
   
@@ -197,17 +197,7 @@
   </url>
   
   <url>
-    <loc>http://walternascimento.com.br/2016/04/08/A-bit-of-C-is-good/</loc>
-    <lastmod>2016-11-22T20:50:54.391Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://walternascimento.com.br/2016/04/02/Conexao-SSH/</loc>
-    <lastmod>2016-11-22T20:50:54.391Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://walternascimento.com.br/2016/04/12/Comandos-basicos-do-GIT/</loc>
+    <loc>http://walternascimento.com.br/2016/04/10/Aprenda-a-usar-o-VIM/</loc>
     <lastmod>2016-11-22T20:50:54.391Z</lastmod>
   </url>
   
@@ -217,7 +207,7 @@
   </url>
   
   <url>
-    <loc>http://walternascimento.com.br/2016/04/05/Browser-sync-um-livereload-perfeito/</loc>
+    <loc>http://walternascimento.com.br/2016/04/12/Comandos-basicos-do-GIT/</loc>
     <lastmod>2016-11-22T20:50:54.391Z</lastmod>
   </url>
   
@@ -227,12 +217,17 @@
   </url>
   
   <url>
-    <loc>http://walternascimento.com.br/2016/04/14/Brincando-com-o-Angular-Material/</loc>
+    <loc>http://walternascimento.com.br/2016/04/05/Browser-sync-um-livereload-perfeito/</loc>
     <lastmod>2016-11-22T20:50:54.391Z</lastmod>
   </url>
   
   <url>
-    <loc>http://walternascimento.com.br/2016/05/19/Brincando-com-arduino/</loc>
+    <loc>http://walternascimento.com.br/2016/04/02/Conexao-SSH/</loc>
+    <lastmod>2016-11-22T20:50:54.391Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://walternascimento.com.br/2016/04/14/Brincando-com-o-Angular-Material/</loc>
     <lastmod>2016-11-22T20:50:54.391Z</lastmod>
   </url>
   
@@ -242,17 +237,22 @@
   </url>
   
   <url>
-    <loc>http://walternascimento.com.br/2016/04/18/Aprendendo-Matematica-com-o-KhanAcademy/</loc>
-    <lastmod>2016-11-22T20:50:54.391Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://walternascimento.com.br/2016/04/10/Aprenda-a-usar-o-VIM/</loc>
+    <loc>http://walternascimento.com.br/2016/05/19/Brincando-com-arduino/</loc>
     <lastmod>2016-11-22T20:50:54.391Z</lastmod>
   </url>
   
   <url>
     <loc>http://walternascimento.com.br/2016/04/19/Aprendendo-Xadrez/</loc>
+    <lastmod>2016-11-22T20:50:54.391Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://walternascimento.com.br/2016/04/18/Aprendendo-Matematica-com-o-KhanAcademy/</loc>
+    <lastmod>2016-11-22T20:50:54.391Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://walternascimento.com.br/2016/04/08/A-bit-of-C-is-good/</loc>
     <lastmod>2016-11-22T20:50:54.391Z</lastmod>
   </url>
   
