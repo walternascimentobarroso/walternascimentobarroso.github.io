@@ -137,8 +137,8 @@
   
   <entry>
     <title><![CDATA[Exemplo de chat]]></title>
-    <link href="http://walternascimento.com.br/2016/07/11/Exemplo-de-chat/"/>
-    <id>http://walternascimento.com.br/2016/07/11/Exemplo-de-chat/</id>
+    <link href="http://walternascimento.com.br/2016/07/11/servidor-de-email/"/>
+    <id>http://walternascimento.com.br/2016/07/11/servidor-de-email/</id>
     <published>2016-07-12T01:34:55.000Z</published>
     <updated>2016-11-22T20:50:54.395Z</updated>
     <content type="html"><![CDATA[<p>É muito comum termos diversos a vontade e ideias de criar diversos projetos, e um dos mais comuns é o de um chat, porém não sou um excelente front end, por tanto acabo sempre recorrendo a templats, e hoje a dica é bem simples, um site com varios templats de chat<br><a id="more"></a><br>Acesse o site <a href="http://www.bypeople.com/" target="_blank" rel="external">ByPeople</a>, lá existe diversos exemplos de codigos e uma seção genial é a de chat, segue o link abaixo:<br><a href="http://www.bypeople.com/css-chat/" target="_blank" rel="external">http://www.bypeople.com/css-chat/</a></p>
@@ -156,22 +156,22 @@
   </entry>
   
   <entry>
-    <title><![CDATA[Brincando com arduino]]></title>
-    <link href="http://walternascimento.com.br/2016/05/19/Brincando-com-arduino/"/>
-    <id>http://walternascimento.com.br/2016/05/19/Brincando-com-arduino/</id>
-    <published>2016-05-20T00:55:35.000Z</published>
-    <updated>2016-11-22T20:50:54.391Z</updated>
-    <content type="html"><![CDATA[<p>Olá, estive um pouco fora pois tou ocupado com algumas atividades, mas para voltar e voltar com força total, vou falar um pouco sobre arduino.<br><a id="more"></a><br>Se você gosta de programação e de eletronica, então você precisa conhecer o arduino, hoje diria que ele ja é algo bem antigo, mas é muito diverto brinca com ele, e é possivel fazer diversas coisas super interessantes.</p>
-<p>Para comprar um arduino se você esta começando recomendo comprar o arduino uno R3 (esse é o meu), você consegue compra-lo em diversas lojas (não vou indicar uma especifica para nao fazer propaganda :D ), como mercado livre, ebay, aliexpress, entre outras.</p>
-<p>Após ter o arduino, pode comecar a seguir tutoriais pela internet, eu consegui um livro sobre arduino bem basico com diversos projetos e conforme eu for concluindo o projeto vou disponibilizando o codigo no meu github (<a href="https://github.com/walternascimentobarroso/arduino-basico" target="_blank" rel="external">https://github.com/walternascimentobarroso/arduino-basico</a>).</p>
-<p>Então adquira o seu e diverta-se.</p>
+    <title><![CDATA[Exemplo de chat]]></title>
+    <link href="http://walternascimento.com.br/2016/07/11/Exemplo-de-chat/"/>
+    <id>http://walternascimento.com.br/2016/07/11/Exemplo-de-chat/</id>
+    <published>2016-07-12T01:34:55.000Z</published>
+    <updated>2016-11-22T20:50:54.395Z</updated>
+    <content type="html"><![CDATA[<p>É muito comum termos diversos a vontade e ideias de criar diversos projetos, e um dos mais comuns é o de um chat, porém não sou um excelente front end, por tanto acabo sempre recorrendo a templats, e hoje a dica é bem simples, um site com varios templats de chat<br><a id="more"></a><br>Acesse o site <a href="http://www.bypeople.com/" target="_blank" rel="external">ByPeople</a>, lá existe diversos exemplos de codigos e uma seção genial é a de chat, segue o link abaixo:<br><a href="http://www.bypeople.com/css-chat/" target="_blank" rel="external">http://www.bypeople.com/css-chat/</a></p>
+<p>Gostei bastante do site. :D</p>
 ]]></content>
     <summary type="html">
-    <![CDATA[<p>Olá, estive um pouco fora pois tou ocupado com algumas atividades, mas para voltar e voltar com força total, vou falar um pouco sobre arduino.<br>]]>
+    <![CDATA[<p>É muito comum termos diversos a vontade e ideias de criar diversos projetos, e um dos mais comuns é o de um chat, porém não sou um excelente front end, por tanto acabo sempre recorrendo a templats, e hoje a dica é bem simples, um site com varios templats de chat<br>]]>
     
     </summary>
     
-      <category term="Arduino" scheme="http://walternascimento.com.br/tags/Arduino/"/>
+      <category term="Front End" scheme="http://walternascimento.com.br/tags/Front-End/"/>
+    
+      <category term="Templat" scheme="http://walternascimento.com.br/tags/Templat/"/>
     
   </entry>
   
@@ -196,23 +196,22 @@
   </entry>
   
   <entry>
-    <title><![CDATA[Discovering the maximum memory on Linux]]></title>
-    <link href="http://walternascimento.com.br/2016/04/21/Discovering-the-maximum-memory-on-Linux/"/>
-    <id>http://walternascimento.com.br/2016/04/21/Discovering-the-maximum-memory-on-Linux/</id>
-    <published>2016-04-21T13:57:09.000Z</published>
-    <updated>2016-11-22T20:50:54.395Z</updated>
-    <content type="html"><![CDATA[<p>A few days ago I was to find out how much memory my notebook stand, despite being a simple command, I had to browse many sites to discover.<br><a id="more"></a><br>I found diversar way and several new Linux commands, but will only show what really solved my problem</p>
-<p>Open Terminal and type:<br><figure class="highlight excel"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo dmidecode -<span class="built_in">t</span> <span class="number">16</span></div></pre></td></tr></table></figure></p>
-<p>will show various information<br><figure class="highlight gauss"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"><span class="meta"># dmidecode 2.12</span></div><div class="line">SMBIOS <span class="number">2.7</span> present.</div><div class="line"></div><div class="line">Handle <span class="number">0x0019</span>, DMI <span class="built_in">type</span> <span class="number">16</span>, <span class="number">23</span> bytes</div><div class="line">Physical Memory Array</div><div class="line">	Location: <span class="keyword">System</span> Board <span class="keyword">Or</span> Motherboard</div><div class="line">	<span class="keyword">Use</span>: <span class="keyword">System</span> Memory</div><div class="line">	<span class="built_in">Error</span> Correction <span class="built_in">Type</span>: None</div><div class="line">	Maximum Capacity: <span class="number">32</span> GB</div><div class="line">	<span class="built_in">Error</span> Information Handle: No <span class="built_in">Error</span></div><div class="line">	Number Of Devices: <span class="number">2</span></div></pre></td></tr></table></figure></p>
-<p>but if you want to know is the maximum memory is then only look where ta written <code>Maximum</code> to facilitate you can use the command:<br><figure class="highlight 1c"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo dmidecode -t <span class="number">16</span> <span class="string">| grep Maximum</span></div></pre></td></tr></table></figure></p>
-<p>and it will show just what you are looking for.</p>
+    <title><![CDATA[Brincando com arduino]]></title>
+    <link href="http://walternascimento.com.br/2016/05/19/Brincando-com-arduino/"/>
+    <id>http://walternascimento.com.br/2016/05/19/Brincando-com-arduino/</id>
+    <published>2016-05-20T00:55:35.000Z</published>
+    <updated>2016-11-22T20:50:54.391Z</updated>
+    <content type="html"><![CDATA[<p>Olá, estive um pouco fora pois tou ocupado com algumas atividades, mas para voltar e voltar com força total, vou falar um pouco sobre arduino.<br><a id="more"></a><br>Se você gosta de programação e de eletronica, então você precisa conhecer o arduino, hoje diria que ele ja é algo bem antigo, mas é muito diverto brinca com ele, e é possivel fazer diversas coisas super interessantes.</p>
+<p>Para comprar um arduino se você esta começando recomendo comprar o arduino uno R3 (esse é o meu), você consegue compra-lo em diversas lojas (não vou indicar uma especifica para nao fazer propaganda :D ), como mercado livre, ebay, aliexpress, entre outras.</p>
+<p>Após ter o arduino, pode comecar a seguir tutoriais pela internet, eu consegui um livro sobre arduino bem basico com diversos projetos e conforme eu for concluindo o projeto vou disponibilizando o codigo no meu github (<a href="https://github.com/walternascimentobarroso/arduino-basico" target="_blank" rel="external">https://github.com/walternascimentobarroso/arduino-basico</a>).</p>
+<p>Então adquira o seu e diverta-se.</p>
 ]]></content>
     <summary type="html">
-    <![CDATA[<p>A few days ago I was to find out how much memory my notebook stand, despite being a simple command, I had to browse many sites to discover.<br>]]>
+    <![CDATA[<p>Olá, estive um pouco fora pois tou ocupado com algumas atividades, mas para voltar e voltar com força total, vou falar um pouco sobre arduino.<br>]]>
     
     </summary>
     
-      <category term="Linux" scheme="http://walternascimento.com.br/tags/Linux/"/>
+      <category term="Arduino" scheme="http://walternascimento.com.br/tags/Arduino/"/>
     
   </entry>
   
@@ -230,6 +229,27 @@
 ]]></content>
     <summary type="html">
     <![CDATA[<p>A alguns dias estive atras de descobrir quanto de memória meu notebook suportava, apesar de ser um comando simples, precisei navegar em muitos sites para descobri.<br>]]>
+    
+    </summary>
+    
+      <category term="Linux" scheme="http://walternascimento.com.br/tags/Linux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Discovering the maximum memory on Linux]]></title>
+    <link href="http://walternascimento.com.br/2016/04/21/Discovering-the-maximum-memory-on-Linux/"/>
+    <id>http://walternascimento.com.br/2016/04/21/Discovering-the-maximum-memory-on-Linux/</id>
+    <published>2016-04-21T13:57:09.000Z</published>
+    <updated>2016-11-22T20:50:54.395Z</updated>
+    <content type="html"><![CDATA[<p>A few days ago I was to find out how much memory my notebook stand, despite being a simple command, I had to browse many sites to discover.<br><a id="more"></a><br>I found diversar way and several new Linux commands, but will only show what really solved my problem</p>
+<p>Open Terminal and type:<br><figure class="highlight excel"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo dmidecode -<span class="built_in">t</span> <span class="number">16</span></div></pre></td></tr></table></figure></p>
+<p>will show various information<br><figure class="highlight gauss"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"><span class="meta"># dmidecode 2.12</span></div><div class="line">SMBIOS <span class="number">2.7</span> present.</div><div class="line"></div><div class="line">Handle <span class="number">0x0019</span>, DMI <span class="built_in">type</span> <span class="number">16</span>, <span class="number">23</span> bytes</div><div class="line">Physical Memory Array</div><div class="line">	Location: <span class="keyword">System</span> Board <span class="keyword">Or</span> Motherboard</div><div class="line">	<span class="keyword">Use</span>: <span class="keyword">System</span> Memory</div><div class="line">	<span class="built_in">Error</span> Correction <span class="built_in">Type</span>: None</div><div class="line">	Maximum Capacity: <span class="number">32</span> GB</div><div class="line">	<span class="built_in">Error</span> Information Handle: No <span class="built_in">Error</span></div><div class="line">	Number Of Devices: <span class="number">2</span></div></pre></td></tr></table></figure></p>
+<p>but if you want to know is the maximum memory is then only look where ta written <code>Maximum</code> to facilitate you can use the command:<br><figure class="highlight 1c"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo dmidecode -t <span class="number">16</span> <span class="string">| grep Maximum</span></div></pre></td></tr></table></figure></p>
+<p>and it will show just what you are looking for.</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>A few days ago I was to find out how much memory my notebook stand, despite being a simple command, I had to browse many sites to discover.<br>]]>
     
     </summary>
     
@@ -274,25 +294,6 @@
   </entry>
   
   <entry>
-    <title><![CDATA[Learning Chess]]></title>
-    <link href="http://walternascimento.com.br/2016/04/19/Learning-Chess/"/>
-    <id>http://walternascimento.com.br/2016/04/19/Learning-Chess/</id>
-    <published>2016-04-19T16:23:42.000Z</published>
-    <updated>2016-11-22T20:50:54.395Z</updated>
-    <content type="html"><![CDATA[<p>Chess the game of kings, since antiquity is playing, if you like and want to know more, then continue reading this post indicate<br><a id="more"></a><br>Chess besides being a great game it is great to increase the logical reasoning, if you are curious and want to learn more about chess, indicate the site <a href="https://www.chesscademy.com/" title="Official Site" target="_blank" rel="external">Chesscademy</a> .</p>
-<p>If you want to go to my friend use the link below<br><a href="http://chscd.me/invitations/WalterNascimento" target="_blank" rel="external">http://chscd.me/invitations/WalterNascimento</a></p>
-<p>It is basic to advanced course for every taste, whether you are a chess fan, beginner or even advanced, recommend a look of ;)</p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p>Chess the game of kings, since antiquity is playing, if you like and want to know more, then continue reading this post indicate<br>]]>
-    
-    </summary>
-    
-      <category term="Knowledge" scheme="http://walternascimento.com.br/tags/Knowledge/"/>
-    
-  </entry>
-  
-  <entry>
     <title><![CDATA[Aprendendo Xadrez]]></title>
     <link href="http://walternascimento.com.br/2016/04/19/Aprendendo-Xadrez/"/>
     <id>http://walternascimento.com.br/2016/04/19/Aprendendo-Xadrez/</id>
@@ -304,6 +305,25 @@
 ]]></content>
     <summary type="html">
     <![CDATA[<p>Xadrez o jogo dos reis, desde a antiguidade é jogando, se você gosta e quer conhecer mais, então indico continuar lendo esse post<br>]]>
+    
+    </summary>
+    
+      <category term="Knowledge" scheme="http://walternascimento.com.br/tags/Knowledge/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Learning Chess]]></title>
+    <link href="http://walternascimento.com.br/2016/04/19/Learning-Chess/"/>
+    <id>http://walternascimento.com.br/2016/04/19/Learning-Chess/</id>
+    <published>2016-04-19T16:23:42.000Z</published>
+    <updated>2016-11-22T20:50:54.395Z</updated>
+    <content type="html"><![CDATA[<p>Chess the game of kings, since antiquity is playing, if you like and want to know more, then continue reading this post indicate<br><a id="more"></a><br>Chess besides being a great game it is great to increase the logical reasoning, if you are curious and want to learn more about chess, indicate the site <a href="https://www.chesscademy.com/" title="Official Site" target="_blank" rel="external">Chesscademy</a> .</p>
+<p>If you want to go to my friend use the link below<br><a href="http://chscd.me/invitations/WalterNascimento" target="_blank" rel="external">http://chscd.me/invitations/WalterNascimento</a></p>
+<p>It is basic to advanced course for every taste, whether you are a chess fan, beginner or even advanced, recommend a look of ;)</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>Chess the game of kings, since antiquity is playing, if you like and want to know more, then continue reading this post indicate<br>]]>
     
     </summary>
     
@@ -348,27 +368,6 @@
   </entry>
   
   <entry>
-    <title><![CDATA[Transferring file with SCP]]></title>
-    <link href="http://walternascimento.com.br/2016/04/17/Transferring-file-with-SCP/"/>
-    <id>http://walternascimento.com.br/2016/04/17/Transferring-file-with-SCP/</id>
-    <published>2016-04-17T13:29:49.000Z</published>
-    <updated>2016-11-22T20:50:54.395Z</updated>
-    <content type="html"><![CDATA[<p>When using ssh able to connect to a machine and do everything like we had in front of her, but there comes a time that we want to copy something from the machine that we are for the remote machine or vice versa, and at that time enters the <a href="https://wikipedia.org/wiki/Unix_SCP" title="Wikipedia" target="_blank" rel="external">SCP</a>.<br><a id="more"></a><br>If we are in our machine and we have to send a file simply type the following command:<br><figure class="highlight elixir"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="variable">$ </span>scp /home/usuario/texto.txt servidor<span class="variable">@192</span>.<span class="number">168.0</span>.<span class="number">1</span><span class="symbol">:/home/servidor</span></div></pre></td></tr></table></figure></p>
-<p>Thus the <code>texto.txt</code> file will be copied to the machine<code>192.168.0.1</code> in the directory <code>/home/servidor</code>.</p>
-<p>To retrace just type the following command:<br><figure class="highlight elixir"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="variable">$ </span>scp servidor<span class="variable">@192</span>.<span class="number">168.0</span>.<span class="number">1</span><span class="symbol">:/home/servidor/texto</span>.txt /home/usuario/</div></pre></td></tr></table></figure></p>
-<p>Thus the <code>texto.txt</code> file is copied to the local machine in the directory <code>/home/usuario</code>.</p>
-<p>For more information about the type command:<br><figure class="highlight elixir"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="variable">$ </span>man scp</div></pre></td></tr></table></figure></p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p>When using ssh able to connect to a machine and do everything like we had in front of her, but there comes a time that we want to copy something from the machine that we are for the remote machine or vice versa, and at that time enters the <a href="https://wikipedia.org/wiki/Unix_SCP" title="Wikipedia">SCP</a>.<br>]]>
-    
-    </summary>
-    
-      <category term="Development" scheme="http://walternascimento.com.br/tags/Development/"/>
-    
-  </entry>
-  
-  <entry>
     <title><![CDATA[Transferindo arquivo com SCP]]></title>
     <link href="http://walternascimento.com.br/2016/04/17/Transferindo-arquivo-com-SCP/"/>
     <id>http://walternascimento.com.br/2016/04/17/Transferindo-arquivo-com-SCP/</id>
@@ -390,31 +389,19 @@
   </entry>
   
   <entry>
-    <title><![CDATA[Practicing programming with UriOnlineJudge]]></title>
-    <link href="http://walternascimento.com.br/2016/04/16/Practicing-programming-with-UriOnlineJudge/"/>
-    <id>http://walternascimento.com.br/2016/04/16/Practicing-programming-with-UriOnlineJudge/</id>
-    <published>2016-04-16T14:01:15.000Z</published>
+    <title><![CDATA[Transferring file with SCP]]></title>
+    <link href="http://walternascimento.com.br/2016/04/17/Transferring-file-with-SCP/"/>
+    <id>http://walternascimento.com.br/2016/04/17/Transferring-file-with-SCP/</id>
+    <published>2016-04-17T13:29:49.000Z</published>
     <updated>2016-11-22T20:50:54.395Z</updated>
-    <content type="html"><![CDATA[<p>The site <a href="http://www.urionlinejudge.com.br/" title="Official Site" target="_blank" rel="external">UriOnlineJudge</a> is an online judge who evaluates the soloções sent to the various problems in different languages.<br><a id="more"></a><br>There are several online judges of codes, but the <a href="http://www.urionlinejudge.com.br/" title="Official Site" target="_blank" rel="external">UriOnlineJudge</a> has several advantages:</p>
-<ul>
-<li>In Portuguese;</li>
-<li>Online;</li>
-<li>Supports multiple languages;<ul>
-<li>C;</li>
-<li>C ++;</li>
-<li>Java;</li>
-<li>Python;</li>
-</ul>
-</li>
-<li>It has over a thousand problems;</li>
-<li>From the university to use;</li>
-<li>among others…</li>
-</ul>
-<p>If you do not know then run it to register and start to rise in rank.</p>
-<p>the <a href="http://www.urionlinejudge.com.br/" title="Official Site" target="_blank" rel="external">UriOnlineJudge</a> is a fantastic tool, I believe that every developer should use something to improve more always their codes.</p>
+    <content type="html"><![CDATA[<p>When using ssh able to connect to a machine and do everything like we had in front of her, but there comes a time that we want to copy something from the machine that we are for the remote machine or vice versa, and at that time enters the <a href="https://wikipedia.org/wiki/Unix_SCP" title="Wikipedia" target="_blank" rel="external">SCP</a>.<br><a id="more"></a><br>If we are in our machine and we have to send a file simply type the following command:<br><figure class="highlight elixir"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="variable">$ </span>scp /home/usuario/texto.txt servidor<span class="variable">@192</span>.<span class="number">168.0</span>.<span class="number">1</span><span class="symbol">:/home/servidor</span></div></pre></td></tr></table></figure></p>
+<p>Thus the <code>texto.txt</code> file will be copied to the machine<code>192.168.0.1</code> in the directory <code>/home/servidor</code>.</p>
+<p>To retrace just type the following command:<br><figure class="highlight elixir"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="variable">$ </span>scp servidor<span class="variable">@192</span>.<span class="number">168.0</span>.<span class="number">1</span><span class="symbol">:/home/servidor/texto</span>.txt /home/usuario/</div></pre></td></tr></table></figure></p>
+<p>Thus the <code>texto.txt</code> file is copied to the local machine in the directory <code>/home/usuario</code>.</p>
+<p>For more information about the type command:<br><figure class="highlight elixir"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="variable">$ </span>man scp</div></pre></td></tr></table></figure></p>
 ]]></content>
     <summary type="html">
-    <![CDATA[<p>The site <a href="http://www.urionlinejudge.com.br/" title="Official Site">UriOnlineJudge</a> is an online judge who evaluates the soloções sent to the various problems in different languages.<br>]]>
+    <![CDATA[<p>When using ssh able to connect to a machine and do everything like we had in front of her, but there comes a time that we want to copy something from the machine that we are for the remote machine or vice versa, and at that time enters the <a href="https://wikipedia.org/wiki/Unix_SCP" title="Wikipedia">SCP</a>.<br>]]>
     
     </summary>
     

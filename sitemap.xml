@@ -17,12 +17,22 @@
   </url>
   
   <url>
-    <loc>http://walternascimento.com.br/2016/04/03/Usando-Bower/</loc>
+    <loc>http://walternascimento.com.br/2016/04/07/Hexo-to-staticos-blogs/</loc>
     <lastmod>2016-11-22T20:50:54.395Z</lastmod>
   </url>
   
   <url>
-    <loc>http://walternascimento.com.br/2016/04/13/Gulp-task-Automator/</loc>
+    <loc>http://walternascimento.com.br/2016/07/11/servidor-de-email/</loc>
+    <lastmod>2016-11-22T20:50:54.395Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://walternascimento.com.br/2016/04/03/Using-Bower/</loc>
+    <lastmod>2016-11-22T20:50:54.395Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://walternascimento.com.br/2016/04/03/Usando-Bower/</loc>
     <lastmod>2016-11-22T20:50:54.395Z</lastmod>
   </url>
   
@@ -37,12 +47,12 @@
   </url>
   
   <url>
-    <loc>http://walternascimento.com.br/2016/04/17/Transferindo-arquivo-com-SCP/</loc>
+    <loc>http://walternascimento.com.br/2016/04/17/Transferring-file-with-SCP/</loc>
     <lastmod>2016-11-22T20:50:54.395Z</lastmod>
   </url>
   
   <url>
-    <loc>http://walternascimento.com.br/2016/04/17/Transferring-file-with-SCP/</loc>
+    <loc>http://walternascimento.com.br/2016/04/17/Transferindo-arquivo-com-SCP/</loc>
     <lastmod>2016-11-22T20:50:54.395Z</lastmod>
   </url>
   
@@ -57,27 +67,12 @@
   </url>
   
   <url>
-    <loc>http://walternascimento.com.br/2016/04/16/Praticando-programacao-com-o-UriOnlineJudge/</loc>
-    <lastmod>2016-11-22T20:50:54.395Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://walternascimento.com.br/2016/04/16/Practicing-programming-with-UriOnlineJudge/</loc>
-    <lastmod>2016-11-22T20:50:54.395Z</lastmod>
-  </url>
-  
-  <url>
     <loc>http://walternascimento.com.br/2016/04/04/Criando-um-CSS-melhor-com-Sass/</loc>
     <lastmod>2016-11-22T20:50:54.395Z</lastmod>
   </url>
   
   <url>
     <loc>http://walternascimento.com.br/2016/04/11/Descobrindo-o-AngularJs/</loc>
-    <lastmod>2016-11-22T20:50:54.395Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://walternascimento.com.br/2016/04/03/Using-Bower/</loc>
     <lastmod>2016-11-22T20:50:54.395Z</lastmod>
   </url>
   
@@ -127,7 +122,7 @@
   </url>
   
   <url>
-    <loc>http://walternascimento.com.br/2016/05/19/Playing-with-arduino/</loc>
+    <loc>http://walternascimento.com.br/2016/04/13/Gulp-task-Automator/</loc>
     <lastmod>2016-11-22T20:50:54.395Z</lastmod>
   </url>
   
@@ -137,7 +132,7 @@
   </url>
   
   <url>
-    <loc>http://walternascimento.com.br/2016/04/07/Hexo-to-staticos-blogs/</loc>
+    <loc>http://walternascimento.com.br/2016/04/16/Praticando-programacao-com-o-UriOnlineJudge/</loc>
     <lastmod>2016-11-22T20:50:54.395Z</lastmod>
   </url>
   
@@ -192,6 +187,16 @@
   </url>
   
   <url>
+    <loc>http://walternascimento.com.br/2016/05/19/Playing-with-arduino/</loc>
+    <lastmod>2016-11-22T20:50:54.395Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://walternascimento.com.br/2016/04/16/Practicing-programming-with-UriOnlineJudge/</loc>
+    <lastmod>2016-11-22T20:50:54.395Z</lastmod>
+  </url>
+  
+  <url>
     <loc>http://walternascimento.com.br/2016/04/05/Browser-sync-a-perfect-livereload/</loc>
     <lastmod>2016-11-22T20:50:54.391Z</lastmod>
   </url>
@@ -202,7 +207,7 @@
   </url>
   
   <url>
-    <loc>http://walternascimento.com.br/2016/07/12/CSS-Tools/</loc>
+    <loc>http://walternascimento.com.br/2016/04/02/Conexao-SSH/</loc>
     <lastmod>2016-11-22T20:50:54.391Z</lastmod>
   </url>
   
@@ -212,7 +217,7 @@
   </url>
   
   <url>
-    <loc>http://walternascimento.com.br/2016/04/04/Creating-a-CSS-better-with-Sass/</loc>
+    <loc>http://walternascimento.com.br/2016/07/12/CSS-Tools/</loc>
     <lastmod>2016-11-22T20:50:54.391Z</lastmod>
   </url>
   
@@ -222,7 +227,7 @@
   </url>
   
   <url>
-    <loc>http://walternascimento.com.br/2016/04/02/Conexao-SSH/</loc>
+    <loc>http://walternascimento.com.br/2016/04/04/Creating-a-CSS-better-with-Sass/</loc>
     <lastmod>2016-11-22T20:50:54.391Z</lastmod>
   </url>
   
@@ -232,12 +237,12 @@
   </url>
   
   <url>
-    <loc>http://walternascimento.com.br/2016/04/12/Basic-Commands-GIT/</loc>
+    <loc>http://walternascimento.com.br/2016/05/19/Brincando-com-arduino/</loc>
     <lastmod>2016-11-22T20:50:54.391Z</lastmod>
   </url>
   
   <url>
-    <loc>http://walternascimento.com.br/2016/05/19/Brincando-com-arduino/</loc>
+    <loc>http://walternascimento.com.br/2016/04/12/Basic-Commands-GIT/</loc>
     <lastmod>2016-11-22T20:50:54.391Z</lastmod>
   </url>
   
