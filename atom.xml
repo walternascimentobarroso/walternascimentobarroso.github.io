@@ -216,27 +216,6 @@
   </entry>
   
   <entry>
-    <title><![CDATA[Descobrindo o máximo de memória no Linux]]></title>
-    <link href="http://walternascimento.com.br/2016/04/21/Descobrindo-o-maximo-de-memoria-no-Linux/"/>
-    <id>http://walternascimento.com.br/2016/04/21/Descobrindo-o-maximo-de-memoria-no-Linux/</id>
-    <published>2016-04-21T13:57:09.000Z</published>
-    <updated>2016-11-22T20:50:54.395Z</updated>
-    <content type="html"><![CDATA[<p>A alguns dias estive atras de descobrir quanto de memória meu notebook suportava, apesar de ser um comando simples, precisei navegar em muitos sites para descobri.<br><a id="more"></a><br>Descobri diversar forma e varios novos comandos do linux, mas vou mostrar apenas o que realmente solucionou meu problema</p>
-<p>Abra o terminal e digite:<br><figure class="highlight excel"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo dmidecode -<span class="built_in">t</span> <span class="number">16</span></div></pre></td></tr></table></figure></p>
-<p>vai aparecer diversas informações<br><figure class="highlight gauss"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"><span class="meta"># dmidecode 2.12</span></div><div class="line">SMBIOS <span class="number">2.7</span> present.</div><div class="line"></div><div class="line">Handle <span class="number">0x0019</span>, DMI <span class="built_in">type</span> <span class="number">16</span>, <span class="number">23</span> bytes</div><div class="line">Physical Memory Array</div><div class="line">	Location: <span class="keyword">System</span> Board <span class="keyword">Or</span> Motherboard</div><div class="line">	<span class="keyword">Use</span>: <span class="keyword">System</span> Memory</div><div class="line">	<span class="built_in">Error</span> Correction <span class="built_in">Type</span>: None</div><div class="line">	Maximum Capacity: <span class="number">32</span> GB</div><div class="line">	<span class="built_in">Error</span> Information Handle: No <span class="built_in">Error</span></div><div class="line">	Number Of Devices: <span class="number">2</span></div></pre></td></tr></table></figure></p>
-<p>mas se o que deseja saber é o máximo de memoria então é so olhar onde ta escrito <code>Maximum</code>, para facilitar você pode usar o comando:<br><figure class="highlight 1c"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo dmidecode -t <span class="number">16</span> <span class="string">| grep Maximum</span></div></pre></td></tr></table></figure></p>
-<p>e com isso vai exibir apenas o que você procura.</p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p>A alguns dias estive atras de descobrir quanto de memória meu notebook suportava, apesar de ser um comando simples, precisei navegar em muitos sites para descobri.<br>]]>
-    
-    </summary>
-    
-      <category term="Linux" scheme="http://walternascimento.com.br/tags/Linux/"/>
-    
-  </entry>
-  
-  <entry>
     <title><![CDATA[Discovering the maximum memory on Linux]]></title>
     <link href="http://walternascimento.com.br/2016/04/21/Discovering-the-maximum-memory-on-Linux/"/>
     <id>http://walternascimento.com.br/2016/04/21/Discovering-the-maximum-memory-on-Linux/</id>
@@ -258,20 +237,23 @@
   </entry>
   
   <entry>
-    <title><![CDATA[English is Fundamental]]></title>
-    <link href="http://walternascimento.com.br/2016/04/20/English-is-Fundamental/"/>
-    <id>http://walternascimento.com.br/2016/04/20/English-is-Fundamental/</id>
-    <published>2016-04-20T16:23:42.000Z</published>
+    <title><![CDATA[Descobrindo o máximo de memória no Linux]]></title>
+    <link href="http://walternascimento.com.br/2016/04/21/Descobrindo-o-maximo-de-memoria-no-Linux/"/>
+    <id>http://walternascimento.com.br/2016/04/21/Descobrindo-o-maximo-de-memoria-no-Linux/</id>
+    <published>2016-04-21T13:57:09.000Z</published>
     <updated>2016-11-22T20:50:54.395Z</updated>
-    <content type="html"><![CDATA[<p>If you are a person who likes to know then you noticed that today is essential inlês<br><a id="more"></a><br>So essential that independete your area of expertise you need it, and to learn a new language is a bit complicated and we must dedicate ourselves a lot, so I decided to share a very cool site that use to study the <a href="http://duolingo.com/" title="Official Site" target="_blank" rel="external">Duolingo</a>.</p>
-<p>The <a href="http://duolingo.com/" title="Official Site" target="_blank" rel="external">Duolingo</a> is an excellent website that helps and motivates you to study daily, with it you can stay focused, but it is not something miraculous, it’s just a addition to your study hours, is free and fun, go there ;)</p>
+    <content type="html"><![CDATA[<p>A alguns dias estive atras de descobrir quanto de memória meu notebook suportava, apesar de ser um comando simples, precisei navegar em muitos sites para descobri.<br><a id="more"></a><br>Descobri diversar forma e varios novos comandos do linux, mas vou mostrar apenas o que realmente solucionou meu problema</p>
+<p>Abra o terminal e digite:<br><figure class="highlight excel"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo dmidecode -<span class="built_in">t</span> <span class="number">16</span></div></pre></td></tr></table></figure></p>
+<p>vai aparecer diversas informações<br><figure class="highlight gauss"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"><span class="meta"># dmidecode 2.12</span></div><div class="line">SMBIOS <span class="number">2.7</span> present.</div><div class="line"></div><div class="line">Handle <span class="number">0x0019</span>, DMI <span class="built_in">type</span> <span class="number">16</span>, <span class="number">23</span> bytes</div><div class="line">Physical Memory Array</div><div class="line">	Location: <span class="keyword">System</span> Board <span class="keyword">Or</span> Motherboard</div><div class="line">	<span class="keyword">Use</span>: <span class="keyword">System</span> Memory</div><div class="line">	<span class="built_in">Error</span> Correction <span class="built_in">Type</span>: None</div><div class="line">	Maximum Capacity: <span class="number">32</span> GB</div><div class="line">	<span class="built_in">Error</span> Information Handle: No <span class="built_in">Error</span></div><div class="line">	Number Of Devices: <span class="number">2</span></div></pre></td></tr></table></figure></p>
+<p>mas se o que deseja saber é o máximo de memoria então é so olhar onde ta escrito <code>Maximum</code>, para facilitar você pode usar o comando:<br><figure class="highlight 1c"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo dmidecode -t <span class="number">16</span> <span class="string">| grep Maximum</span></div></pre></td></tr></table></figure></p>
+<p>e com isso vai exibir apenas o que você procura.</p>
 ]]></content>
     <summary type="html">
-    <![CDATA[<p>If you are a person who likes to know then you noticed that today is essential inlês<br>]]>
+    <![CDATA[<p>A alguns dias estive atras de descobrir quanto de memória meu notebook suportava, apesar de ser um comando simples, precisei navegar em muitos sites para descobri.<br>]]>
     
     </summary>
     
-      <category term="Knowledge" scheme="http://walternascimento.com.br/tags/Knowledge/"/>
+      <category term="Linux" scheme="http://walternascimento.com.br/tags/Linux/"/>
     
   </entry>
   
@@ -286,6 +268,24 @@
 ]]></content>
     <summary type="html">
     <![CDATA[<p>Se você é uma pessoa que gosta de conhecimento então já percebeu que hoje o inlês é essencial<br>]]>
+    
+    </summary>
+    
+      <category term="Knowledge" scheme="http://walternascimento.com.br/tags/Knowledge/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[English is Fundamental]]></title>
+    <link href="http://walternascimento.com.br/2016/04/20/English-is-Fundamental/"/>
+    <id>http://walternascimento.com.br/2016/04/20/English-is-Fundamental/</id>
+    <published>2016-04-20T16:23:42.000Z</published>
+    <updated>2016-11-22T20:50:54.395Z</updated>
+    <content type="html"><![CDATA[<p>If you are a person who likes to know then you noticed that today is essential inlês<br><a id="more"></a><br>So essential that independete your area of expertise you need it, and to learn a new language is a bit complicated and we must dedicate ourselves a lot, so I decided to share a very cool site that use to study the <a href="http://duolingo.com/" title="Official Site" target="_blank" rel="external">Duolingo</a>.</p>
+<p>The <a href="http://duolingo.com/" title="Official Site" target="_blank" rel="external">Duolingo</a> is an excellent website that helps and motivates you to study daily, with it you can stay focused, but it is not something miraculous, it’s just a addition to your study hours, is free and fun, go there ;)</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>If you are a person who likes to know then you noticed that today is essential inlês<br>]]>
     
     </summary>
     
@@ -332,24 +332,6 @@
   </entry>
   
   <entry>
-    <title><![CDATA[Learning Mathematics with the Khan Academy]]></title>
-    <link href="http://walternascimento.com.br/2016/04/18/Learning-Math-with-KhanAcademy/"/>
-    <id>http://walternascimento.com.br/2016/04/18/Learning-Math-with-KhanAcademy/</id>
-    <published>2016-04-18T16:23:42.000Z</published>
-    <updated>2016-11-22T20:50:54.395Z</updated>
-    <content type="html"><![CDATA[<p>All who like the IT area has a certain taste for the mathematics, but mathematics is the same programming, we need to practice and have a good base, and if you so like me, this is the time stopped, then indicate keep reading this post<br><a id="more"></a><br>The <a href="https://khanacademy.org/" title="Official Site" target="_blank" rel="external">Khan Academy</a> is an excellent site that you want to update their knowledge in mathematics and / or want to review</p>
-<p>Besides being an excellent platform to learn mathematics, the <a href="https://khanacademy.org/" title="Official Site" target="_blank" rel="external">Khan Academy</a> have a number of other matters, you will enjoy;)</p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p>All who like the IT area has a certain taste for the mathematics, but mathematics is the same programming, we need to practice and have a good base, and if you so like me, this is the time stopped, then indicate keep reading this post<br>]]>
-    
-    </summary>
-    
-      <category term="Knowledge" scheme="http://walternascimento.com.br/tags/Knowledge/"/>
-    
-  </entry>
-  
-  <entry>
     <title><![CDATA[Aprendendo Matemática com o KhanAcademy]]></title>
     <link href="http://walternascimento.com.br/2016/04/18/Aprendendo-Matematica-com-o-KhanAcademy/"/>
     <id>http://walternascimento.com.br/2016/04/18/Aprendendo-Matematica-com-o-KhanAcademy/</id>
@@ -360,6 +342,24 @@
 ]]></content>
     <summary type="html">
     <![CDATA[<p>Todos que gostam da area de TI tem uma certa quedinha pela matematica, mas matematica é igual programação, precisamos praticar e ter uma boa base, e se você assim que nem eu, esta a algum tempo parado, então indico continuar lendo esse post<br>]]>
+    
+    </summary>
+    
+      <category term="Knowledge" scheme="http://walternascimento.com.br/tags/Knowledge/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Learning Mathematics with the Khan Academy]]></title>
+    <link href="http://walternascimento.com.br/2016/04/18/Learning-Math-with-KhanAcademy/"/>
+    <id>http://walternascimento.com.br/2016/04/18/Learning-Math-with-KhanAcademy/</id>
+    <published>2016-04-18T16:23:42.000Z</published>
+    <updated>2016-11-22T20:50:54.395Z</updated>
+    <content type="html"><![CDATA[<p>All who like the IT area has a certain taste for the mathematics, but mathematics is the same programming, we need to practice and have a good base, and if you so like me, this is the time stopped, then indicate keep reading this post<br><a id="more"></a><br>The <a href="https://khanacademy.org/" title="Official Site" target="_blank" rel="external">Khan Academy</a> is an excellent site that you want to update their knowledge in mathematics and / or want to review</p>
+<p>Besides being an excellent platform to learn mathematics, the <a href="https://khanacademy.org/" title="Official Site" target="_blank" rel="external">Khan Academy</a> have a number of other matters, you will enjoy;)</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>All who like the IT area has a certain taste for the mathematics, but mathematics is the same programming, we need to practice and have a good base, and if you so like me, this is the time stopped, then indicate keep reading this post<br>]]>
     
     </summary>
     
