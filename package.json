@@ -1,0 +1,24 @@
+{
+  "name": "walternascimentobarroso.github.io",
+  "version": "1.0.0",
+  "description": "Site pessoal",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/walternascimentobarroso/walternascimentobarroso.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/walternascimentobarroso/walternascimentobarroso.github.io/issues"
+  },
+  "homepage": "https://github.com/walternascimentobarroso/walternascimentobarroso.github.io#readme",
+  "devDependencies": {
+    "handlebars": "^4.0.10",
+    "i18next": "^9.0.0",
+    "materialize-css": "^0.100.2"
+  }
+}
