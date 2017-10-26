@@ -159,24 +159,82 @@ bio.display = function () {
 
 
 //Work function displays work history
-work.display = function () {
-	$("#workExperience").append(HTMLworkStart);
-	if (work.jobs.length) {
-		for (var job = 0; job < work.jobs.length; job++) {
-			//appends work information
-			var workNameAndTitle = work.jobs[job].employer + ": " + work.jobs[job].title;
-			replaceAndAppend(HTMLworkEmployer, data, workNameAndTitle, $(".work-entry:last"), work.jobs[job].url, "#");
-			replaceAndAppend(HTMLworkDates, data, work.jobs[job].dates, $(".work-entry:last"));
-			replaceAndAppend(HTMLworkLocation, data, work.jobs[job].location, $(".work-entry:last"));
-			replaceAndAppend(HTMLworkDescription, data, work.jobs[job].description, $(".work-entry:last"));
+// work.display = function () {
+// 	$("#workExperience").append(HTMLworkStart);
+// 	if (work.jobs.length) {
+// 		for (var job = 0; job < work.jobs.length; job++) {
+// 			//appends work information
+// 			var workNameAndTitle = work.jobs[job].employer + ": " + work.jobs[job].title;
+// 			replaceAndAppend(HTMLworkEmployer, data, workNameAndTitle, $(".work-entry:last"), work.jobs[job].url, "#");
+// 			replaceAndAppend(HTMLworkDates, data, work.jobs[job].dates, $(".work-entry:last"));
+// 			replaceAndAppend(HTMLworkLocation, data, work.jobs[job].location, $(".work-entry:last"));
+// 			replaceAndAppend(HTMLworkDescription, data, work.jobs[job].description, $(".work-entry:last"));
 
-			//if there are images for this job entry, itterate through array
-			if (work.jobs[job].images.length) {
-				appendArray(HTMLworkImages, data, work.jobs[job].images, $(".work-entry:last"));
-			}
-		}
-	}
-}; //end work display function
+// 			//if there are images for this job entry, itterate through array
+// 			if (work.jobs[job].images.length) {
+// 				appendArray(HTMLworkImages, data, work.jobs[job].images, $(".work-entry:last"));
+// 			}
+// 		}
+// 	}
+// }; //end work display function
+
+work.display = function () {
+
+ 	// checks for jobs
+ 	if (work.jobs.length > 0) {
+
+ 		// create div for work experience
+ 		// and change work-entry div to ul
+ 		var HTMLworkTimeline = '<ul class="work-entry"></ul>';
+		var HTMLworkTimelineItem = '<li class="work timeline__item"></li>';
+		$("#workExperience").append(HTMLworkStart).addClass("resume-content");
+ 		$(".work-entry").replaceWith(HTMLworkTimeline);
+
+ 		// loop through work object
+		for (var i = 0; i < work.jobs.length; i++) {
+
+ 			// format work information
+ 			var formattedEmployer = HTMLworkEmployer.replace("%data%", work.jobs[i].employer);
+ 			var formattedTitle = HTMLworkTitle.replace("%data%", work.jobs[i].title);
+ 			var formattedEmployerTitle = formattedEmployer + ' ' + formattedTitle;
+ 			var formattedDates = HTMLworkDates.replace("%data%", work.jobs[i].dates);
+ 			var formattedLocation = HTMLworkLocation.replace("%data%", work.jobs[i].location);
+ 			var formattedDescription = HTMLworkDescription.replace("%data%", work.jobs[i].description);
+
+ 			// display work date and location
+ 			$(".work-entry:last").append(HTMLworkTimelineItem);
+ 			$(".timeline__item:last")
+ 				.append(formattedDates)
+ 				.append(formattedLocation);
+
+ 			// put date and location in one div
+ 			var workDate = '<span>' + $(".work .date-text").text() + '</span>';
+ 			var workLocation = '<span>' + $(".work .location-text").text() + '</span>';
+ 			var workDateLocation = workDate + workLocation;
+ 			var HTMLworkDateLocation = '<div class="item__date-location">' + workDateLocation + '</div>';
+ 			$(".timeline__item:last").append(HTMLworkDateLocation);
+
+ 			// remove individual date-text and location-text divs
+ 			$(".work .date-text").remove();
+ 			$(".work .location-text").remove();
+
+ 			// display work information
+ 			$(".timeline__item:last")
+ 				.append(formattedEmployerTitle)
+				.append(formattedDescription);
+
+ 			// change work employer and work title from a link to divs
+ 			var workEmployerTitle = $(".work a").text().split("-");
+ 			var workEmployer = '<div class="second-item item__employer">' + workEmployerTitle[0] + '</div>';
+ 			var workTitle = '<div class="first-item item__title">' + workEmployerTitle[1] + '</div>';
+// 			$("a").replaceWith(workTitle + workEmployer);
+
+ 			// change work description from paragraph to div
+ 			var workDescription = '<div class="description item__description">' + $(".work p").text() + '</div>';
+ 			$("p").replaceWith(workDescription);
+ 		}
+ 	}
+}
 
 //Displays Projects information to website
 projects.display = function () {

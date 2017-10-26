@@ -239,6 +239,21 @@ span {
 
 .workImages {
   width: 20%;
+  border-radius: 50%;
+  margin-bottom: 35px;
+  -webkit-box-shadow: inset 0 0 0 8px rgba(255, 255, 255, 0.6), 0 1px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 0 0 8px rgba(255, 255, 255, 0.6), 0 1px 2px rgba(0, 0, 0, 0.1);
+  transition: all 400ms ease-in-out;
+  position: relative;
+}
+
+.workImages:hover {
+  -webkit-box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.1);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.1);
+}
+
+.workImages:last-child {
+  margin: 0;
 }
 
 .clear-fix {
@@ -253,16 +268,16 @@ span {
 
 .date-text {
   font-style: italic;
-  font-size: 18px;
-  color: #000;
+  font-size: 14px;
+  color: #005DFE;
   line-height: 16px;
-  float: left;
+  /* float: left; */
 }
 
 .location-text {
   font-style: italic;
-  font-size: 18px;
-  color: #000;
+  font-size: 14px;
+  color: #005DFE;
   line-height: 16px;
   float: right;
 }
@@ -353,6 +368,15 @@ span {
   .biopic {
     display: block;
   }
+  .timeline__item {
+    padding: 0 0 100px 30px;
+  }
+  .timeline__item:before {
+    width: 26px;
+    height: 26px;
+    top: -5px;
+    left: -15px;
+  }
 }
 
 
@@ -372,6 +396,7 @@ span {
   background-color: #4e5d6c;
   border-radius: 10px;
 }
+
 .badge:empty {
   display: none;
 }
@@ -379,6 +404,7 @@ span {
 .project-entry img:hover {
   opacity: 1;
 }
+
 .project-entry img {
   opacity: 0.7;
   transition: opacity 0.2s ease;
@@ -393,4 +419,75 @@ span {
   margin-bottom: 10px;
   padding: 5px;
   background: white;
+}
+
+.timeline__item {
+  position: relative;
+  border-left: 1px dashed #159fc2;
+  margin-left: 50%;
+  padding: 0 0 75px 20px;
+}
+
+.timeline__item:last-child {
+  padding-bottom: 0;
+}
+
+.timeline__item:before {
+  position: absolute;
+  content: '';
+  width: 16px;
+  height: 16px;
+  background: #f3f3f3;
+  border-radius: 50%;
+  border: 2px solid #159fc2;
+  top: -5px;
+  left: -10px;
+  transition: all 500ms ease-in-out;
+}
+
+.timeline__item:hover:before {
+  background: #159fc2;
+  transition: all 1000ms ease-in-out;
+}
+
+.resume-content {
+  padding: 50px 0;
+}
+
+.resume-content>h2 {
+  text-align: center;
+  margin-bottom: 50px;
+  color: rgba(0, 0, 0, 0.1);
+}
+
+.item__date-location {
+  position: absolute;
+  width: 100px;
+  left: -125px;
+  text-align: right;
+}
+
+.item__date-location span {
+  display: block;
+  padding: 0;
+}
+
+.item__date-location span:first-child {
+  font-style: italic;
+  font-size: 14px;
+  color: #440BB8;
+  line-height: 16px;
+}
+
+.item__date-location span:last-child {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #440BB8;
+  margin-top: 5px;
+}
+
+.item__date-location,
+.project-date {
+  left: -150px;
 }
