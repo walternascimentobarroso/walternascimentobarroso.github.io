@@ -9,8 +9,12 @@
 - Media Screen
 */
 
+
 /* Body */
+
+
 /*----------------------------------------------*/
+
 body,
 div,
 ul,
@@ -22,13 +26,16 @@ h3,
 h4,
 h5,
 h6 {
-  padding:0;
-  margin:0;
-  font-family: 'Josefin Sans', sans-serif;
+  padding: 0;
+  margin: 0;
+  /* font-family: 'Josefin Sans', sans-serif; */
+  font-family: "Lato", sans-serif;
 }
 
+
 /* Floating back-to-top button */
-#toTop{
+
+#toTop {
   position: fixed;
   bottom: 0;
   right: 0;
@@ -48,7 +55,6 @@ body {
   -webkit-background-size: cover;
 }
 
-
 h1 {
   font-size: 40px;
   font-weight: 100;
@@ -56,7 +62,6 @@ h1 {
   line-height: 48px;
   display: inline;
 }
-
 
 h2 {
   font-weight: bold;
@@ -66,15 +71,12 @@ h2 {
   padding: 50px 10px 10px 68px;
 }
 
-
 h3 {
-
   font-weight: bold;
   font-size: 20px;
   color: #000;
   line-height: 22px;
 }
-
 
 h4 {
   font-weight: bold;
@@ -83,41 +85,34 @@ h4 {
   line-height: 17px;
 }
 
-
 p {
   font-size: 18px;
   color: #000;
   line-height: 21px;
 }
 
-
 a:link {
   text-decoration: none;
 }
 
-
 a:hover {
   text-decoration: underline;
 }
-
 
 .white-text {
   font-weight: bold;
   color: #fff;
 }
 
-
 .gray {
   background-color: #f3f3f3;
   padding-bottom: 10px;
-  clear:both;
+  clear: both;
 }
-
 
 .blue {
-   background-color: #62adc1;
+  background-color: #62adc1;
 }
-
 
 .flex-box {
   display: -webkit-flex;
@@ -129,30 +124,31 @@ a:hover {
   line-height: 30px;
 }
 
-
 .center-content {
   padding: 3.5% 5%;
 }
-
 
 ul {
   list-style-type: none;
 }
 
-
 img {
   padding: 10px;
 }
 
-
 span {
   padding: 10px;
 }
+
+
 /*----------------------------------------------*/
 
 
 /*Into Title Area */
+
+
 /*----------------------------------------------*/
+
 #titleContainer {
   z-index: 100;
   text-align: center;
@@ -160,15 +156,12 @@ span {
   margin-bottom: 30%;
 }
 
-
 #titleName {
   font-size: 80px;
   margin: 0.8%;
 }
 
-
 #titleRole {
-
   font-size: 40px;
   margin: 1.5%;
   padding: 10px;
@@ -176,27 +169,38 @@ span {
 
 
 /* Arrow image indicating to scroll down */
+
 #scrollDown {
   margin-top: 20%;
   max-width: 50px;
 }
+
+
 /*----------------------------------------------*/
 
 
 /* Top Navivation */
+
+
 /*----------------------------------------------*/
+
 #topNav {
   background-color: #91c5d3;
+  z-index: 9;
 }
+
+
 /*----------------------------------------------*/
 
 
 /* Header Bio Area */
+
+
 /*----------------------------------------------*/
+
 #header {
   background-color: #62adc1;
 }
-
 
 .biopic {
   float: left;
@@ -205,7 +209,6 @@ span {
   display: none;
 }
 
-
 .welcome-message {
   font-size: 18px;
   font-weight: bold;
@@ -213,40 +216,40 @@ span {
   line-height: 28px;
 }
 
-
 #skills-h3 {
   color: #000;
   display: none;
   padding-top: 20px;
 }
 
-
-#contactLink, .topMenu {
+#contactLink,
+.topMenu {
   font-weight: bold;
   color: #fff;
-
 }
+
+
 /*----------------------------------------------*/
 
 
 /* Info Entries */
-/*----------------------------------------------*/
-.workImages {
-  width:20%;
-}
 
+
+/*----------------------------------------------*/
+
+.workImages {
+  width: 20%;
+}
 
 .clear-fix {
   overflow: auto;
 }
-
 
 .education-entry,
 .work-entry,
 .project-entry {
   padding: 0 5%;
 }
-
 
 .date-text {
   font-style: italic;
@@ -256,16 +259,13 @@ span {
   float: left;
 }
 
-
 .location-text {
   font-style: italic;
   font-size: 18px;
   color: #000;
   line-height: 16px;
   float: right;
-
 }
-
 
 #bodyLink {
   color: #1199c3;
@@ -273,11 +273,16 @@ span {
   margin-top: 10px;
   display: block;
 }
+
+
 /*----------------------------------------------*/
 
 
 /* Google Map */
+
+
 /*----------------------------------------------*/
+
 #map {
   display: block;
   height: 100%;
@@ -288,33 +293,39 @@ span {
   width: 100%;
   padding-bottom: 5%;
 }
+
+
 /*----------------------------------------------*/
 
 
 /* Footer */
+
+
 /*----------------------------------------------*/
+
 #letsConnect {
   text-align: center;
 }
 
-
 #footerText {
   padding-top: .2%;
 }
+
+
 /*----------------------------------------------*/
 
 
 /* Media Screen
 /* Media queries to handle various device widths */
+
+
 /*----------------------------------------------*/
 
 @media only screen and (max-width: 1024px) {
-
   #lets-connect {
     margin-top: 5%;
   }
 }
-
 
 @media only screen and (max-width:900px) {
   .biopic {
@@ -322,35 +333,64 @@ span {
   }
 }
 
-
 @media only screen and (max-width: 750px) {
-
   #lets-connect {
     margin-top: 10%;
   }
-
-
   .biopic {
     width: 150px;
   }
-
-
   .welcome-message {
     display: none;
   }
-
-
   .workImages {
     display: none;
   }
 }
 
-
 @media only screen and (min-width: 750px) {
-
   #skills-h3,
   .biopic {
     display: block;
   }
 }
+
+
 /*----------------------------------------------*/
+
+.badge {
+  display: inline-block;
+  min-width: 10px;
+  padding: 3px 7px;
+  font-size: 13px;
+  font-weight: 300;
+  color: #ebebeb;
+  line-height: 1;
+  vertical-align: baseline;
+  white-space: nowrap;
+  text-align: center;
+  background-color: #4e5d6c;
+  border-radius: 10px;
+}
+.badge:empty {
+  display: none;
+}
+
+.project-entry img:hover {
+  opacity: 1;
+}
+.project-entry img {
+  opacity: 0.7;
+  transition: opacity 0.2s ease;
+}
+
+.biopic {
+  float: left;
+  /* display: none; */
+  width: 10em;
+  height: 10em;
+  border-radius: 100%;
+  margin-bottom: 10px;
+  padding: 5px;
+  background: white;
+}
