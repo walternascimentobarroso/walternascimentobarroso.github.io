@@ -39,11 +39,15 @@ html
                 h2 Projetos
             #education.gray
                 h2 Educação
-            #map-div
-                h2 Where I've Lived and Worked
+            #map
+                h2 Localização
+                #map-div
             #letsConnect.blue
                 h2#footerText Contato
                 ul#footerContacts.flex-box
+            //-  <!-- Adds a floating “Back to Top” button -->
+            a(href="#").white-text#toTop Back to Top
+
         script(src='js/resumeBuilder.js')
         script(type='text/javascript').
             if(document.getElementsByClassName('flex-item').length === 0) {

@@ -27,6 +27,18 @@ h6 {
   font-family: 'Josefin Sans', sans-serif;
 }
 
+/* Floating back-to-top button */
+#toTop{
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  display: none;
+  border: none;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  background-color: #337ab7;
+  padding: 15px !important;
+}
 
 body {
   background: url('../img/pattern.png') no-repeat 50% 50% fixed;
@@ -269,9 +281,7 @@ span {
 #map {
   display: block;
   height: 100%;
-  margin: 0 5%;
 }
-
 
 #map-div {
   height: 400px;
