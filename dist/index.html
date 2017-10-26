@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Walter Nascimento Barroso</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link href="http://fonts.googleapis.com/css?family=Josefin+Sans:300" rel="stylesheet" type="text/css">
+    <script src="js/jQuery.js"></script>
+    <script src="js/jquery.sticky.js"></script>
+    <script src="js/helper.js"></script>
+    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?libraries=places"></script>
+    <meta name="viewport" content="width=device-width">
+  </head>
+  <body>
+    <div id="titleContainer">
+      <h1 id="titleName">Walter Nascimento Barroso</h1>
+      <h2 id="titleRole">Full Stack developer</h2><a href="#header"><img id="scrollDown" src="img/arrow.png"></a>
+    </div>
+    <div id="main">
+      <ul class="flex-box" id="topNav">
+        <li>
+          <h3><a class="topMenu" href="#header">Sobre</a></h3>
+        </li>
+        <li>
+          <h3><a class="topMenu" href="#workExperience">Trabalhos</a></h3>
+        </li>
+        <li>
+          <h3><a class="topMenu" href="#projects">Projetos</a></h3>
+        </li>
+        <li>
+          <h3><a class="topMenu" href="#education">Educação</a></h3>
+        </li>
+      </ul>
+      <div class="center-content clear-fix" id="header">
+        <ul class="flex-box" id="topContacts"></ul>
+      </div>
+      <div class="imageFlex" style="clear: both;">
+        <div class="gray" id="workExperience">
+          <h2>Trabalhos</h2>
+        </div>
+      </div>
+      <div id="projects">
+        <h2>Projetos</h2>
+      </div>
+      <div class="gray" id="education">
+        <h2>Educação</h2>
+      </div>
+      <div id="map-div">
+        <h2>Where I've Lived and Worked</h2>
+      </div>
+      <div class="blue" id="letsConnect">
+        <h2 id="footerText">Contato</h2>
+        <ul class="flex-box" id="footerContacts"></ul>
+      </div>
+    </div>
+    <script src="js/resumeBuilder.js"></script>
+    <script type="text/javascript">
+      if(document.getElementsByClassName('flex-item').length === 0) {
+      document.getElementById('topContacts').style.display = 'none';
+      }
+      if(document.getElementsByTagName('h1').length === 0) {
+      document.getElementById('header').style.display = 'none';
+      }
+      if(document.getElementsByClassName('work-entry').length === 0) {
+      document.getElementById('workExperience').style.display = 'none';
+      }
+      if(document.getElementsByClassName('project-entry').length === 0) {
+      document.getElementById('projects').style.display = 'none';
+      }
+      if(document.getElementsByClassName('education-entry').length === 0) {
+      document.getElementById('education').style.display = 'none';
+      }
+      if(document.getElementsByClassName('flex-item').length === 0) {
+      document.getElementById('lets-connect').style.display = 'none';
+      }
+      if(document.getElementById('map') === null) {
+      document.getElementById('map-div').style.display = 'none';
+      }
+    </script>
+  </body>
+</html>

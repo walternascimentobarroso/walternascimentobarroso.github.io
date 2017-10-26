@@ -1,0 +1,346 @@
+/* CSS Areas
+- Body
+- Into Title Area
+- Top Menu Naviation
+- Header Bio Area
+- Info Entries (workExperience, Projects, Education)
+- Google Map
+- Footer
+- Media Screen
+*/
+
+/* Body */
+/*----------------------------------------------*/
+body,
+div,
+ul,
+li,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding:0;
+  margin:0;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+
+body {
+  background: url('../img/pattern.png') no-repeat 50% 50% fixed;
+  background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+}
+
+
+h1 {
+  font-size: 40px;
+  font-weight: 100;
+  color: #000;
+  line-height: 48px;
+  display: inline;
+}
+
+
+h2 {
+  font-weight: bold;
+  font-size: 24px;
+  color: #000;
+  line-height: 29px;
+  padding: 50px 10px 10px 68px;
+}
+
+
+h3 {
+
+  font-weight: bold;
+  font-size: 20px;
+  color: #000;
+  line-height: 22px;
+}
+
+
+h4 {
+  font-weight: bold;
+  font-size: 14px;
+  color: #4a4a4a;
+  line-height: 17px;
+}
+
+
+p {
+  font-size: 18px;
+  color: #000;
+  line-height: 21px;
+}
+
+
+a:link {
+  text-decoration: none;
+}
+
+
+a:hover {
+  text-decoration: underline;
+}
+
+
+.white-text {
+  font-weight: bold;
+  color: #fff;
+}
+
+
+.gray {
+  background-color: #f3f3f3;
+  padding-bottom: 10px;
+  clear:both;
+}
+
+
+.blue {
+   background-color: #62adc1;
+}
+
+
+.flex-box {
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 10px;
+  line-height: 30px;
+}
+
+
+.center-content {
+  padding: 3.5% 5%;
+}
+
+
+ul {
+  list-style-type: none;
+}
+
+
+img {
+  padding: 10px;
+}
+
+
+span {
+  padding: 10px;
+}
+/*----------------------------------------------*/
+
+
+/*Into Title Area */
+/*----------------------------------------------*/
+#titleContainer {
+  z-index: 100;
+  text-align: center;
+  margin-top: 25%;
+  margin-bottom: 30%;
+}
+
+
+#titleName {
+  font-size: 80px;
+  margin: 0.8%;
+}
+
+
+#titleRole {
+
+  font-size: 40px;
+  margin: 1.5%;
+  padding: 10px;
+}
+
+
+/* Arrow image indicating to scroll down */
+#scrollDown {
+  margin-top: 20%;
+  max-width: 50px;
+}
+/*----------------------------------------------*/
+
+
+/* Top Navivation */
+/*----------------------------------------------*/
+#topNav {
+  background-color: #91c5d3;
+}
+/*----------------------------------------------*/
+
+
+/* Header Bio Area */
+/*----------------------------------------------*/
+#header {
+  background-color: #62adc1;
+}
+
+
+.biopic {
+  float: left;
+  padding: 10px;
+  width: 300px;
+  display: none;
+}
+
+
+.welcome-message {
+  font-size: 18px;
+  font-weight: bold;
+  color: #f3f3f3;
+  line-height: 28px;
+}
+
+
+#skills-h3 {
+  color: #000;
+  display: none;
+  padding-top: 20px;
+}
+
+
+#contactLink, .topMenu {
+  font-weight: bold;
+  color: #fff;
+
+}
+/*----------------------------------------------*/
+
+
+/* Info Entries */
+/*----------------------------------------------*/
+.workImages {
+  width:20%;
+}
+
+
+.clear-fix {
+  overflow: auto;
+}
+
+
+.education-entry,
+.work-entry,
+.project-entry {
+  padding: 0 5%;
+}
+
+
+.date-text {
+  font-style: italic;
+  font-size: 18px;
+  color: #000;
+  line-height: 16px;
+  float: left;
+}
+
+
+.location-text {
+  font-style: italic;
+  font-size: 18px;
+  color: #000;
+  line-height: 16px;
+  float: right;
+
+}
+
+
+#bodyLink {
+  color: #1199c3;
+  font-size: 25px;
+  margin-top: 10px;
+  display: block;
+}
+/*----------------------------------------------*/
+
+
+/* Google Map */
+/*----------------------------------------------*/
+#map {
+  display: block;
+  height: 100%;
+  margin: 0 5%;
+}
+
+
+#map-div {
+  height: 400px;
+  width: 100%;
+  padding-bottom: 5%;
+}
+/*----------------------------------------------*/
+
+
+/* Footer */
+/*----------------------------------------------*/
+#letsConnect {
+  text-align: center;
+}
+
+
+#footerText {
+  padding-top: .2%;
+}
+/*----------------------------------------------*/
+
+
+/* Media Screen
+/* Media queries to handle various device widths */
+/*----------------------------------------------*/
+
+@media only screen and (max-width: 1024px) {
+
+  #lets-connect {
+    margin-top: 5%;
+  }
+}
+
+
+@media only screen and (max-width:900px) {
+  .biopic {
+    width: 175px;
+  }
+}
+
+
+@media only screen and (max-width: 750px) {
+
+  #lets-connect {
+    margin-top: 10%;
+  }
+
+
+  .biopic {
+    width: 150px;
+  }
+
+
+  .welcome-message {
+    display: none;
+  }
+
+
+  .workImages {
+    display: none;
+  }
+}
+
+
+@media only screen and (min-width: 750px) {
+
+  #skills-h3,
+  .biopic {
+    display: block;
+  }
+}
+/*----------------------------------------------*/

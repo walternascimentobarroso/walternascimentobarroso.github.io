@@ -1,24 +1,26 @@
 {
-  "name": "walternascimentobarroso.github.io",
+  "name": "wquiz",
   "version": "1.0.0",
-  "description": "Site pessoal",
+  "description": "Sistema de perguntas e respostas",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/walternascimentobarroso/walternascimentobarroso.github.io.git"
+    "url": "git+https://github.com/walternascimentobarroso/wquiz.git"
   },
-  "author": "",
+  "author": "Walter Nascimento Barroso",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/walternascimentobarroso/walternascimentobarroso.github.io/issues"
+    "url": "https://github.com/walternascimentobarroso/wquiz/issues"
   },
-  "homepage": "https://github.com/walternascimentobarroso/walternascimentobarroso.github.io#readme",
+  "homepage": "https://github.com/walternascimentobarroso/wquiz#readme",
   "devDependencies": {
-    "handlebars": "^4.0.10",
-    "i18next": "^9.0.0",
+    "browser-sync": "^2.18.13",
+    "gulp": "^3.9.1",
+    "gulp-pug": "^3.3.0",
+    "jquery": "^3.2.1",
     "materialize-css": "^0.100.2"
   }
 }

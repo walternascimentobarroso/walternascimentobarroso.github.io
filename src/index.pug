@@ -1,0 +1,69 @@
+doctype html
+html
+    head
+        meta(charset='utf-8')
+        title Walter Nascimento Barroso
+        link(href='css/style.css', rel='stylesheet')
+        link(href='http://fonts.googleapis.com/css?family=Josefin+Sans:300', rel='stylesheet', type='text/css')
+        script(src='js/jQuery.js')
+        script(src='js/jquery.sticky.js')
+        script(src='js/helper.js')
+        script(type='text/javascript', src='http://maps.googleapis.com/maps/api/js?libraries=places')
+        meta(name='viewport', content='width=device-width')
+    body
+        #titleContainer
+            h1#titleName Walter Nascimento Barroso
+            h2#titleRole Full Stack developer
+            a(href='#header')
+                img#scrollDown(src='img/arrow.png')
+        #main
+            ul#topNav.flex-box
+                li
+                    h3
+                        a.topMenu(href='#header') Sobre
+                li
+                    h3
+                        a.topMenu(href='#workExperience') Trabalhos
+                li
+                    h3
+                        a.topMenu(href='#projects') Projetos
+                li
+                    h3
+                        a.topMenu(href='#education') Educação
+            #header.center-content.clear-fix
+                ul#topContacts.flex-box
+            .imageFlex(style='clear: both;')
+                #workExperience.gray
+                    h2 Trabalhos
+            #projects
+                h2 Projetos
+            #education.gray
+                h2 Educação
+            #map-div
+                h2 Where I've Lived and Worked
+            #letsConnect.blue
+                h2#footerText Contato
+                ul#footerContacts.flex-box
+        script(src='js/resumeBuilder.js')
+        script(type='text/javascript').
+            if(document.getElementsByClassName('flex-item').length === 0) {
+            document.getElementById('topContacts').style.display = 'none';
+            }
+            if(document.getElementsByTagName('h1').length === 0) {
+            document.getElementById('header').style.display = 'none';
+            }
+            if(document.getElementsByClassName('work-entry').length === 0) {
+            document.getElementById('workExperience').style.display = 'none';
+            }
+            if(document.getElementsByClassName('project-entry').length === 0) {
+            document.getElementById('projects').style.display = 'none';
+            }
+            if(document.getElementsByClassName('education-entry').length === 0) {
+            document.getElementById('education').style.display = 'none';
+            }
+            if(document.getElementsByClassName('flex-item').length === 0) {
+            document.getElementById('lets-connect').style.display = 'none';
+            }
+            if(document.getElementById('map') === null) {
+            document.getElementById('map-div').style.display = 'none';
+            }
