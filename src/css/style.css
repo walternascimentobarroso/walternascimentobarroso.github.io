@@ -171,8 +171,8 @@ span {
 /* Arrow image indicating to scroll down */
 
 #scrollDown {
-  margin-top: 20%;
-  max-width: 50px;
+  font-size: 36px;
+  margin-top: 180%;
 }
 
 
