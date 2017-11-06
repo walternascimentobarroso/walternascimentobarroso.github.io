@@ -1,0 +1,61 @@
+/*------------------------------------*\
+  SECTION-TITLE
+\*------------------------------------*/
+body {
+  background: url('../img/pattern.png') no-repeat 50% 50% fixed;
+  background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: 100;
+  color: #000;
+  line-height: 48px;
+  display: inline;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 24px;
+  color: #000;
+  line-height: 29px;
+  padding: 50px 10px 10px 68px;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+header {
+  z-index: 100;
+  text-align: center;
+  margin-top: 25%;
+  margin-bottom: 30%;
+}
+
+#titleName {
+  font-size: 80px;
+  margin: 0.8%;
+}
+
+#titleRole {
+  font-size: 40px;
+  margin: 1.5%;
+  padding: 10px;
+}
+
+
+/* Arrow image indicating to scroll down */
+
+#scrollDown {
+  font-size: 36px;
+  margin-top: 180%;
+}
+

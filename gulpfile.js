@@ -2,6 +2,7 @@
 var gulp = require('gulp');
 var browserSync = require('browser-sync').create();
 var pug = require('gulp-pug');
+var sass = require('gulp-sass');
 
 /**
  * Copilando HTML (PUG Templat)
@@ -18,8 +19,17 @@ gulp.task('html', function () {
  * Copilando CSS
  */
 gulp.task('css', function () {
-	return gulp.src(['src/css/*.css', 'node_modules/materialize-css/dist/css/materialize.min.css'])
+	return gulp.src(['src/css/*.css', 'node_modules/normalize.css/normalize.css'])
 		.pipe(gulp.dest('./dist/css/'))
+});
+
+//task para o sass
+gulp.task('scss', function () {
+	return gulp.src('src/css/*.scss')
+		.pipe(sass({
+			// outputStyle: 'compressed'
+		}).on('error', sass.logError))
+		.pipe(gulp.dest('./dist/css'));
 });
 
 /**
@@ -50,12 +60,13 @@ gulp.task('serve', function () {
 	});
 
 	gulp.watch("src/css/*.css", ['css']);
+	gulp.watch("src/css/*.scss", ['scss']);
 	gulp.watch("src/js/*.js", ['js']);
 	gulp.watch("src/img/*.*", ['img']);
 	gulp.watch("src/*.pug", ['html']);
 	gulp.watch("./dist/**/*.*").on('change', browserSync.reload);
 });
 
-gulp.task('default', ['html', 'css', 'js', 'img', 'serve']);
+gulp.task('default', ['html', 'css', 'scss', 'js', 'img', 'serve']);
 
 // echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p

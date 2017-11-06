@@ -1,0 +1,71 @@
+doctype html
+html
+    head
+        meta(charset='utf-8')
+        title Walter Nascimento Barroso
+        //- link(href='http://fonts.googleapis.com/css?family=Josefin+Sans:300', rel='stylesheet', type='text/css')
+        link(href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,400", rel="stylesheet", type='text/css')
+        link(href='css/style.css', rel='stylesheet')
+        //- link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css")
+        script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js')
+        script(src='js/jquery.sticky.js')
+        script(src='js/helper.js')
+        script(type='text/javascript', src='http://maps.googleapis.com/maps/api/js?libraries=places')
+        meta(name='viewport', content='width=device-width')
+    body
+        #titleContainer
+            h1#titleName Walter Nascimento Barroso
+            h2#titleRole Full Stack developer
+            a(href='#header')
+                br
+                br
+                span#scrollDown &#129123;
+        #main
+            ul#topNav.flex-box
+                li
+                    h3
+                        a.topMenu(href='#header') Sobre
+                li
+                    h3
+                        a.topMenu(href='#workExperience') Trabalhos
+                li
+                    h3
+                        a.topMenu(href='#projects') Projetos
+                li
+                    h3
+                        a.topMenu(href='#education') Educação
+            #header.center-content.clear-fix
+                ul#topContacts.flex-box
+            .imageFlex(style='clear: both;')
+                #workExperience.gray
+                    h2#workH2.animated.zoomIn(onClick="ExpandCollapse('work-entry','#workH2','Trabalhos');") Trabalhos (-)
+            #projects
+                h2#projectsH2.animated.zoomIn(onClick="ExpandCollapse('project-entry','#projectsH2','Projetos');") Projetos (-)
+            #education.gray
+                h2#educationH2.animated.zoomIn(onClick="ExpandCollapse('education-entry','#educationH2','Educação');") Educação (-)
+            #map
+                h2#locationH2.animated.zoomIn(onClick="ExpandCollapse('map-div','#locationH2','Localização');") Localização (-)
+                #map-div
+            #letsConnect.blue
+                h2#footerText Contato
+                ul#footerContacts.flex-box
+            //-  <!-- Adds a floating “Back to Top” button -->
+            a(href="#").white-text#toTop &#129129;
+
+        script(src='js/resumeBuilder.js')
+        script(type='text/javascript').
+            function ExpandCollapse(aDiv,itsHeader,itsText) {
+                if(aDiv == 'map-div'){
+                    el = document.getElementById(aDiv); 
+                } else {
+                    el = document.getElementsByClassName(aDiv)[0]; 
+                }
+                if(el.style.display == 'none'){ 
+                    el.style.display = '';
+                    $(itsHeader).text(itsText + " (-)");
+                } else { 
+                    el.style.display = 'none'; 
+                    $(itsHeader).text(itsText+" (+)");
+                } 
+                return false; 
+            } 

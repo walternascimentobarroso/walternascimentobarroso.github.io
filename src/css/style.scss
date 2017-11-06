@@ -1,0 +1,64 @@
+/*------------------------------------*\
+                CONFIG
+\*------------------------------------*/
+
+$font: "Roboto", sans-serif;
+$font-color: #fff;
+$background-color-one: rgb(238, 9, 121);
+$background-color-two: rgb(255, 106, 0);
+
+/*------------------------------------*\
+                MIXIS
+\*------------------------------------*/
+@mixin background-gradient($color-one, $color-two) {
+    background: $color-one;
+    background: -webkit-linear-gradient(top, $color-one, $color-two);
+    background: -o-linear-gradient(top, $color-one, $color-two);
+    background: -moz-linear-gradient(top, $color-one, $color-two);
+    background: linear-gradient(to bottom, $color-one, $color-two);
+}
+
+/*------------------------------------*\
+                HEADER
+\*------------------------------------*/
+* {
+    font-family: $font;
+}
+
+body {
+    @include background-gradient($background-color-one, $background-color-two);
+}
+
+a {
+    &:hover {
+        text-decoration: underline;
+    }
+
+    &:link {
+        text-decoration: none;
+    }
+}
+
+header {
+    text-align: center;
+    margin: 20% 0 30% 0;
+    color: $font-color;
+
+    h1 {
+        font-size: 4rem;
+        margin: 0.5%;
+        font-weight: 100;
+    }
+
+    h2 {
+        font-size: 2rem;
+        margin: 0.5%;
+    }
+
+    span {
+        position: absolute;
+        margin: 5% 0 30% 0;
+        font-size: 3rem;
+    }
+}
+
