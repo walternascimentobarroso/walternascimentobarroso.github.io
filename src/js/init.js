@@ -13,8 +13,6 @@ function isMobile() {
  */
 document.addEventListener("DOMContentLoaded", function(event) {
     if(isMobile()) {
-        document.querySelector('#whatsapplink').setAttribute("href", "https://api.whatsapp.com/send?phone=5595991712790&text=Oi,%20Gostaria%20de%20solicitar%20um%20orçamento.");
     } else {
-        document.querySelector('#whatsapplink').setAttribute("href", "https://web.whatsapp.com/send?phone=5595991712790&text=Oi,%20Gostaria%20de%20solicitar%20um%20orçamento.");
     }
 });
