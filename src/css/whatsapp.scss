@@ -12,7 +12,15 @@
     border-radius: 100%;
     -webkit-box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.3);
     -moz-box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.3);
-    box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.3)
+    box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.3);
+
+    &:hover {
+        opacity: 0.7;
+        -webkit-transform: rotate(360deg);
+        transform: rotate(deg);
+        -webkit-transition: width 0.5s, height 0.5s, -webkit-transform 0.5s;
+        transition: width 0.5s, height 0.5s, transform 0.5s;
+    }    
 }
 
 .whatsapp-icon svg#whatsapp-msng-icon {
@@ -26,10 +34,10 @@
     -webkit-transition: opacity 160ms ease-in-out;
     -moz-transition: opacity 160ms ease-in-out;
     -o-transition: opacity 160ms ease-in-out;
-    transition: opacity 160ms ease-in-out
+    transition: opacity 160ms ease-in-out;
 }
 
-.whatsapp-icon svg#close-icon {
+.whatsapp-icon svg#whatsapp-close-icon {
     opacity: 0;
     width: 20px;
     height: 20px;
@@ -39,7 +47,7 @@
     -webkit-transition: opacity 160ms ease-in-out;
     -moz-transition: opacity 160ms ease-in-out;
     -o-transition: opacity 160ms ease-in-out;
-    transition: opacity 160ms ease-in-out
+    transition: opacity 160ms ease-in-out;
 }
 
 .whatsapp-icon.open svg#whatsapp-msng-icon {
@@ -47,7 +55,7 @@
 }
 path { fill: #fff}
 
-.whatsapp-icon.open svg#close-icon {
+.whatsapp-icon.open svg#whatsapp-close-icon {
     opacity: 1;
 }
 
@@ -103,23 +111,23 @@ path { fill: #fff}
     border-radius: 0 !important;
     color: #000;
     padding: 20px 40px !important;
-    transition: none
+    transition: none;
 }
 
 .whatsapp-container-textarea::-webkit-input-placeholder {
-    color: #cfcfcf
+    color: #cfcfcf;
 }
 
 .whatsapp-container-textarea::-moz-placeholder {
-    color: #cfcfcf
+    color: #cfcfcf;
 }
 
 .whatsapp-container-textarea:-ms-input-placeholder {
-    color: #cfcfcf
+    color: #cfcfcf;
 }
 
 .whatsapp-container-textarea:-moz-placeholder {
-    color: #cfcfcf
+    color: #cfcfcf;
 }
 
 .whatsapp-container-footer {
@@ -143,7 +151,6 @@ path { fill: #fff}
     top: -10px;
     right: -10px;
     bottom: -10px;
-    -webkit-border-radius: 50%;
     -webkit-animation: WaveWhatsApp 1.5s ease infinite;
     animation: WaveWhatsApp 1.5s ease infinite;
 }
@@ -169,7 +176,7 @@ path { fill: #fff}
     left: 15px;
 }
 
-.whatsapp-icon svg#close-icon {
+.whatsapp-icon svg#whatsapp-close-icon {
     width: 20px;
     height: 20px;
     top: 15px;
@@ -177,18 +184,9 @@ path { fill: #fff}
 }
 
 @keyframes WaveWhatsApp {
-    0% {
-        transform: scale(0.5);
-    }
-
-    50% {
-        opacity: 1;
-    }
-
-    100% {
-        transform: scale(1.2);
-        opacity: 0;
-    }
+    0% { border-radius: 50%; transform: scale(0.5); }
+    50% { border-radius: 50%; opacity: 1; }
+    100% { border-radius: 50%; transform: scale(1.2); opacity: 0; }
 }
 
 .whatsapp-icon {z-index:10000}
