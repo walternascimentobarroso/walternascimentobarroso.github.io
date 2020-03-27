@@ -1,0 +1,61 @@
+:root {
+    --global-bg-color: #fff;
+    --global-font-family: Verdana, sans-serif;
+    --global-text-color: #222;
+    --global-link-color: blue;
+    --global-link-hover: lightblue;
+    --global-theme-toggle-bg: #ccc;
+    --global-theme-toggle-content: '💡';
+}
+
+html {
+    background: var(--global-bg-color);
+    font-family: var(--global-font-family);
+    color: var(--global-text-color);
+    transition: all 1s;
+}
+
+a {
+    color: var(--global-link-color);
+    text-decoration: none;
+    font-weight: 700;
+    transition: all 1s;
+}
+
+a:hover {
+    color: var(--global-link-hover);
+}
+
+
+html[data-theme='dark'] {
+    --global-bg-color: #444;
+    --global-text-color: #ddd;
+    --global-link-color: yellow;
+    --global-link-hover: lightyellow;
+    --global-theme-toggle-bg: #000;
+    --global-theme-toggle-content: '🌕';
+}
+  
+.theme-toggle {
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    background: var(--global-theme-toggle-bg);
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1.8rem;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+.theme-toggle::after {
+    content: var(--global-theme-toggle-content);
+}
+
+[data-theme='comic'] {
+    --global-font-family: 'Comic Sans MS';
+}
+
+p, span {
+    font-family: var(--global-font-family);
+}
