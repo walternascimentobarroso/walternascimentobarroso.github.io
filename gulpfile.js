@@ -1,73 +1,95 @@
-'use strict';
-var gulp = require('gulp');
-var browserSync = require('browser-sync').create();
-var pug = require('gulp-pug');
-var sass = require('gulp-sass');
+"use strict";
+const { src, dest, series, parallel, watch } = require('gulp');
+const browserSync = require('browser-sync').create();
+const del = require('del');
+const pug = require('gulp-pug');
+const sass = require('gulp-sass');
+ 
+sass.compiler = require('node-sass');
 
-/**
- * Copilando HTML (PUG Templat)
- */
-gulp.task('html', function () {
-	return gulp.src('./src/*.pug')
-		.pipe(pug({
-			pretty: true
-		}))
-		.pipe(gulp.dest('./dist'))
-});
+let DIR = {
+    build: './dist',
+    src: './src'
+};
 
-/**
- * Copilando CSS
- */
-gulp.task('css', function () {
-	return gulp.src(['src/css/*.css', 'node_modules/normalize.css/normalize.css'])
-		.pipe(gulp.dest('./dist/css/'))
-});
+DIR.build_css = `${DIR.build}/css`;
+DIR.build_images = `${DIR.build}/images`;
+DIR.build_js = `${DIR.build}/js`;
 
-//task para o sass
-gulp.task('scss', function () {
-	return gulp.src('src/css/*.scss')
+DIR.src_css = `${DIR.src}/css`;
+DIR.src_images = `${DIR.src}/images`;
+DIR.src_js = `${DIR.src}/js`;
+
+function reload(done) {
+    browserSync.reload();
+    done();
+}
+
+function serve(done) {
+    browserSync.init({
+        server: {
+            baseDir: `${DIR.build}`
+        }
+    });
+    done();
+};
+
+function clean() {
+    return del([DIR.build]);
+};
+
+function images() {
+    return src([
+        `${DIR.src_images}/**.*`
+    ]).pipe(dest(DIR.build_images))
+    .pipe(browserSync.stream());
+};
+
+function scss() {
+	return src(`${DIR.src_css}/*.scss`)
 		.pipe(sass({
-			// outputStyle: 'compressed'
+			outputStyle: 'compressed'
 		}).on('error', sass.logError))
-		.pipe(gulp.dest('./dist/css'));
-});
+		.pipe(dest('./dist/css'));
+};
 
-/**
- * Copilando JS
- */
-gulp.task('js', function () {
-	return gulp.src(['src/js/*.js', 'node_modules/jquery/dist/jquery.min.js', 'node_modules/materialize-css/dist/js/materialize.min.js'])
-		.pipe(gulp.dest('./dist/js/'))
-});
+function style() {
+    return src([
+        `${DIR.src_css}/*.css`, 
+        'node_modules/normalize.css/normalize.css'
+    ]).pipe(dest(DIR.build_css))
+    .pipe(browserSync.stream());
+};
 
-/**
- * otimizando Imagens
- */
-gulp.task('img', function () {
-	return gulp.src('src/img/*.*')
-		.pipe(gulp.dest('./dist/img/'))
-});
+function script() {
+    return src([`${DIR.src_js}/**/**.js`]).pipe(dest(DIR.build_js))
+    .pipe(browserSync.stream());
+};
 
-/**
- * Servidor local
- */
-gulp.task('serve', function () {
+function html() {
+    return src([`${DIR.src}/*.pug`])
+        .pipe(pug({
+            pretty: true
+        }))
+        .pipe(dest(`${DIR.build}`))
+        .pipe(browserSync.stream());
+};
 
-	browserSync.init({
-		server: {
-			baseDir: "./dist/"
-		}
-	});
+function watchFiles() {
+    watch(`${DIR.src}/*.pug`, series(html, reload));
+    watch(`${DIR.src_css}`, series(style, reload));
+    watch(`${DIR.src_images}`, series(images, reload));
+    watch(`${DIR.src_js}`, series(script, reload));
+};
 
-	gulp.watch("src/css/*.css", ['css']);
-	gulp.watch("src/css/*.scss", ['scss']);
-	gulp.watch("src/js/*.js", ['js']);
-	gulp.watch("src/img/*.*", ['img']);
-	gulp.watch("src/*.pug", ['html']);
-	gulp.watch("./dist/**/*.*").on('change', browserSync.reload);
-});
-
-gulp.task('default', ['html', 'css', 'scss', 'js', 'img', 'serve']);
-gulp.task('deploy', ['html', 'css', 'scss', 'js', 'img']);
+exports.clean = clean;
+exports.html = html;
+exports.images = images;
+exports.scss = scss;
+exports.style = style;
+exports.script = script;
+exports.watchFiles = watchFiles;
+exports.serve = serve;
+exports.default = series(clean, html, images, scss, style, script, parallel(watchFiles, serve));
 
 // echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
