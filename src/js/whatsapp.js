@@ -1,4 +1,6 @@
-$(function () {
+window.onload = function() {
+
+
   "use strict";
   let whatsapp = `
   <div class="whatsapp-icon">
@@ -12,32 +14,34 @@ $(function () {
     <div class="whatsapp-container-inner">
       <textarea class="whatsapp-container-textarea" placeholder="Olá! Use esta caixa para nos enviar uma mensagem via WhatsApp..."></textarea>
     </div>
-    <div class="whatsapp-container-footer">Enviar</div>
+    <div onClick="sendMsg()" class="whatsapp-container-footer">Enviar</div>
   </div>`;
-  $('body').append(whatsapp);
+  document.getElementsByTagName("BODY")[0].insertAdjacentHTML('afterend', whatsapp); 
+    
 
-  $(document).ready(function () {
-    let mobileDetect = /Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
-    let phone = '5595991712790';
     if (mobileDetect) {
-      $('.whatsapp-container').css('display', 'none');
-      $('.whatsapp-icon').on('click', function () {
-        window.location = `whatsapp://send?text=&phone=+${phone}&abid=+${phone}`;
-      });
+      document.getElementsByClassName("whatsapp-container")[0].style.display = "none"; 
+      document.getElementsByClassName("whatsapp-icon")[0].onclick = () => window.location = `whatsapp://send?text=&phone=+${phone}&abid=+${phone}`;
     } else {
-      $('.whatsapp-icon').on('click', function () {
-        if ($('.whatsapp-icon').hasClass('open')) {
-          $('.whatsapp-icon, .whatsapp-container').removeClass('open');
+      document.getElementsByClassName("whatsapp-icon")[0].onclick = () => {
+        if (document.querySelector('.whatsapp-icon').classList.contains('open')) {
+          document.querySelector('.whatsapp-icon').classList.remove('open');
+          document.querySelector('.whatsapp-container').classList.remove('open');
         } else {
-          $('.whatsapp-icon, .whatsapp-container').addClass('open');
-          $('.whatsapp-container-textarea').focus();
+          document.querySelector('.whatsapp-icon').classList.add('open');
+          document.querySelector('.whatsapp-container').classList.add('open');
+          document.getElementsByClassName("whatsapp-container-textarea")[0].focus();
         }
-      });
-      $('.whatsapp-container-footer').click(function () {
-        let baseUrl = `https://web.whatsapp.com/send?phone=+${phone}&text=`;
-        let textEncode = encodeURIComponent($('.whatsapp-container-textarea').val());
-        window.open(baseUrl + textEncode, '_blank');
-      });
+      }
     }
-  });
-});
+    
+}
+
+let mobileDetect = /Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+let phone = '5595991712790';
+
+function sendMsg() {
+  let baseUrl = `https://web.whatsapp.com/send?phone=+${phone}&text=`;
+  let textEncode = encodeURIComponent(document.getElementsByClassName("whatsapp-container-textarea")[0].value);
+  window.open(baseUrl + textEncode, '_blank');
+}
