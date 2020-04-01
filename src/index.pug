@@ -2,7 +2,7 @@ doctype html
 html(lang='pt-BR')
     head
         meta(charset='utf-8')
-        title < Walter Dev />
+        title < Walter - Full Stack Developer />
         meta(name="theme-color", content="#ee0979")
         link(rel="icon", href="img/favicon.ico")
         link(rel="stylesheet", href="https://use.fontawesome.com/releases/v5.7.2/css/all.css")
@@ -13,10 +13,22 @@ html(lang='pt-BR')
     body
         header
             span(id="theme-toggle", data-theme="comic",  class="theme-toggle")
+            input(id="navbar", type='checkbox')
+            label(for="navbar")
+                .menu
+                    span.hamburger
+            ul
+                li
+                    a(href="#") Home
+                    a(href="#") Experience
+                    a(href="#") Projetos
+                    a(href="#") Education
+                    a(href="#") Skills
+                    a(href="#") Contact
 
         main
             section
-                h1 &lt; Walter Dev /&gt;
+                h1 &lt; Walter Nascimento Barroso /&gt;
                 h2 Full Stack Developer
                 a(href='#header')
                     span 
