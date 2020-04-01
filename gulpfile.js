@@ -13,11 +13,11 @@ let DIR = {
 };
 
 DIR.build_css = `${DIR.build}/css`;
-DIR.build_images = `${DIR.build}/images`;
+DIR.build_images = `${DIR.build}/img`;
 DIR.build_js = `${DIR.build}/js`;
 
 DIR.src_css = `${DIR.src}/css`;
-DIR.src_images = `${DIR.src}/images`;
+DIR.src_images = `${DIR.src}/img`;
 DIR.src_js = `${DIR.src}/js`;
 
 function reload(done) {
@@ -78,6 +78,7 @@ function html() {
 function watchFiles() {
     watch(`${DIR.src}/*.pug`, series(html, reload));
     watch(`${DIR.src_css}`, series(style, reload));
+    watch(`${DIR.src_css}`, series(scss, reload));
     watch(`${DIR.src_images}`, series(images, reload));
     watch(`${DIR.src_js}`, series(script, reload));
 };
@@ -91,5 +92,6 @@ exports.script = script;
 exports.watchFiles = watchFiles;
 exports.serve = serve;
 exports.default = series(clean, html, images, scss, style, script, parallel(watchFiles, serve));
+exports.deploy = series(clean, html, images, scss, style, script);
 
 // echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
