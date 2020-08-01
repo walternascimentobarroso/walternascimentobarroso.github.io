@@ -16,15 +16,15 @@
  * ADD Load circle bar skill
 
 ## Iniciando projeto
-
 ```
 git clone git@github.com:walternascimentobarroso/walternascimentobarroso.github.io.git .
 npm install
+gulp
 ```
 
 > Se prefirir pode usar docker
 ```
-docker-composer up -d
+docker-compose up -d
 http://127.0.0.1
 ```
 
