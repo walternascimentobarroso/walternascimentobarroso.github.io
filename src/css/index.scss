@@ -1,9 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
+
+
+:root {
+	--global-font-family: 'Roboto', sans-serif;
+	--main-primary-color: #36a794;
+	--main-secondary-color: #7d26e7;
+
+	--global-bg-color: #ccc;
+	--global-text-color: #222;
+	--global-link-color: blue;
+	--global-link-hover: lightblue;
+	--global-theme-toggle-bg: #ccc;
+	--global-theme-toggle-content: '💡';
+}
+
+/*------------------------------------*\
+                DARK THEME
+\*------------------------------------*/
+html[data-theme='dark'] {
+	--main-primary-color: #0eda29;
+	--main-secondary-color: #e40909;
+
+	--global-bg-color: #444;
+	--global-text-color: #ddd;
+	--global-link-color: yellow;
+	--global-link-hover: lightyellow;
+	--global-theme-toggle-bg: #ccc;
+	--global-theme-toggle-content: '🌕';
+}
+
+.theme-toggle {
+	position: fixed;
+	right: 20px;
+	top: 20px;
+	background: var(--global-theme-toggle-bg);
+	padding: 10px;
+	border-radius: 5px;
+	font-size: 1.8rem;
+	font-weight: 900;
+	cursor: pointer;
+}
+
+.theme-toggle::after {
+	content: var(--global-theme-toggle-content);
+}
+
 html, body {
 	height: 100%;
-	background-color: #792b92;
+	background-color: var(--global-bg-color);
 	padding: 0;
 	margin: 0;
-	font-family: "poppins",sans-serif;
+	font-family: var(--global-font-family);
 }
 
 .wrapper{
@@ -24,7 +71,7 @@ html, body {
 	transform: rotateY(-180deg);
 }
 .front{
-	background-color: #252628;
+	background-color: var(--main-primary-color);
 	height: 100%;
 	width: 100%;
 	display: flex;
@@ -47,7 +94,7 @@ html, body {
 	}
 }
 .back{
-	background-color: white;
+	background-color: var(--main-secondary-color);
 	height: 100%;
 	width: 100%;
 	position: absolute;
@@ -57,7 +104,7 @@ html, body {
 	.header{
 		display: flex;
 		justify-content: center;
-		color: #252628;
+		color: var(--global-text-color);
 
 		.fullname {
 			font-size: 28px;
@@ -89,11 +136,11 @@ html, body {
 		top: 100px;
 		a {
 			text-decoration: none;
-			color: #252628;
+			color: var(--global-text-color);
 		}
 	}
 	.footer{
-		background-color: #252628;
+		background-color: var(--global-text-color);
 		height: 60px;
 		width: 100%;
 		position: absolute;
