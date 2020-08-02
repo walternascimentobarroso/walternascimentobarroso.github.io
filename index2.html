@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Walter Nascimento Barroso</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,400" rel="stylesheet" type="text/css">
+    <link href="css/style.1.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/jquery.sticky.js"></script>
+    <script src="js/helper.js"></script>
+    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?libraries=places"></script>
+    <meta name="viewport" content="width=device-width">
+  </head>
+  <body>
+    <div id="titleContainer">
+      <h1 id="titleName">Walter Nascimento Barroso</h1>
+      <h2 id="titleRole">Full Stack developer</h2><a href="#header"><br><br><span id="scrollDown">&#129123;</span></a>
+    </div>
+    <div id="main">
+      <ul class="flex-box" id="topNav">
+        <li>
+          <h3><a class="topMenu" href="#header">Sobre</a></h3>
+        </li>
+        <li>
+          <h3><a class="topMenu" href="#workExperience">Trabalhos</a></h3>
+        </li>
+        <li>
+          <h3><a class="topMenu" href="#projects">Projetos</a></h3>
+        </li>
+        <li>
+          <h3><a class="topMenu" href="#education">Educação</a></h3>
+        </li>
+      </ul>
+      <div class="center-content clear-fix" id="header">
+        <ul class="flex-box" id="topContacts"></ul>
+      </div>
+      <div class="imageFlex" style="clear: both;">
+        <div class="gray" id="workExperience">
+          <h2 class="animated zoomIn" id="workH2" onClick="ExpandCollapse('work-entry','#workH2','Trabalhos');">Trabalhos (-)</h2>
+        </div>
+      </div>
+      <div id="projects">
+        <h2 class="animated zoomIn" id="projectsH2" onClick="ExpandCollapse('project-entry','#projectsH2','Projetos');">Projetos (-)</h2>
+      </div>
+      <div class="gray" id="education">
+        <h2 class="animated zoomIn" id="educationH2" onClick="ExpandCollapse('education-entry','#educationH2','Educação');">Educação (-)</h2>
+      </div>
+      <div id="map">
+        <h2 class="animated zoomIn" id="locationH2" onClick="ExpandCollapse('map-div','#locationH2','Localização');">Localização (-)</h2>
+        <div id="map-div"></div>
+      </div>
+      <div class="blue" id="letsConnect">
+        <h2 id="footerText">Contato</h2>
+        <ul class="flex-box" id="footerContacts"></ul>
+      </div><a class="white-text" href="#" id="toTop">&#129129;</a>
+    </div>
+    <script src="js/resumeBuilder.js"></script>
+    <script type="text/javascript">
+      function ExpandCollapse(aDiv,itsHeader,itsText) {
+          if(aDiv == 'map-div'){
+              el = document.getElementById(aDiv); 
+          } else {
+              el = document.getElementsByClassName(aDiv)[0]; 
+          }
+          if(el.style.display == 'none'){ 
+              el.style.display = '';
+              $(itsHeader).text(itsText + " (-)");
+          } else { 
+              el.style.display = 'none'; 
+              $(itsHeader).text(itsText+" (+)");
+          } 
+          return false; 
+      } 
+    </script>
+  </body>
+</html>
