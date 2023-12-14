@@ -2,19 +2,42 @@
 import { useTransition, useState } from "react";
 import Image from "next/image";
 import TabButton from "./TabButton";
+import {
+  TrophyIcon,
+  BookOpenIcon,
+  CodeBracketIcon,
+} from "@heroicons/react/24/solid";
 
 const TAB_DATA = [
   {
     title: "Skills",
     id: "skills",
     content: (
-      <ul className="list-disc pl-2">
-        <li>Node.js</li>
-        <li>Express</li>
-        <li>PostgreSQL</li>
-        <li>Sequelize</li>
-        <li>JavaScript</li>
-        <li>React</li>
+      <ul className="pl-2">
+        <li className="flex">
+          <CodeBracketIcon className="w-5 h-5 mr-2 text-secondary-500" />
+          Node.js
+        </li>
+        <li className="flex">
+          <CodeBracketIcon className="w-5 h-5 mr-2 text-secondary-500" />
+          Express
+        </li>
+        <li className="flex">
+          <CodeBracketIcon className="w-5 h-5 mr-2 text-secondary-500" />
+          PostgreSQL
+        </li>
+        <li className="flex">
+          <CodeBracketIcon className="w-5 h-5 mr-2 text-secondary-500" />
+          Sequelize
+        </li>
+        <li className="flex">
+          <CodeBracketIcon className="w-5 h-5 mr-2 text-secondary-500" />
+          JavaScript
+        </li>
+        <li className="flex">
+          <CodeBracketIcon className="w-5 h-5 mr-2 text-secondary-500" />
+          React
+        </li>
       </ul>
     ),
   },
@@ -22,9 +45,15 @@ const TAB_DATA = [
     title: "Education",
     id: "education",
     content: (
-      <ul className="list-disc pl-2">
-        <li>Fullstack Academy of Code</li>
-        <li>University of California, Santa Cruz</li>
+      <ul className="pl-2">
+        <li className="flex">
+          <BookOpenIcon className="w-5 h-5 mr-2 text-secondary-500" />
+          Fullstack Academy of Code
+        </li>
+        <li className="flex">
+          <BookOpenIcon className="w-5 h-5 mr-2 text-secondary-500" />
+          University of California, Santa Cruz
+        </li>
       </ul>
     ),
   },
@@ -32,9 +61,15 @@ const TAB_DATA = [
     title: "Certifications",
     id: "certifications",
     content: (
-      <ul className="list-disc pl-2">
-        <li>AWS Cloud Practitioner</li>
-        <li>Google Professional Cloud Developer</li>
+      <ul className=" pl-2">
+        <li className="flex">
+          <TrophyIcon className="w-5 h-5 mr-2 text-secondary-500" />
+          AWS Cloud Practitioner
+        </li>
+        <li className="flex">
+          <TrophyIcon className="w-5 h-5 mr-2 text-secondary-500" />
+          LE-1: Linux Essentials
+        </li>
       </ul>
     ),
   },
