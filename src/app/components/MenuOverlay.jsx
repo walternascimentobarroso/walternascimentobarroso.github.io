@@ -1,6 +1,6 @@
-import {NavLink} from "./NavLink";
+import NavLink from "./NavLink";
 
-export const MenuOverlay = ({ links }) => {
+const MenuOverlay = ({ links }) => {
   return (
     <ul className="flex flex-col py-4 items-center">
       {links.map((link, index) => (
@@ -11,3 +11,5 @@ export const MenuOverlay = ({ links }) => {
     </ul>
   );
 };
+
+export default MenuOverlay;

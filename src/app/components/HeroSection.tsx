@@ -2,7 +2,7 @@
 import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
 
-export const HeroSection = () => {
+const HeroSection = () => {
   return (
     <section className="lg:py-16">
       <div className="grid grid-cols-1 sm:grid-cols-12">
@@ -12,7 +12,7 @@ export const HeroSection = () => {
               Hello, I&apos;m{" "}
             </span>
             <br />
-            
+
             <TypeAnimation
               sequence={[
                 "Walter",
@@ -59,3 +59,5 @@ export const HeroSection = () => {
     </section>
   );
 };
+
+export default HeroSection;

@@ -1,7 +1,7 @@
 "use client";
-import React, { useTransition, useState } from "react";
 import Image from "next/image";
-import { TabButton } from "./TabButton";
+import React, { useTransition, useState } from "react";
+import TabButton from "./TabButton";
 
 const TAB_DATA = [
   {
@@ -40,7 +40,7 @@ const TAB_DATA = [
   },
 ];
 
-export const AboutSection = () => {
+const AboutSection = () => {
   const [tab, setTab] = useState("skills");
   const [isPending, startTransition] = useTransition();
 
@@ -100,3 +100,5 @@ export const AboutSection = () => {
     </section>
   );
 };
+
+export default AboutSection;

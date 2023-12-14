@@ -2,8 +2,8 @@
 import { useState } from "react";
 import Link from "next/link";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
-import { NavLink } from "./NavLink";
-import { MenuOverlay } from "./MenuOverlay";
+import NavLink from "./NavLink";
+import MenuOverlay from "./MenuOverlay";
 
 const navLinks = [
   {
@@ -20,7 +20,7 @@ const navLinks = [
   },
 ];
 
-export const Navbar = () => {
+const Navbar = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
 
   return (
@@ -30,7 +30,7 @@ export const Navbar = () => {
           href={"/"}
           className="text-2xl md:text-5xl text-white font-semibold"
         >
-          {'<W />'}
+          {"<W />"}
         </Link>
         <div className="mobile-menu block md:hidden">
           {!navbarOpen ? (
@@ -63,3 +63,5 @@ export const Navbar = () => {
     </nav>
   );
 };
+
+export default Navbar;
