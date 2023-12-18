@@ -27,7 +27,7 @@ const HeroSection = () => {
                 1000,
                 "Mobile Developer",
                 1000,
-                "UI/UX Designer",
+                "BackEnd Developer",
                 1000,
               ]}
               wrapper="span"
@@ -36,8 +36,9 @@ const HeroSection = () => {
             />
           </h1>
           <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
-            voluptuous.
+            I`m passionate about robust architectures, efficient code, and
+            backend implementations that ensure exceptional performance and an
+            effective user experience behind the scenes.
           </p>
           <div>
             <Link
