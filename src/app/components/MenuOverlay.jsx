@@ -1,3 +1,4 @@
+import { ModeToggle } from "./ModeToggle";
 import NavLink from "./NavLink";
 
 const MenuOverlay = ({ links }) => {
@@ -8,6 +9,7 @@ const MenuOverlay = ({ links }) => {
           <NavLink href={link.path} title={link.title} />
         </li>
       ))}
+      <li><ModeToggle /></li>
     </ul>
   );
 };

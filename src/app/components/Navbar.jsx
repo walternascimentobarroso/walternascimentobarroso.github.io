@@ -4,6 +4,7 @@ import Link from "next/link";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 import NavLink from "./NavLink";
 import MenuOverlay from "./MenuOverlay";
+import { ModeToggle } from "./ModeToggle";
 
 const navLinks = [
   {
@@ -56,6 +57,7 @@ const Navbar = () => {
                 <NavLink href={link.path} title={link.title} />
               </li>
             ))}
+            <li><ModeToggle /></li>
           </ul>
         </div>
       </div>
