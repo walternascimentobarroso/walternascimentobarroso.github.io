@@ -4,7 +4,7 @@ Portfólio pessoal de Walter Nascimento Barroso, publicado no GitHub Pages.
 
 ## Stack
 
-- Next.js 16 (App Router), React 19, mistura de TypeScript (`.tsx`) e JavaScript (`.jsx`)
+- Next.js 16 (App Router), React 19, TypeScript (`.tsx`, props tipadas com `type Props` no próprio ficheiro)
 - Tailwind CSS 4 (config em `src/app/globals.css` via `@theme`) com dark mode por classe via `next-themes` (`ThemeProvider` + `ModeToggle`)
 - Animações: `motion` (`motion/react`), `react-type-animation`, `react-animated-numbers`
 - Ícones: `@heroicons/react`

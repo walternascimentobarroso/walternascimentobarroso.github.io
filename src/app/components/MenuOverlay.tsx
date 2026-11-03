@@ -1,7 +1,12 @@
 import { ModeToggle } from "./ModeToggle";
 import NavLink from "./NavLink";
+import type { NavLinkItem } from "./Navbar";
 
-const MenuOverlay = ({ links }) => {
+type Props = {
+  links: NavLinkItem[];
+};
+
+const MenuOverlay = ({ links }: Props) => {
   return (
     <ul className="flex flex-col py-4 items-center">
       {links.map((link, index) => (

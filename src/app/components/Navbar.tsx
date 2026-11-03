@@ -6,7 +6,12 @@ import NavLink from "./NavLink";
 import MenuOverlay from "./MenuOverlay";
 import { ModeToggle } from "./ModeToggle";
 
-const navLinks = [
+export type NavLinkItem = {
+  title: string;
+  path: string;
+};
+
+const navLinks: NavLinkItem[] = [
   {
     title: "About",
     path: "#about",
