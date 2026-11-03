@@ -5,33 +5,28 @@ import Image from "next/image";
 import GithubIcon from "../../../public/github-icon.svg";
 import LinkedinIcon from "../../../public/linkedin-icon.svg";
 
+// Web3Forms access keys are public by design: they only allow sending to the owner's inbox.
+const WEB3FORMS_ACCESS_KEY = "c00ebeb4-4265-4e46-9d61-b94b8ced78ea";
+
 const EmailSection = () => {
   const [emailSubmitted, setEmailSubmitted] = useState(false);
+  const [sendFailed, setSendFailed] = useState(false);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const data = {
-      email: e.target.email.value,
-      subject: e.target.subject.value,
-      message: e.target.message.value,
-    };
-    const JSONdata = JSON.stringify(data);
-    const endpoint = "/api/send";
+    setSendFailed(false);
+    const formData = new FormData(e.target);
+    formData.append("access_key", WEB3FORMS_ACCESS_KEY);
 
-    const options = {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSONdata,
-    };
-
-    const response = await fetch(endpoint, options);
-    const resData = await response.json();
-
-    if (response.status === 200) {
-      console.log("Message sent.");
-      setEmailSubmitted(true);
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formData,
+      });
+      const { success } = await response.json();
+      success ? setEmailSubmitted(true) : setSendFailed(true);
+    } catch {
+      setSendFailed(true);
     }
   };
 
@@ -119,6 +114,11 @@ const EmailSection = () => {
             >
               Send Message
             </button>
+            {sendFailed && (
+              <p className="text-red-500 text-sm mt-2">
+                Could not send the message. Please try again later.
+              </p>
+            )}
           </form>
         )}
       </div>
