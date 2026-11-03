@@ -42,17 +42,14 @@ const AchievementsSection = () => {
               <h2 className="text-white text-4xl font-bold flex flex-row">
                 {achievement.prefix}
                 <AnimatedNumbers
-                  includeComma
+                  useThousandsSeparator
                   animateToNumber={parseInt(achievement.value)}
                   locale="en-US"
                   className="text-white text-4xl font-bold"
-                  configs={(_, index) => {
-                    return {
-                      mass: 1,
-                      friction: 100,
-                      tensions: 140 * (index + 1),
-                    };
-                  }}
+                  transitions={(index) => ({
+                    type: "spring",
+                    duration: index + 0.3,
+                  })}
                 />
                 {achievement.postfix}
               </h2>
