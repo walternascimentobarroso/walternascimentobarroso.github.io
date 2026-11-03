@@ -4,9 +4,9 @@ Portfólio pessoal de Walter Nascimento Barroso, publicado no GitHub Pages.
 
 ## Stack
 
-- Next.js 14 (App Router), React 18, mistura de TypeScript (`.tsx`) e JavaScript (`.jsx`)
-- Tailwind CSS 3 com dark mode por classe via `next-themes` (`ThemeProvider` + `ModeToggle`)
-- Animações: `framer-motion`, `react-type-animation`, `react-animated-numbers`
+- Next.js 16 (App Router), React 19, mistura de TypeScript (`.tsx`) e JavaScript (`.jsx`)
+- Tailwind CSS 4 (config em `src/app/globals.css` via `@theme`) com dark mode por classe via `next-themes` (`ThemeProvider` + `ModeToggle`)
+- Animações: `motion` (`motion/react`), `react-type-animation`, `react-animated-numbers`
 - Ícones: `@heroicons/react`
 
 ## Comandos
@@ -14,7 +14,7 @@ Portfólio pessoal de Walter Nascimento Barroso, publicado no GitHub Pages.
 ```bash
 npm run dev     # servidor local em http://localhost:3000
 npm run build   # build estático para ./out
-npm run lint    # next lint
+npm run lint    # eslint .
 ```
 
 Não há testes.
