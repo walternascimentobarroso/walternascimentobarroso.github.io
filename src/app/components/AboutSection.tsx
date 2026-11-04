@@ -46,7 +46,7 @@ const AboutSection = ({ dict }: Props) => {
         />
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-3xl md:text-4xl font-semibold tracking-tight text-zinc-900 dark:text-zinc-50 mb-4">{dict.title}</h2>
-          <p className="text-base lg:text-lg leading-relaxed text-zinc-600 dark:text-zinc-400 max-w-[65ch]">
+          <p className="text-base lg:text-lg leading-relaxed text-zinc-600 dark:text-zinc-400 max-w-[65ch] text-justify">
             {dict.text}
           </p>
           <div className="flex flex-row justify-start mt-8">

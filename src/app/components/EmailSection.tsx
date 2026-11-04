@@ -46,7 +46,7 @@ const EmailSection = ({ dict }: Props) => {
         <h2 className="text-3xl md:text-4xl font-semibold tracking-tight text-zinc-900 dark:text-zinc-50 mb-4">
           {dict.title}
         </h2>
-        <p className="text-zinc-600 dark:text-zinc-400 mb-6 max-w-md leading-relaxed">
+        <p className="text-zinc-600 dark:text-zinc-400 mb-6 max-w-md leading-relaxed text-justify hyphens-auto">
           {dict.text}
         </p>
         <div className="socials flex flex-row gap-4">

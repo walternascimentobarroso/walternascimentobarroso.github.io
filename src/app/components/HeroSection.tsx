@@ -40,7 +40,7 @@ const HeroSection = ({ dict }: Props) => {
             )}
           </span>
         </h1>
-        <p className="text-zinc-600 dark:text-zinc-400 text-base lg:text-lg leading-relaxed max-w-[55ch] mb-8">
+        <p className="text-zinc-600 dark:text-zinc-400 text-base lg:text-lg leading-relaxed max-w-[55ch] mb-8 text-justify">
           {dict.intro}
         </p>
         <div className="flex flex-col sm:flex-row gap-3">
