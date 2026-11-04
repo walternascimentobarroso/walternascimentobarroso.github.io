@@ -6,7 +6,10 @@
   "nav": {
     "about": "Sobre",
     "projects": "Projetos",
-    "contact": "Contato"
+    "contact": "Contato",
+    "openMenu": "Abrir menu",
+    "closeMenu": "Fechar menu",
+    "toggleTheme": "Alternar tema"
   },
   "hero": {
     "greeting": "Olá, eu sou",

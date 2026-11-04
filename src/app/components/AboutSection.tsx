@@ -1,5 +1,5 @@
 "use client";
-import { useTransition, useState } from "react";
+import { useState } from "react";
 import Image from "next/image";
 import TabButton from "./TabButton";
 import {
@@ -34,14 +34,6 @@ const AboutSection = ({ dict }: Props) => {
     education: listItems(dict.educationItems, BookOpenIcon),
     certifications: listItems(profile.certifications, TrophyIcon),
   };
-  const [isPending, startTransition] = useTransition();
-
-  const handleTabChange = (id: (typeof tabIds)[number]) => {
-    startTransition(() => {
-      setTab(id);
-    });
-  };
-
   return (
     <section className="text-gray-900 dark:text-white" id="about">
       <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
@@ -60,7 +52,7 @@ const AboutSection = ({ dict }: Props) => {
             {tabIds.map((id) => (
               <TabButton
                 key={id}
-                selectTab={() => handleTabChange(id)}
+                selectTab={() => setTab(id)}
                 active={tab === id}
               >
                 {dict[id]}

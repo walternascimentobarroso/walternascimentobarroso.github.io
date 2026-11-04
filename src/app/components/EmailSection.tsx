@@ -17,10 +17,12 @@ type Props = {
 const EmailSection = ({ dict }: Props) => {
   const [emailSubmitted, setEmailSubmitted] = useState(false);
   const [sendFailed, setSendFailed] = useState(false);
+  const [sending, setSending] = useState(false);
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setSendFailed(false);
+    setSending(true);
     const formData = new FormData(e.currentTarget);
     formData.append("access_key", WEB3FORMS_ACCESS_KEY);
 
@@ -33,6 +35,8 @@ const EmailSection = ({ dict }: Props) => {
       success ? setEmailSubmitted(true) : setSendFailed(true);
     } catch {
       setSendFailed(true);
+    } finally {
+      setSending(false);
     }
   };
 
@@ -43,9 +47,9 @@ const EmailSection = ({ dict }: Props) => {
     >
       <div className="bg-[radial-gradient(ellipse_at_center,var(--tw-gradient-stops))] from-primary-900 to-transparent rounded-full h-80 w-80 z-0 blur-lg absolute top-3/4 -left-4 transform -translate-x-1/2 -translate-1/2"></div>
       <div className="z-10">
-        <h5 className="text-xl font-bold text-gray-900 dark:text-white my-2">
+        <h2 className="text-xl font-bold text-gray-900 dark:text-white my-2">
           {dict.title}
-        </h5>
+        </h2>
         <p className="text-gray-600 dark:text-[#ADB7BE] mb-4 max-w-md">
           {dict.text}
         </p>
@@ -113,7 +117,8 @@ const EmailSection = ({ dict }: Props) => {
             </div>
             <button
               type="submit"
-              className="bg-primary-500 hover:bg-primary-600 text-white font-medium py-2.5 px-5 rounded-lg w-full"
+              disabled={sending}
+              className="bg-primary-500 hover:bg-primary-600 text-white font-medium py-2.5 px-5 rounded-lg w-full disabled:opacity-50 disabled:cursor-not-allowed"
             >
               {dict.send}
             </button>

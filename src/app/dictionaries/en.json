@@ -6,7 +6,10 @@
   "nav": {
     "about": "About",
     "projects": "Projects",
-    "contact": "Contact"
+    "contact": "Contact",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "toggleTheme": "Toggle theme"
   },
   "hero": {
     "greeting": "Hello, I'm",

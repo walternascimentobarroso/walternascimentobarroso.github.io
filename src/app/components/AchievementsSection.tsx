@@ -25,7 +25,7 @@ const AchievementsSection = ({ dict }: Props) => {
               key={index}
               className="flex flex-col items-center justify-center mx-4 my-4 sm:my-0"
             >
-              <h2 className="text-gray-900 dark:text-white text-4xl font-bold flex flex-row">
+              <p className="text-gray-900 dark:text-white text-4xl font-bold flex flex-row">
                 {"prefix" in achievement && achievement.prefix}
                 <AnimatedNumbers
                   useThousandsSeparator
@@ -38,7 +38,7 @@ const AchievementsSection = ({ dict }: Props) => {
                   })}
                 />
                 {"postfix" in achievement && achievement.postfix}
-              </h2>
+              </p>
               <p className="text-gray-600 dark:text-[#ADB7BE] text-base">{dict[achievement.metric as keyof typeof dict]}</p>
             </div>
           );

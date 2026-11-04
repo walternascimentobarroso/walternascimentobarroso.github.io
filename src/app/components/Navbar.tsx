@@ -40,6 +40,7 @@ const Navbar = ({ lang, dict }: Props) => {
           {!navbarOpen ? (
             <button
               onClick={() => setNavbarOpen(true)}
+              aria-label={dict.nav.openMenu}
               className="flex items-center px-3 py-2 border rounded-sm border-slate-600 dark:border-slate-200 text-slate-600 dark:text-slate-200 hover:text-gray-900 dark:hover:text-white hover:border-black dark:hover:border-white"
             >
               <Bars3Icon className="h-5 w-5" />
@@ -47,6 +48,7 @@ const Navbar = ({ lang, dict }: Props) => {
           ) : (
             <button
               onClick={() => setNavbarOpen(false)}
+              aria-label={dict.nav.closeMenu}
               className="flex items-center px-3 py-2 border rounded-sm border-slate-600 dark:border-slate-200 text-slate-600 dark:text-slate-200 hover:text-gray-900 dark:hover:text-white hover:border-black dark:hover:border-white"
             >
               <XMarkIcon className="h-5 w-5" />
@@ -61,11 +63,16 @@ const Navbar = ({ lang, dict }: Props) => {
               </li>
             ))}
             <li>{languageToggle}</li>
-            <li><ModeToggle /></li>
+            <li><ModeToggle label={dict.nav.toggleTheme} /></li>
           </ul>
         </div>
       </div>
-      {navbarOpen ? <MenuOverlay links={navLinks} languageToggle={languageToggle} /> : null}
+      {navbarOpen ? <MenuOverlay
+          links={navLinks}
+          languageToggle={languageToggle}
+          themeLabel={dict.nav.toggleTheme}
+          onNavigate={() => setNavbarOpen(false)}
+        /> : null}
     </nav>
   );
 };
