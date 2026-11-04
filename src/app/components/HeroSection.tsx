@@ -41,14 +41,15 @@ const HeroSection = ({ dict }: Props) => {
             >
               {dict.hireMe}
             </Link>
-            <Link
-              href="/"
+            <a
+              href="/cv.pdf"
+              download
               className="px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-linear-to-br from-primary-500 to-secondary-500 hover:bg-slate-100 dark:hover:bg-slate-800 text-gray-900 dark:text-white mt-3"
             >
               <span className="block bg-white dark:bg-[#121212] hover:bg-slate-100 dark:hover:bg-slate-800 rounded-full px-5 py-2">
                 {dict.downloadCv}
               </span>
-            </Link>
+            </a>
           </div>
         </motion.div>
         <motion.div

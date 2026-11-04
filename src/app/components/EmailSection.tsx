@@ -5,6 +5,7 @@ import Image from "next/image";
 import GithubIcon from "../../../public/github-icon.svg";
 import LinkedinIcon from "../../../public/linkedin-icon.svg";
 import type { Dictionary } from "../dictionaries";
+import profile from "../profile.json";
 
 // Web3Forms access keys are public by design: they only allow sending to the owner's inbox.
 const WEB3FORMS_ACCESS_KEY = "c00ebeb4-4265-4e46-9d61-b94b8ced78ea";
@@ -49,10 +50,10 @@ const EmailSection = ({ dict }: Props) => {
           {dict.text}
         </p>
         <div className="socials flex flex-row gap-2">
-          <Link href="github.com">
+          <Link href={profile.social.github} target="_blank" rel="noopener noreferrer">
             <Image src={GithubIcon} alt="Github Icon" />
           </Link>
-          <Link href="linkedin.com">
+          <Link href={profile.social.linkedin} target="_blank" rel="noopener noreferrer">
             <Image src={LinkedinIcon} alt="Linkedin Icon" />
           </Link>
         </div>

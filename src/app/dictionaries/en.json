@@ -1,7 +1,7 @@
 {
   "metadata": {
     "title": "Walter Nascimento Barroso",
-    "description": "Portfolio of Walter Nascimento Barroso"
+    "description": "Portfolio of Walter Nascimento Barroso, Tech Lead (Python, PHP, Node.js, AWS, Kubernetes)"
   },
   "nav": {
     "about": "About",
@@ -10,30 +10,47 @@
   },
   "hero": {
     "greeting": "Hello, I'm",
-    "roles": ["Walter", "Software Engineer", "Mobile Developer", "Backend Developer"],
-    "intro": "I'm passionate about robust architectures, efficient code, and backend implementations that ensure exceptional performance and an effective user experience behind the scenes.",
+    "roles": [
+      "Walter",
+      "Tech Lead",
+      "Software Engineer",
+      "Backend Engineer",
+      "Full Stack Developer",
+      "Team Lead"
+    ],
+    "intro": "Hands-on tech lead with 10+ years building software and growing teams. I write code daily in Python, PHP and Node.js, and I care about Clean Architecture, delivery flow and people.",
     "hireMe": "Hire Me",
     "downloadCv": "Download CV",
     "imageAlt": "hero image"
   },
   "achievements": {
     "locale": "en-US",
-    "projects": "Projects",
-    "users": "Users",
-    "awards": "Awards",
-    "years": "Years"
+    "years": "Years of experience",
+    "engineers": "Engineers on the team I led",
+    "deploys": "Faster deployments",
+    "certifications": "Certifications"
   },
   "about": {
     "title": "About Me",
     "imageAlt": "About Image",
-    "text": "I am a full stack web developer with a passion for creating interactive and responsive web applications. I have experience working with JavaScript, React, Redux, Node.js, Express, PostgreSQL, Sequelize, HTML, CSS, and Git. I am a quick learner and I am always looking to expand my knowledge and skill set. I am a team player and I am excited to work with others to create amazing applications.",
+    "text": "Tech lead based in Braga, Portugal, working remotely. At a B2B pharmaceutical startup I stepped up to lead the team within 6 months, grew it from 4 to ~10 engineers and introduced CI/CD and Terraform, taking releases from 2–4 hours to under 20 minutes. At a large e-commerce I led the zero-downtime migration of a legacy PHP monolith into Node.js microservices with RabbitMQ. I still code every day with FastAPI, Symfony, Laravel and TypeScript, mentor developers and lead incident response on AWS and Kubernetes.",
     "skills": "Skills",
     "education": "Education",
-    "certifications": "Certifications"
+    "certifications": "Certifications",
+    "educationItems": [
+      "Postgraduate – Software Engineering · Faculdade Unyleya (2020)",
+      "Postgraduate – Computer Networks and Security · UNICIV (2020)",
+      "Postgraduate – Database Administration · Universidade Estácio de Sá (2016)",
+      "Bachelor of Technology – Analysis and Systems Development · Centro Universitário Cathedral (2014)"
+    ]
   },
   "projects": {
     "title": "My Projects",
-    "tags": { "All": "All", "Web": "Web", "Mobile": "Mobile" },
+    "tags": {
+      "All": "All",
+      "Web": "Web",
+      "Mobile": "Mobile"
+    },
     "descriptions": {
       "1": "Project 1 description",
       "2": "Project 2 description",

@@ -1,7 +1,7 @@
 {
   "metadata": {
     "title": "Walter Nascimento Barroso",
-    "description": "Portfólio de Walter Nascimento Barroso"
+    "description": "Portfólio de Walter Nascimento Barroso, Tech Lead (Python, PHP, Node.js, AWS, Kubernetes)"
   },
   "nav": {
     "about": "Sobre",
@@ -10,30 +10,47 @@
   },
   "hero": {
     "greeting": "Olá, eu sou",
-    "roles": ["Walter", "Engenheiro de Software", "Desenvolvedor Mobile", "Desenvolvedor Backend"],
-    "intro": "Sou apaixonado por arquiteturas robustas, código eficiente e implementações de backend que garantem desempenho excepcional e uma experiência de usuário eficaz nos bastidores.",
+    "roles": [
+      "Walter",
+      "Tech Lead",
+      "Engenheiro de Software",
+      "Engenheiro Backend",
+      "Desenvolvedor Full Stack",
+      "Líder de Equipa"
+    ],
+    "intro": "Tech lead hands-on com mais de 10 anos a construir software e a fazer crescer equipas. Programo todos os dias em Python, PHP e Node.js, com foco em Clean Architecture, fluxo de entrega e pessoas.",
     "hireMe": "Contrate-me",
     "downloadCv": "Baixar CV",
     "imageAlt": "imagem de apresentação"
   },
   "achievements": {
     "locale": "pt-BR",
-    "projects": "Projetos",
-    "users": "Usuários",
-    "awards": "Prêmios",
-    "years": "Anos"
+    "years": "Anos de experiência",
+    "engineers": "Engenheiros na equipa que liderei",
+    "deploys": "Deploys mais rápidos",
+    "certifications": "Certificações"
   },
   "about": {
     "title": "Sobre mim",
     "imageAlt": "Imagem sobre mim",
-    "text": "Sou desenvolvedor web full stack, apaixonado por criar aplicações web interativas e responsivas. Tenho experiência com JavaScript, React, Redux, Node.js, Express, PostgreSQL, Sequelize, HTML, CSS e Git. Aprendo rápido e estou sempre buscando expandir meus conhecimentos e habilidades. Gosto de trabalhar em equipe e fico animado em colaborar com outras pessoas para criar aplicações incríveis.",
+    "text": "Tech lead em Braga, Portugal, a trabalhar remotamente. Numa startup B2B do setor farmacêutico assumi a liderança da equipa em 6 meses, ajudei a crescê-la de 4 para ~10 engenheiros e introduzi CI/CD e Terraform, reduzindo os releases de 2–4 horas para menos de 20 minutos. Num grande e-commerce liderei a migração sem downtime de um monólito PHP legado para microsserviços Node.js com RabbitMQ. Continuo a programar todos os dias com FastAPI, Symfony, Laravel e TypeScript, faço mentoria de developers e lidero a resposta a incidentes em AWS e Kubernetes.",
     "skills": "Habilidades",
     "education": "Formação",
-    "certifications": "Certificações"
+    "certifications": "Certificações",
+    "educationItems": [
+      "Pós-graduação em Engenharia de Software · Faculdade Unyleya (2020)",
+      "Pós-graduação em Redes de Computadores e Segurança · UNICIV (2020)",
+      "Pós-graduação em Administração de Banco de Dados · Universidade Estácio de Sá (2016)",
+      "Tecnólogo em Análise e Desenvolvimento de Sistemas · Centro Universitário Cathedral (2014)"
+    ]
   },
   "projects": {
     "title": "Meus Projetos",
-    "tags": { "All": "Todos", "Web": "Web", "Mobile": "Mobile" },
+    "tags": {
+      "All": "Todos",
+      "Web": "Web",
+      "Mobile": "Mobile"
+    },
     "descriptions": {
       "1": "Descrição do projeto 1",
       "2": "Descrição do projeto 2",

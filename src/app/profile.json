@@ -1,0 +1,31 @@
+{
+  "social": {
+    "github": "https://github.com/walternascimentobarroso",
+    "linkedin": "https://www.linkedin.com/in/walternascimentobarroso"
+  },
+  "skills": [
+    "Python (FastAPI, Django)",
+    "PHP (Symfony, Laravel)",
+    "Node.js / TypeScript",
+    "React / Vue.js",
+    "PostgreSQL / MySQL / Redis",
+    "RabbitMQ / Kafka",
+    "AWS / Terraform",
+    "Docker / Kubernetes",
+    "CI/CD (GitLab CI, GitHub Actions)"
+  ],
+  "certifications": [
+    "AWS Certified Solutions Architect – Associate (2026)",
+    "ITIL Foundation (2025)",
+    "PCAP (2024)",
+    "PCEP (2024)",
+    "AWS Certified Cloud Practitioner (2024)",
+    "GitHub Foundations (2024)"
+  ],
+  "achievements": [
+    { "metric": "years", "value": 10, "postfix": "+" },
+    { "metric": "engineers", "prefix": "~", "value": 10 },
+    { "metric": "deploys", "prefix": "~", "value": 90, "postfix": "%" },
+    { "metric": "certifications", "value": 6 }
+  ]
+}

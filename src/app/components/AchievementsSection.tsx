@@ -1,6 +1,7 @@
 "use client";
 import dynamic from "next/dynamic";
 import type { Dictionary } from "../dictionaries";
+import profile from "../profile.json";
 
 const AnimatedNumbers = dynamic(
   () => {
@@ -9,26 +10,6 @@ const AnimatedNumbers = dynamic(
   { ssr: false }
 );
 
-const achievementsList = [
-  {
-    metric: "projects",
-    value: "100",
-    postfix: "+",
-  },
-  {
-    prefix: "~",
-    metric: "users",
-    value: "100000",
-  },
-  {
-    metric: "awards",
-    value: "7",
-  },
-  {
-    metric: "years",
-    value: "5",
-  },
-] as const;
 
 type Props = {
   dict: Dictionary["achievements"];
@@ -38,7 +19,7 @@ const AchievementsSection = ({ dict }: Props) => {
   return (
     <div className="py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
       <div className="sm:border-gray-300 dark:sm:border-[#33353F] sm:border rounded-md py-8 px-16 flex flex-col sm:flex-row items-center justify-between">
-        {achievementsList.map((achievement, index) => {
+        {profile.achievements.map((achievement, index) => {
           return (
             <div
               key={index}
@@ -48,7 +29,7 @@ const AchievementsSection = ({ dict }: Props) => {
                 {"prefix" in achievement && achievement.prefix}
                 <AnimatedNumbers
                   useThousandsSeparator
-                  animateToNumber={parseInt(achievement.value)}
+                  animateToNumber={achievement.value}
                   locale={dict.locale}
                   className="text-gray-900 dark:text-white text-4xl font-bold"
                   transitions={(index) => ({
@@ -58,7 +39,7 @@ const AchievementsSection = ({ dict }: Props) => {
                 />
                 {"postfix" in achievement && achievement.postfix}
               </h2>
-              <p className="text-gray-600 dark:text-[#ADB7BE] text-base">{dict[achievement.metric]}</p>
+              <p className="text-gray-600 dark:text-[#ADB7BE] text-base">{dict[achievement.metric as keyof typeof dict]}</p>
             </div>
           );
         })}
