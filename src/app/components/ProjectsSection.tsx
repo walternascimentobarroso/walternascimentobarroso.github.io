@@ -77,11 +77,11 @@ const ProjectsSection = ({ dict }: Props) => {
   };
 
   return (
-    <section id="projects" className="scroll-mt-28">
-      <h2 className="text-center text-4xl font-bold text-gray-900 dark:text-white mt-4 mb-8 md:mb-12">
+    <section id="projects" className="scroll-mt-28 py-16">
+      <h2 className="text-3xl md:text-4xl font-semibold tracking-tight text-zinc-900 dark:text-zinc-50 mb-6">
         {dict.title}
       </h2>
-      <div className="text-gray-900 dark:text-white flex flex-row justify-center items-center gap-2 py-6">
+      <div className="text-zinc-900 dark:text-white flex flex-wrap gap-2 pb-8">
         {PROJECT_TAGS.map((projectTag) => (
           <ProjectTag
             key={projectTag}
@@ -91,14 +91,14 @@ const ProjectsSection = ({ dict }: Props) => {
           />
         ))}
       </div>
-      <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">
+      <ul ref={ref} className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
         {filteredProjects.map((project, index) => (
           <motion.li
             key={project.id}
             variants={cardVariants}
             initial="initial"
             animate={isInView ? "animate" : "initial"}
-            transition={{ duration: 0.3, delay: index * 0.4 }}
+            transition={{ duration: 0.3, delay: index * 0.06, ease: [0.16, 1, 0.3, 1] }}
           >
             <ProjectCard
               title={project.title}

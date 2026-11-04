@@ -17,26 +17,26 @@ type Props = {
 
 const AchievementsSection = ({ dict }: Props) => {
   return (
-    <div className="py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
-      <div className="sm:border-gray-300 dark:sm:border-[#33353F] sm:border rounded-md py-8 px-16 flex flex-col sm:flex-row items-center justify-between">
+    <div className="border-y border-zinc-200 dark:border-zinc-800">
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-8 py-10">
         {profile.achievements.map((achievement) => {
           return (
             <div
               key={achievement.metric}
-              className="flex flex-col items-center justify-center mx-4 my-4 sm:my-0"
+              className="flex flex-col"
             >
               <span className="sr-only">
                 {"prefix" in achievement && achievement.prefix}
                 {achievement.value.toLocaleString(dict.locale)}
                 {"postfix" in achievement && achievement.postfix}
               </span>
-              <div aria-hidden="true" className="text-gray-900 dark:text-white text-4xl font-bold flex flex-row tabular-nums">
+              <div aria-hidden="true" className="text-zinc-900 dark:text-zinc-50 text-3xl md:text-4xl font-semibold flex flex-row tabular-nums">
                 {"prefix" in achievement && achievement.prefix}
                 <AnimatedNumbers
                   useThousandsSeparator
                   animateToNumber={achievement.value}
                   locale={dict.locale}
-                  className="text-gray-900 dark:text-white text-4xl font-bold"
+                  className="text-zinc-900 dark:text-zinc-50 text-3xl md:text-4xl font-semibold"
                   transitions={(index) => ({
                     type: "spring",
                     duration: index + 0.3,
@@ -44,7 +44,7 @@ const AchievementsSection = ({ dict }: Props) => {
                 />
                 {"postfix" in achievement && achievement.postfix}
               </div>
-              <p className="text-gray-600 dark:text-[#ADB7BE] text-base">{dict[achievement.metric as keyof typeof dict]}</p>
+              <p className="text-zinc-600 dark:text-zinc-400 text-sm mt-1">{dict[achievement.metric as keyof typeof dict]}</p>
             </div>
           );
         })}

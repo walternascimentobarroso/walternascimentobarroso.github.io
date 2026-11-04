@@ -9,74 +9,71 @@ type Props = {
   dict: Dictionary["hero"];
 };
 
+const enter = {
+  initial: { opacity: 0, y: 16 },
+  animate: { opacity: 1, y: 0 },
+};
+
 const HeroSection = ({ dict }: Props) => {
   const reduceMotion = useReducedMotion();
   return (
-    <section className="lg:py-16">
-      <div className="grid grid-cols-1 sm:grid-cols-12">
-        <motion.div
-          initial={{ opacity: 0, scale: 0.5 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.5 }}
-          className="col-span-8 place-self-center text-center sm:text-left justify-self-start"
-        >
-          <h1 className="text-gray-900 dark:text-white mb-4 text-4xl sm:text-5xl lg:text-8xl lg:leading-normal font-extrabold">
-            <span className="text-transparent bg-clip-text bg-linear-to-r from-primary-400 to-secondary-600">
-              {dict.greeting}{" "}
-            </span>
-            <br />
-            <span className="sr-only">{dict.roles.join(", ")}</span>
+    <section className="grid grid-cols-1 md:grid-cols-12 gap-10 items-center py-12 lg:py-20">
+      <motion.div
+        {...enter}
+        transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
+        className="md:col-span-7"
+      >
+        <h1 className="text-zinc-900 dark:text-zinc-50 text-4xl md:text-5xl lg:text-6xl font-semibold tracking-tight leading-[1.1] mb-6">
+          {dict.greeting}
+          <br />
+          <span className="sr-only">{dict.roles.join(", ")}</span>
+          <span aria-hidden="true" className="text-primary-600 dark:text-primary-400">
             {reduceMotion ? (
-              <span aria-hidden="true">{dict.roles[0]}</span>
+              dict.roles[0]
             ) : (
               <TypeAnimation
-                aria-hidden="true"
                 sequence={dict.roles.flatMap((role) => [role, 1000])}
                 wrapper="span"
                 speed={50}
                 repeat={Infinity}
               />
             )}
-          </h1>
-          <p className="text-gray-600 dark:text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
-            {dict.intro}
-          </p>
-          <div>
-            <Link
-              href="#contact"
-              className="px-6 inline-block py-3 w-full sm:w-fit rounded-full mr-4 bg-linear-to-br from-primary-500 to-secondary-500 hover:from-primary-600 hover:to-secondary-600 text-white"
-            >
-              {dict.hireMe}
-            </Link>
-            <a
-              href="/cv.pdf"
-              download
-              className="px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-linear-to-br from-primary-500 to-secondary-500 hover:bg-slate-100 dark:hover:bg-slate-800 text-gray-900 dark:text-white mt-3"
-            >
-              <span className="block bg-white dark:bg-[#121212] hover:bg-slate-100 dark:hover:bg-slate-800 rounded-full px-5 py-2">
-                {dict.downloadCv}
-              </span>
-            </a>
-          </div>
-        </motion.div>
-        <motion.div
-          initial={{ opacity: 0, scale: 0.5 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.5 }}
-          className="col-span-4 place-self-center mt-4 lg:mt-0"
-        >
-          <div className="rounded-full bg-gray-100 dark:bg-[#181818] w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative">
-            <Image
-              src="/images/hero-image.png"
-              alt={dict.imageAlt}
-              priority
-              className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-              width={300}
-              height={300}
-            />
-          </div>
-        </motion.div>
-      </div>
+          </span>
+        </h1>
+        <p className="text-zinc-600 dark:text-zinc-400 text-base lg:text-lg leading-relaxed max-w-[55ch] mb-8">
+          {dict.intro}
+        </p>
+        <div className="flex flex-col sm:flex-row gap-3">
+          <Link
+            href="#contact"
+            className="px-5 py-3 rounded-lg text-center font-medium bg-primary-700 hover:bg-primary-800 text-white active:scale-[0.98] transition-transform"
+          >
+            {dict.hireMe}
+          </Link>
+          <a
+            href="/cv.pdf"
+            download
+            className="px-5 py-3 rounded-lg text-center font-medium border border-zinc-300 dark:border-zinc-700 text-zinc-900 dark:text-zinc-50 hover:bg-zinc-100 dark:hover:bg-zinc-900 active:scale-[0.98] transition-transform"
+          >
+            {dict.downloadCv}
+          </a>
+        </div>
+      </motion.div>
+      <motion.div
+        {...enter}
+        transition={{ duration: 0.5, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
+        className="md:col-span-5 justify-self-center md:justify-self-end"
+      >
+        <div className="rounded-lg bg-zinc-100 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 p-6">
+          <Image
+            src="/images/hero-image.png"
+            alt={dict.imageAlt}
+            priority
+            width={320}
+            height={320}
+          />
+        </div>
+      </motion.div>
     </section>
   );
 };

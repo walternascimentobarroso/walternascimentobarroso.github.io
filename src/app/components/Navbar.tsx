@@ -28,11 +28,11 @@ const Navbar = ({ lang, dict }: Props) => {
   const languageToggle = <LanguageToggle lang={lang} labels={dict.language} />;
 
   return (
-    <nav className="fixed mx-auto border border-gray-300 dark:border-[#33353F] top-0 left-0 right-0 z-10 bg-white dark:bg-[#121212] bg-opacity-100">
-      <div className="flex container lg:py-4 flex-wrap items-center justify-between mx-auto px-4 py-2">
+    <nav className="fixed top-0 left-0 right-0 z-10 border-b border-zinc-200 dark:border-zinc-800 bg-zinc-50/90 dark:bg-zinc-950/90 backdrop-blur">
+      <div className="flex max-w-6xl min-h-16 flex-wrap items-center justify-between mx-auto px-6">
         <Link
           href={`/${lang}`}
-          className="text-2xl md:text-5xl text-gray-900 dark:text-white font-semibold"
+          className="text-xl font-semibold tracking-tight text-zinc-900 dark:text-zinc-50"
         >
           {"<W />"}
         </Link>
@@ -43,7 +43,7 @@ const Navbar = ({ lang, dict }: Props) => {
               aria-label={dict.nav.openMenu}
               aria-expanded="false"
               aria-controls="mobile-menu"
-              className="flex items-center px-3 py-2 border rounded-sm border-slate-600 dark:border-slate-200 text-slate-600 dark:text-slate-200 hover:text-gray-900 dark:hover:text-white hover:border-black dark:hover:border-white"
+              className="flex items-center px-3 py-2 border rounded-lg border-zinc-300 dark:border-zinc-700 text-zinc-600 dark:text-zinc-200 hover:text-zinc-900 dark:hover:text-white hover:border-black dark:hover:border-white"
             >
               <Bars3Icon className="h-5 w-5" />
             </button>
@@ -53,7 +53,7 @@ const Navbar = ({ lang, dict }: Props) => {
               aria-label={dict.nav.closeMenu}
               aria-expanded="true"
               aria-controls="mobile-menu"
-              className="flex items-center px-3 py-2 border rounded-sm border-slate-600 dark:border-slate-200 text-slate-600 dark:text-slate-200 hover:text-gray-900 dark:hover:text-white hover:border-black dark:hover:border-white"
+              className="flex items-center px-3 py-2 border rounded-lg border-zinc-300 dark:border-zinc-700 text-zinc-600 dark:text-zinc-200 hover:text-zinc-900 dark:hover:text-white hover:border-black dark:hover:border-white"
             >
               <XMarkIcon className="h-5 w-5" />
             </button>

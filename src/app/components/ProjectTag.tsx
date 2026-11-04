@@ -6,12 +6,12 @@ type Props = {
 
 const ProjectTag = ({ name, onClick, isSelected }: Props) => {
   const buttonStyles = isSelected
-    ? "text-gray-900 dark:text-white border-primary-500"
-    : "text-gray-600 dark:text-[#ADB7BE] border-slate-600 hover:border-black dark:hover:border-white";
+    ? "bg-zinc-900 text-zinc-50 border-zinc-900 dark:bg-zinc-50 dark:text-zinc-900 dark:border-zinc-50"
+    : "text-zinc-600 dark:text-zinc-400 border-zinc-300 dark:border-zinc-700 hover:border-zinc-900 dark:hover:border-zinc-50";
   return (
     <button
       aria-pressed={isSelected}
-      className={`${buttonStyles} rounded-full border-2 px-6 py-3 text-xl cursor-pointer`}
+      className={`${buttonStyles} rounded-lg border px-4 py-2 text-sm font-medium cursor-pointer`}
       onClick={() => onClick(name)}
     >
       {name}

@@ -1,7 +1,7 @@
 export default function PrivacyPolicies() {
   return (
-    <main className="flex min-h-screen flex-col bg-white dark:bg-[#121212]">
-      <div className="container mt-24 mx-auto px-12 py-4 text-gray-900 dark:text-white">
+    <main className="flex min-h-screen flex-col bg-zinc-50 dark:bg-zinc-950">
+      <div className="container mt-24 mx-auto px-12 py-4 text-zinc-900 dark:text-white">
         <h1 className="text-3xl font-bold mb-6">Política de Privacidade para a Extensão Gruppy</h1>
         <p>
           Esta Política de Privacidade descreve como as informações são

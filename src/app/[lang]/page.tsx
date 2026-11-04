@@ -25,19 +25,19 @@ export default async function Home({ params }: Props) {
   };
 
   return (
-    <main className="flex min-h-screen flex-col bg-white dark:bg-[#121212]">
+    <main className="flex min-h-screen flex-col bg-zinc-50 dark:bg-zinc-950">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(person) }}
       />
       <a
         href="#content"
-        className="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-20 focus:rounded-sm focus:bg-white focus:px-4 focus:py-2 focus:text-gray-900"
+        className="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-20 focus:rounded-sm focus:bg-white focus:px-4 focus:py-2 focus:text-zinc-900"
       >
         {dict.nav.skipToContent}
       </a>
       <Navbar lang={lang} dict={dict} />
-      <div id="content" className="container mt-24 mx-auto px-12 py-4">
+      <div id="content" className="w-full max-w-6xl mt-16 mx-auto px-6">
         <HeroSection dict={dict.hero} />
         <AchievementsSection dict={dict.achievements} />
         <AboutSection dict={dict.about} />
