@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { CodeBracketIcon, EyeIcon } from "@heroicons/react/24/outline";
 
 type Props = {
@@ -7,27 +8,25 @@ type Props = {
   description: string;
   gitUrl: string;
   previewUrl: string;
+  codeLabel: string;
+  previewLabel: string;
 };
 
-const ProjectCard = ({ imgUrl, title, description, gitUrl, previewUrl }: Props) => {
+const linkClass =
+  "h-14 w-14 mr-2 border-2 flex items-center justify-center rounded-full border-gray-500 dark:border-[#ADB7BE] text-gray-600 dark:text-[#ADB7BE] hover:border-black dark:hover:border-white hover:text-gray-900 dark:hover:text-white";
+
+const ProjectCard = ({ imgUrl, title, description, gitUrl, previewUrl, codeLabel, previewLabel }: Props) => {
   return (
     <div>
-      <div
-        className="h-52 md:h-72 rounded-t-xl relative group"
-        style={{ background: `url(${imgUrl})`, backgroundSize: "cover" }}
-      >
-        <div className="overlay items-center justify-center absolute top-0 left-0 w-full h-full bg-gray-100/80 dark:bg-[#181818]/80 hidden group-hover:flex transition-all duration-500 ">
-          <Link
-            href={gitUrl}
-            className="h-14 w-14 mr-2 border-2 relative rounded-full border-gray-500 dark:border-[#ADB7BE] hover:border-black dark:hover:border-white group/link"
-          >
-            <CodeBracketIcon className="h-10 w-10 text-gray-600 dark:text-[#ADB7BE] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2  cursor-pointer group-hover/link:text-gray-900 dark:group-hover/link:text-white" />
+      <div className="h-52 md:h-72 rounded-t-xl relative overflow-hidden group">
+        <Image src={imgUrl} alt="" fill sizes="(min-width: 768px) 33vw, 100vw" className="object-cover" />
+        {/* Hidden only where hover exists; touch screens always show the links */}
+        <div className="overlay flex items-center justify-center absolute inset-0 bg-gray-100/80 dark:bg-[#181818]/80 transition-opacity duration-500 [@media(hover:hover)]:opacity-0 group-hover:opacity-100 group-focus-within:opacity-100">
+          <Link href={gitUrl} aria-label={`${codeLabel}: ${title}`} className={linkClass}>
+            <CodeBracketIcon className="h-10 w-10" aria-hidden="true" />
           </Link>
-          <Link
-            href={previewUrl}
-            className="h-14 w-14 border-2 relative rounded-full border-gray-500 dark:border-[#ADB7BE] hover:border-black dark:hover:border-white group/link"
-          >
-            <EyeIcon className="h-10 w-10 text-gray-600 dark:text-[#ADB7BE] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2  cursor-pointer group-hover/link:text-gray-900 dark:group-hover/link:text-white" />
+          <Link href={previewUrl} aria-label={`${previewLabel}: ${title}`} className={linkClass}>
+            <EyeIcon className="h-10 w-10" aria-hidden="true" />
           </Link>
         </div>
       </div>

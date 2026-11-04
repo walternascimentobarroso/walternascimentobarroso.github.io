@@ -41,6 +41,8 @@ const Navbar = ({ lang, dict }: Props) => {
             <button
               onClick={() => setNavbarOpen(true)}
               aria-label={dict.nav.openMenu}
+              aria-expanded="false"
+              aria-controls="mobile-menu"
               className="flex items-center px-3 py-2 border rounded-sm border-slate-600 dark:border-slate-200 text-slate-600 dark:text-slate-200 hover:text-gray-900 dark:hover:text-white hover:border-black dark:hover:border-white"
             >
               <Bars3Icon className="h-5 w-5" />
@@ -49,6 +51,8 @@ const Navbar = ({ lang, dict }: Props) => {
             <button
               onClick={() => setNavbarOpen(false)}
               aria-label={dict.nav.closeMenu}
+              aria-expanded="true"
+              aria-controls="mobile-menu"
               className="flex items-center px-3 py-2 border rounded-sm border-slate-600 dark:border-slate-200 text-slate-600 dark:text-slate-200 hover:text-gray-900 dark:hover:text-white hover:border-black dark:hover:border-white"
             >
               <XMarkIcon className="h-5 w-5" />
@@ -57,8 +61,8 @@ const Navbar = ({ lang, dict }: Props) => {
         </div>
         <div className="menu hidden md:block md:w-auto" id="navbar">
           <ul className="flex items-center p-4 md:p-0 md:flex-row md:space-x-8 mt-0">
-            {navLinks.map((link, index) => (
-              <li key={index}>
+            {navLinks.map((link) => (
+              <li key={link.path}>
                 <NavLink href={link.path} title={link.title} />
               </li>
             ))}
@@ -68,6 +72,7 @@ const Navbar = ({ lang, dict }: Props) => {
         </div>
       </div>
       {navbarOpen ? <MenuOverlay
+          id="mobile-menu"
           links={navLinks}
           languageToggle={languageToggle}
           themeLabel={dict.nav.toggleTheme}

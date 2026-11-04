@@ -77,7 +77,7 @@ const ProjectsSection = ({ dict }: Props) => {
   };
 
   return (
-    <section id="projects">
+    <section id="projects" className="scroll-mt-28">
       <h2 className="text-center text-4xl font-bold text-gray-900 dark:text-white mt-4 mb-8 md:mb-12">
         {dict.title}
       </h2>
@@ -106,6 +106,8 @@ const ProjectsSection = ({ dict }: Props) => {
               imgUrl={project.image}
               gitUrl={project.gitUrl}
               previewUrl={project.previewUrl}
+              codeLabel={dict.codeLabel}
+              previewLabel={dict.previewLabel}
             />
           </motion.li>
         ))}

@@ -9,7 +9,8 @@
     "contact": "Contact",
     "openMenu": "Open menu",
     "closeMenu": "Close menu",
-    "toggleTheme": "Toggle theme"
+    "toggleTheme": "Toggle theme",
+    "skipToContent": "Skip to content"
   },
   "hero": {
     "greeting": "Hello, I'm",
@@ -61,7 +62,9 @@
       "4": "Project 4 description",
       "5": "Authentication and CRUD operations",
       "6": "Project 5 description"
-    }
+    },
+    "codeLabel": "Source code",
+    "previewLabel": "Live preview"
   },
   "contact": {
     "title": "Let's Connect",
@@ -70,12 +73,14 @@
     "subjectLabel": "Subject",
     "subjectPlaceholder": "Just saying hi",
     "messageLabel": "Message",
-    "messagePlaceholder": "Let's talk about...",
+    "messagePlaceholder": "Let's talk about…",
     "send": "Send Message",
     "success": "Email sent successfully!",
     "failure": "Could not send the message. Please try again later.",
     "githubAlt": "GitHub profile",
-    "linkedinAlt": "LinkedIn profile"
+    "linkedinAlt": "LinkedIn profile",
+    "emailPlaceholder": "jane@example.com",
+    "sending": "Sending…"
   },
   "footer": {
     "rights": "All rights reserved."

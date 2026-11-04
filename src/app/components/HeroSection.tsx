@@ -24,11 +24,13 @@ const HeroSection = ({ dict }: Props) => {
             <span className="text-transparent bg-clip-text bg-linear-to-r from-primary-400 to-secondary-600">
               {dict.greeting}{" "}
             </span>
-            <br></br>
+            <br />
+            <span className="sr-only">{dict.roles.join(", ")}</span>
             {reduceMotion ? (
-              <span>{dict.roles[0]}</span>
+              <span aria-hidden="true">{dict.roles[0]}</span>
             ) : (
               <TypeAnimation
+                aria-hidden="true"
                 sequence={dict.roles.flatMap((role) => [role, 1000])}
                 wrapper="span"
                 speed={50}
@@ -42,7 +44,7 @@ const HeroSection = ({ dict }: Props) => {
           <div>
             <Link
               href="#contact"
-              className="px-6 inline-block py-3 w-full sm:w-fit rounded-full mr-4 bg-linear-to-br from-primary-500 to-secondary-500 hover:bg-slate-200 text-white"
+              className="px-6 inline-block py-3 w-full sm:w-fit rounded-full mr-4 bg-linear-to-br from-primary-500 to-secondary-500 hover:from-primary-600 hover:to-secondary-600 text-white"
             >
               {dict.hireMe}
             </Link>

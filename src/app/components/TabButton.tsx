@@ -1,8 +1,8 @@
 import { motion } from "motion/react";
 
 const variants = {
-  default: { width: 0 },
-  active: { width: "calc(100% - 0.75rem)" },
+  default: { scaleX: 0 },
+  active: { scaleX: 1 },
 };
 
 type Props = {
@@ -15,14 +15,14 @@ const TabButton = ({ active, selectTab, children }: Props) => {
   const buttonClasses = active ? "text-gray-900 dark:text-white" : "text-gray-600 dark:text-[#ADB7BE]";
 
   return (
-    <button onClick={selectTab}>
-      <p className={`mr-3 font-semibold hover:text-gray-900 dark:hover:text-white ${buttonClasses}`}>
+    <button type="button" aria-pressed={active} onClick={selectTab}>
+      <span className={`block mr-3 font-semibold hover:text-gray-900 dark:hover:text-white ${buttonClasses}`}>
         {children}
-      </p>
+      </span>
       <motion.div
         animate={active ? "active" : "default"}
         variants={variants}
-        className="h-1 bg-primary-500 mt-2 mr-3"
+        className="h-1 bg-primary-500 mt-2 mr-3 origin-left"
       ></motion.div>
     </button>
   );

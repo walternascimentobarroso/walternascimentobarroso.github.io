@@ -9,7 +9,8 @@
     "contact": "Contato",
     "openMenu": "Abrir menu",
     "closeMenu": "Fechar menu",
-    "toggleTheme": "Alternar tema"
+    "toggleTheme": "Alternar tema",
+    "skipToContent": "Ir para o conteúdo"
   },
   "hero": {
     "greeting": "Olá, eu sou",
@@ -61,7 +62,9 @@
       "4": "Descrição do projeto 4",
       "5": "Autenticação e operações CRUD",
       "6": "Descrição do projeto 5"
-    }
+    },
+    "codeLabel": "Código-fonte",
+    "previewLabel": "Ver demo"
   },
   "contact": {
     "title": "Vamos conversar",
@@ -70,12 +73,14 @@
     "subjectLabel": "Assunto",
     "subjectPlaceholder": "Só passando para dizer oi",
     "messageLabel": "Mensagem",
-    "messagePlaceholder": "Vamos falar sobre...",
+    "messagePlaceholder": "Vamos falar sobre…",
     "send": "Enviar mensagem",
     "success": "E-mail enviado com sucesso!",
     "failure": "Não foi possível enviar a mensagem. Tente novamente mais tarde.",
     "githubAlt": "Perfil no GitHub",
-    "linkedinAlt": "Perfil no LinkedIn"
+    "linkedinAlt": "Perfil no LinkedIn",
+    "emailPlaceholder": "maria@exemplo.com",
+    "sending": "Enviando…"
   },
   "footer": {
     "rights": "Todos os direitos reservados."

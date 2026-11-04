@@ -22,8 +22,9 @@ export function ModeToggle({ label }: Props) {
   return (
     <button
       aria-label={label}
+      aria-pressed={theme === "dark"}
       className="block py-2 pl-3 pr-4 text-gray-600 dark:text-[#ADB7BE] sm:text-xl rounded-sm md:p-0 hover:text-gray-900 dark:hover:text-white"
-      onClick={() => (theme == "dark" ? setTheme("light") : setTheme("dark"))}
+      onClick={() => (theme === "dark" ? setTheme("light") : setTheme("dark"))}
     >
       {theme === "light" ? (
         <MoonIcon className="h-8 w-8 text-gray-600 dark:text-[#ADB7BE]" />
