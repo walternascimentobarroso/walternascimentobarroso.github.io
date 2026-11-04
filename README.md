@@ -1,36 +1,45 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Walter Nascimento Barroso — Portfolio
 
-## Getting Started
+Personal bilingual portfolio (English and Portuguese), published on GitHub Pages:
+**https://walternascimentobarroso.github.io**
 
-First, run the development server:
+## Features
+
+- Sections: hero, about, projects, achievements and contact
+- English (`/en`) and Portuguese (`/pt`); `/` picks the saved language, then the browser language, then English
+- Light and dark theme
+- Contact form sent through [Web3Forms](https://web3forms.com)
+- Privacy policy at `/privacy`
+
+## Stack
+
+- [Next.js 16](https://nextjs.org) (App Router, static export) with React 19 and TypeScript
+- [Tailwind CSS 4](https://tailwindcss.com) and [next-themes](https://github.com/pacocoursey/next-themes)
+- [Motion](https://motion.dev), `react-type-animation` and `react-animated-numbers` for animations
+- [Heroicons](https://heroicons.com)
+
+## Running locally
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
+npm run dev     # http://localhost:3000
+npm run build   # builds the static site into ./out
+npm run lint
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Structure
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```
+src/app/
+├── [lang]/          # home page per language (/en, /pt)
+├── (default)/       # / redirect and /privacy page
+├── components/      # sections and UI components
+└── dictionaries/    # copy in en.json and pt.json
+public/              # images and icons
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+To change the copy, edit `src/app/dictionaries/en.json` and `pt.json`.
 
-## Learn More
+## Deploy
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Every push to `main` runs [.github/workflows/nextjs.yml](.github/workflows/nextjs.yml), which builds the site and publishes `./out` to GitHub Pages. The site is fully static: there are no API routes in production.
