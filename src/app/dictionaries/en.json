@@ -22,7 +22,7 @@
       "Full Stack",
       "Team Lead"
     ],
-    "intro": "Hands-on tech lead with 12+ years building software and growing teams. I write code daily in Python, PHP and Node.js, and I care about Clean Architecture, delivery flow and people.",
+    "intro": "Hands-on tech lead with 12+ years building software and growing teams. I code every day in Python, PHP and Node.js, and I care most about clean architecture, how work gets shipped and the people doing it.",
     "hireMe": "Hire Me",
     "downloadCv": "Download CV",
     "imageAlt": "hero image"
@@ -37,15 +37,15 @@
   "about": {
     "title": "About Me",
     "imageAlt": "About Image",
-    "text": "Tech lead based in Braga, Portugal, working remotely. At a B2B pharmaceutical startup I stepped up to lead the team within 6 months, grew it from 4 to ~10 engineers and introduced CI/CD and Terraform, taking releases from 2–4 hours to under 20 minutes. At a large e-commerce I led the zero-downtime migration of a legacy PHP monolith into Node.js microservices with RabbitMQ. I still code every day with FastAPI, Symfony, Laravel and TypeScript, mentor developers and lead incident response on AWS and Kubernetes.",
+    "text": "Tech lead based in Braga, Portugal, working remotely. At a B2B pharmaceutical startup I stepped up to lead the team within 6 months, grew it from 4 to ~10 engineers and introduced CI/CD and Terraform, taking releases from 2–4 hours to under 20 minutes. At a large e-commerce company I led the zero-downtime migration of a legacy PHP monolith into Node.js microservices with RabbitMQ. I still code every day with FastAPI, Symfony, Laravel and TypeScript, mentor developers and lead incident response on AWS and Kubernetes.",
     "skills": "Skills",
     "education": "Education",
     "certifications": "Certifications",
     "educationItems": [
-      "Postgraduate – Software Engineering · Faculdade Unyleya (2020)",
-      "Postgraduate – Computer Networks and Security · UNICIV (2020)",
-      "Postgraduate – Database Administration · Universidade Estácio de Sá (2016)",
-      "Bachelor of Technology – Analysis and Systems Development · Centro Universitário Cathedral (2014)"
+      "Postgraduate in Software Engineering · Faculdade Unyleya (2020)",
+      "Postgraduate in Computer Networks and Security · UNICIV (2020)",
+      "Postgraduate in Database Administration · Universidade Estácio de Sá (2016)",
+      "Bachelor of Technology in Analysis and Systems Development · Centro Universitário Cathedral (2014)"
     ]
   },
   "projects": {
@@ -68,7 +68,7 @@
   },
   "contact": {
     "title": "Let's Connect",
-    "text": "I'm currently looking for new opportunities, my inbox is always open. Whether you have a question or just want to say hi, I'll try my best to get back to you!",
+    "text": "I'm open to new opportunities. If you have a question or just want to say hi, send me a message and I'll get back to you.",
     "emailLabel": "Your email",
     "subjectLabel": "Subject",
     "subjectPlaceholder": "Just saying hi",

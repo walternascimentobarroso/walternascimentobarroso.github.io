@@ -20,9 +20,9 @@
       "Engenheiro de Software",
       "Engenheiro Backend",
       "Desenvolvedor Full Stack",
-      "Líder de Equipa"
+      "Líder de Equipe"
     ],
-    "intro": "Tech lead hands-on com mais de 10 anos a construir software e a fazer crescer equipas. Programo todos os dias em Python, PHP e Node.js, com foco em Clean Architecture, fluxo de entrega e pessoas.",
+    "intro": "Tech lead hands-on com mais de 12 anos construindo software e desenvolvendo equipes. Programo todos os dias em Python, PHP e Node.js, e o que mais me importa é arquitetura limpa, a forma como o trabalho chega à produção e as pessoas que o fazem.",
     "hireMe": "Contrate-me",
     "downloadCv": "Baixar CV",
     "imageAlt": "imagem de apresentação"
@@ -30,14 +30,14 @@
   "achievements": {
     "locale": "pt-BR",
     "years": "Anos de experiência",
-    "engineers": "Engenheiros na equipa que liderei",
+    "engineers": "Engenheiros na equipe que liderei",
     "deploys": "Deploys mais rápidos",
     "certifications": "Certificações"
   },
   "about": {
     "title": "Sobre mim",
     "imageAlt": "Imagem sobre mim",
-    "text": "Tech lead em Braga, Portugal, a trabalhar remotamente. Numa startup B2B do setor farmacêutico assumi a liderança da equipa em 6 meses, ajudei a crescê-la de 4 para ~10 engenheiros e introduzi CI/CD e Terraform, reduzindo os releases de 2–4 horas para menos de 20 minutos. Num grande e-commerce liderei a migração sem downtime de um monólito PHP legado para microsserviços Node.js com RabbitMQ. Continuo a programar todos os dias com FastAPI, Symfony, Laravel e TypeScript, faço mentoria de developers e lidero a resposta a incidentes em AWS e Kubernetes.",
+    "text": "Tech lead em Braga, Portugal, trabalhando remotamente. Em uma startup B2B do setor farmacêutico, assumi a liderança da equipe em 6 meses, ajudei a aumentá-la de 4 para ~10 engenheiros e introduzi CI/CD e Terraform, reduzindo os releases de 2–4 horas para menos de 20 minutos. Em um grande e-commerce, liderei a migração sem downtime de um monólito PHP legado para microsserviços Node.js com RabbitMQ. Continuo programando todos os dias com FastAPI, Symfony, Laravel e TypeScript, faço mentoria de desenvolvedores e lidero a resposta a incidentes em AWS e Kubernetes.",
     "skills": "Habilidades",
     "education": "Formação",
     "certifications": "Certificações",
@@ -68,7 +68,7 @@
   },
   "contact": {
     "title": "Vamos conversar",
-    "text": "Estou buscando novas oportunidades e minha caixa de entrada está sempre aberta. Se tiver uma pergunta ou só quiser dizer oi, farei o possível para responder!",
+    "text": "Estou aberto a novas oportunidades. Se tiver uma pergunta ou só quiser dar um oi, mande uma mensagem que eu respondo.",
     "emailLabel": "Seu e-mail",
     "subjectLabel": "Assunto",
     "subjectPlaceholder": "Só passando para dizer oi",
