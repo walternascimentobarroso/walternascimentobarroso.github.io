@@ -21,9 +21,11 @@ Não há testes.
 
 ## Estrutura
 
-- `src/app/page.tsx` — home, monta as secções
-- `src/app/components/` — secções (`HeroSection`, `AboutSection`, `ProjectsSection`, `AchievementsSection`, `EmailSection`) e UI (`Navbar`, `Footer`, `ProjectCard`, ...)
-- `src/app/privacy/page.tsx` — política de privacidade
+- `src/app/[lang]/page.tsx` — home por idioma (`/en`, `/pt`, gerados por `generateStaticParams`), monta as secções
+- `src/app/dictionaries/` — textos em `en.json` e `pt.json` (`en.json` define o tipo `Dictionary`); componentes recebem a fatia por props `dict`
+- `src/app/(default)/page.tsx` — `/` redireciona no cliente: idioma guardado em `localStorage.lang` > idioma do browser > `en` (lógica em `LanguageToggle`)
+- `src/app/components/` — secções (`HeroSection`, `AboutSection`, `ProjectsSection`, `AchievementsSection`, `EmailSection`) e UI (`Navbar`, `Footer`, `LanguageToggle`, ...)
+- `src/app/(default)/privacy/page.tsx` — política de privacidade (só pt, URL `/privacy` mantido)
 - `EmailSection` envia o formulário de contacto para o Web3Forms (access key pública no próprio componente)
 - `public/` — imagens e assets
 

@@ -1,5 +1,6 @@
 "use client";
 import dynamic from "next/dynamic";
+import type { Dictionary } from "../dictionaries";
 
 const AnimatedNumbers = dynamic(
   () => {
@@ -10,26 +11,30 @@ const AnimatedNumbers = dynamic(
 
 const achievementsList = [
   {
-    metric: "Projects",
+    metric: "projects",
     value: "100",
     postfix: "+",
   },
   {
     prefix: "~",
-    metric: "Users",
-    value: "100,000",
+    metric: "users",
+    value: "100000",
   },
   {
-    metric: "Awards",
+    metric: "awards",
     value: "7",
   },
   {
-    metric: "Years",
+    metric: "years",
     value: "5",
   },
-];
+] as const;
 
-const AchievementsSection = () => {
+type Props = {
+  dict: Dictionary["achievements"];
+};
+
+const AchievementsSection = ({ dict }: Props) => {
   return (
     <div className="py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
       <div className="sm:border-gray-300 dark:sm:border-[#33353F] sm:border rounded-md py-8 px-16 flex flex-col sm:flex-row items-center justify-between">
@@ -40,20 +45,20 @@ const AchievementsSection = () => {
               className="flex flex-col items-center justify-center mx-4 my-4 sm:my-0"
             >
               <h2 className="text-gray-900 dark:text-white text-4xl font-bold flex flex-row">
-                {achievement.prefix}
+                {"prefix" in achievement && achievement.prefix}
                 <AnimatedNumbers
                   useThousandsSeparator
                   animateToNumber={parseInt(achievement.value)}
-                  locale="en-US"
+                  locale={dict.locale}
                   className="text-gray-900 dark:text-white text-4xl font-bold"
                   transitions={(index) => ({
                     type: "spring",
                     duration: index + 0.3,
                   })}
                 />
-                {achievement.postfix}
+                {"postfix" in achievement && achievement.postfix}
               </h2>
-              <p className="text-gray-600 dark:text-[#ADB7BE] text-base">{achievement.metric}</p>
+              <p className="text-gray-600 dark:text-[#ADB7BE] text-base">{dict[achievement.metric]}</p>
             </div>
           );
         })}

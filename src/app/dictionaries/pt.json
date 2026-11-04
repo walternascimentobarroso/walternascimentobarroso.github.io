@@ -1,0 +1,65 @@
+{
+  "metadata": {
+    "title": "Walter Nascimento Barroso",
+    "description": "Portfólio de Walter Nascimento Barroso"
+  },
+  "nav": {
+    "about": "Sobre",
+    "projects": "Projetos",
+    "contact": "Contato"
+  },
+  "hero": {
+    "greeting": "Olá, eu sou",
+    "roles": ["Walter", "Engenheiro de Software", "Desenvolvedor Mobile", "Desenvolvedor Backend"],
+    "intro": "Sou apaixonado por arquiteturas robustas, código eficiente e implementações de backend que garantem desempenho excepcional e uma experiência de usuário eficaz nos bastidores.",
+    "hireMe": "Contrate-me",
+    "downloadCv": "Baixar CV",
+    "imageAlt": "imagem de apresentação"
+  },
+  "achievements": {
+    "locale": "pt-BR",
+    "projects": "Projetos",
+    "users": "Usuários",
+    "awards": "Prêmios",
+    "years": "Anos"
+  },
+  "about": {
+    "title": "Sobre mim",
+    "imageAlt": "Imagem sobre mim",
+    "text": "Sou desenvolvedor web full stack, apaixonado por criar aplicações web interativas e responsivas. Tenho experiência com JavaScript, React, Redux, Node.js, Express, PostgreSQL, Sequelize, HTML, CSS e Git. Aprendo rápido e estou sempre buscando expandir meus conhecimentos e habilidades. Gosto de trabalhar em equipe e fico animado em colaborar com outras pessoas para criar aplicações incríveis.",
+    "skills": "Habilidades",
+    "education": "Formação",
+    "certifications": "Certificações"
+  },
+  "projects": {
+    "title": "Meus Projetos",
+    "tags": { "All": "Todos", "Web": "Web", "Mobile": "Mobile" },
+    "descriptions": {
+      "1": "Descrição do projeto 1",
+      "2": "Descrição do projeto 2",
+      "3": "Descrição do projeto 3",
+      "4": "Descrição do projeto 4",
+      "5": "Autenticação e operações CRUD",
+      "6": "Descrição do projeto 5"
+    }
+  },
+  "contact": {
+    "title": "Vamos conversar",
+    "text": "Estou buscando novas oportunidades e minha caixa de entrada está sempre aberta. Se tiver uma pergunta ou só quiser dizer oi, farei o possível para responder!",
+    "emailLabel": "Seu e-mail",
+    "subjectLabel": "Assunto",
+    "subjectPlaceholder": "Só passando para dizer oi",
+    "messageLabel": "Mensagem",
+    "messagePlaceholder": "Vamos falar sobre...",
+    "send": "Enviar mensagem",
+    "success": "E-mail enviado com sucesso!",
+    "failure": "Não foi possível enviar a mensagem. Tente novamente mais tarde."
+  },
+  "footer": {
+    "rights": "Todos os direitos reservados."
+  },
+  "language": {
+    "pt": "Português",
+    "en": "English"
+  }
+}

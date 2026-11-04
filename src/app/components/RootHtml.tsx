@@ -1,22 +1,17 @@
-import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import "./globals.css";
-import { ThemeProvider } from "./components/theme-provider";
+import "../globals.css";
+import { ThemeProvider } from "./theme-provider";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export const metadata: Metadata = {
-  title: "Walter Nascimento Barroso",
-  description: "Portfolio of Walter Nascimento Barroso",
+type Props = {
+  lang: string;
+  children: React.ReactNode;
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootHtml({ lang, children }: Props) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang={lang} suppressHydrationWarning>
       <head />
       <body className={inter.className}>
         <ThemeProvider

@@ -4,11 +4,16 @@ import Link from "next/link";
 import Image from "next/image";
 import GithubIcon from "../../../public/github-icon.svg";
 import LinkedinIcon from "../../../public/linkedin-icon.svg";
+import type { Dictionary } from "../dictionaries";
 
 // Web3Forms access keys are public by design: they only allow sending to the owner's inbox.
 const WEB3FORMS_ACCESS_KEY = "c00ebeb4-4265-4e46-9d61-b94b8ced78ea";
 
-const EmailSection = () => {
+type Props = {
+  dict: Dictionary["contact"];
+};
+
+const EmailSection = ({ dict }: Props) => {
   const [emailSubmitted, setEmailSubmitted] = useState(false);
   const [sendFailed, setSendFailed] = useState(false);
 
@@ -38,13 +43,10 @@ const EmailSection = () => {
       <div className="bg-[radial-gradient(ellipse_at_center,var(--tw-gradient-stops))] from-primary-900 to-transparent rounded-full h-80 w-80 z-0 blur-lg absolute top-3/4 -left-4 transform -translate-x-1/2 -translate-1/2"></div>
       <div className="z-10">
         <h5 className="text-xl font-bold text-gray-900 dark:text-white my-2">
-          Let&apos;s Connect
+          {dict.title}
         </h5>
         <p className="text-gray-600 dark:text-[#ADB7BE] mb-4 max-w-md">
-          {" "}
-          I&apos;m currently looking for new opportunities, my inbox is always
-          open. Whether you have a question or just want to say hi, I&apos;ll
-          try my best to get back to you!
+          {dict.text}
         </p>
         <div className="socials flex flex-row gap-2">
           <Link href="github.com">
@@ -58,7 +60,7 @@ const EmailSection = () => {
       <div>
         {emailSubmitted ? (
           <p className="text-green-500 text-sm mt-2">
-            Email sent successfully!
+            {dict.success}
           </p>
         ) : (
           <form className="flex flex-col" onSubmit={handleSubmit}>
@@ -67,7 +69,7 @@ const EmailSection = () => {
                 htmlFor="email"
                 className="text-gray-900 dark:text-white block mb-2 text-sm font-medium"
               >
-                Your email
+                {dict.emailLabel}
               </label>
               <input
                 name="email"
@@ -83,7 +85,7 @@ const EmailSection = () => {
                 htmlFor="subject"
                 className="text-gray-900 dark:text-white block text-sm mb-2 font-medium"
               >
-                Subject
+                {dict.subjectLabel}
               </label>
               <input
                 name="subject"
@@ -91,7 +93,7 @@ const EmailSection = () => {
                 id="subject"
                 required
                 className="bg-gray-50 dark:bg-[#18191E] border border-gray-300 dark:border-[#33353F] placeholder-[#9CA2A9] text-gray-900 dark:text-gray-100 text-sm rounded-lg block w-full p-2.5"
-                placeholder="Just saying hi"
+                placeholder={dict.subjectPlaceholder}
               />
             </div>
             <div className="mb-6">
@@ -99,24 +101,24 @@ const EmailSection = () => {
                 htmlFor="message"
                 className="text-gray-900 dark:text-white block text-sm mb-2 font-medium"
               >
-                Message
+                {dict.messageLabel}
               </label>
               <textarea
                 name="message"
                 id="message"
                 className="bg-gray-50 dark:bg-[#18191E] border border-gray-300 dark:border-[#33353F] placeholder-[#9CA2A9] text-gray-900 dark:text-gray-100 text-sm rounded-lg block w-full p-2.5"
-                placeholder="Let's talk about..."
+                placeholder={dict.messagePlaceholder}
               />
             </div>
             <button
               type="submit"
               className="bg-primary-500 hover:bg-primary-600 text-white font-medium py-2.5 px-5 rounded-lg w-full"
             >
-              Send Message
+              {dict.send}
             </button>
             {sendFailed && (
               <p className="text-red-500 text-sm mt-2">
-                Could not send the message. Please try again later.
+                {dict.failure}
               </p>
             )}
           </form>

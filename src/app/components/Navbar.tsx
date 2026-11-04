@@ -5,35 +5,33 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 import NavLink from "./NavLink";
 import MenuOverlay from "./MenuOverlay";
 import { ModeToggle } from "./ModeToggle";
+import { LanguageToggle } from "./LanguageToggle";
+import type { Dictionary, Locale } from "../dictionaries";
 
 export type NavLinkItem = {
   title: string;
   path: string;
 };
 
-const navLinks: NavLinkItem[] = [
-  {
-    title: "About",
-    path: "#about",
-  },
-  {
-    title: "Projects",
-    path: "#projects",
-  },
-  {
-    title: "Contact",
-    path: "#contact",
-  },
-];
+type Props = {
+  lang: Locale;
+  dict: Dictionary;
+};
 
-const Navbar = () => {
+const Navbar = ({ lang, dict }: Props) => {
   const [navbarOpen, setNavbarOpen] = useState(false);
+  const navLinks: NavLinkItem[] = [
+    { title: dict.nav.about, path: "#about" },
+    { title: dict.nav.projects, path: "#projects" },
+    { title: dict.nav.contact, path: "#contact" },
+  ];
+  const languageToggle = <LanguageToggle lang={lang} labels={dict.language} />;
 
   return (
     <nav className="fixed mx-auto border border-gray-300 dark:border-[#33353F] top-0 left-0 right-0 z-10 bg-white dark:bg-[#121212] bg-opacity-100">
       <div className="flex container lg:py-4 flex-wrap items-center justify-between mx-auto px-4 py-2">
         <Link
-          href={"/"}
+          href={`/${lang}`}
           className="text-2xl md:text-5xl text-gray-900 dark:text-white font-semibold"
         >
           {"<W />"}
@@ -62,11 +60,12 @@ const Navbar = () => {
                 <NavLink href={link.path} title={link.title} />
               </li>
             ))}
+            <li>{languageToggle}</li>
             <li><ModeToggle /></li>
           </ul>
         </div>
       </div>
-      {navbarOpen ? <MenuOverlay links={navLinks} /> : null}
+      {navbarOpen ? <MenuOverlay links={navLinks} languageToggle={languageToggle} /> : null}
     </nav>
   );
 };

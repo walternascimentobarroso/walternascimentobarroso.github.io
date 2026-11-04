@@ -3,12 +3,12 @@ import { useState, useRef } from "react";
 import ProjectCard from "./ProjectCard";
 import ProjectTag from "./ProjectTag";
 import { motion, useInView } from "motion/react";
+import type { Dictionary } from "../dictionaries";
 
 const projectsData = [
   {
     id: 1,
     title: "React Portfolio Website",
-    description: "Project 1 description",
     image: "/images/projects/1.png",
     tag: ["All", "Web"],
     gitUrl: "/",
@@ -17,7 +17,6 @@ const projectsData = [
   {
     id: 2,
     title: "Potography Portfolio Website",
-    description: "Project 2 description",
     image: "/images/projects/2.png",
     tag: ["All", "Web"],
     gitUrl: "/",
@@ -26,7 +25,6 @@ const projectsData = [
   {
     id: 3,
     title: "E-commerce Application",
-    description: "Project 3 description",
     image: "/images/projects/3.png",
     tag: ["All", "Web"],
     gitUrl: "/",
@@ -35,7 +33,6 @@ const projectsData = [
   {
     id: 4,
     title: "Food Ordering Application",
-    description: "Project 4 description",
     image: "/images/projects/4.png",
     tag: ["All", "Mobile"],
     gitUrl: "/",
@@ -44,7 +41,6 @@ const projectsData = [
   {
     id: 5,
     title: "React Firebase Template",
-    description: "Authentication and CRUD operations",
     image: "/images/projects/5.png",
     tag: ["All", "Web"],
     gitUrl: "/",
@@ -53,7 +49,6 @@ const projectsData = [
   {
     id: 6,
     title: "Full-stack Roadmap",
-    description: "Project 5 description",
     image: "/images/projects/6.png",
     tag: ["All", "Web"],
     gitUrl: "/",
@@ -61,8 +56,14 @@ const projectsData = [
   },
 ];
 
-const ProjectsSection = () => {
-  const [tag, setTag] = useState("All");
+const PROJECT_TAGS = ["All", "Web", "Mobile"] as const;
+
+type Props = {
+  dict: Dictionary["projects"];
+};
+
+const ProjectsSection = ({ dict }: Props) => {
+  const [tag, setTag] = useState<string>("All");
   const ref = useRef<HTMLUListElement>(null);
   const isInView = useInView(ref, { once: true });
 
@@ -82,24 +83,17 @@ const ProjectsSection = () => {
   return (
     <section id="projects">
       <h2 className="text-center text-4xl font-bold text-gray-900 dark:text-white mt-4 mb-8 md:mb-12">
-        My Projects
+        {dict.title}
       </h2>
       <div className="text-gray-900 dark:text-white flex flex-row justify-center items-center gap-2 py-6">
-        <ProjectTag
-          onClick={handleTagChange}
-          name="All"
-          isSelected={tag === "All"}
-        />
-        <ProjectTag
-          onClick={handleTagChange}
-          name="Web"
-          isSelected={tag === "Web"}
-        />
-        <ProjectTag
-          onClick={handleTagChange}
-          name="Mobile"
-          isSelected={tag === "Mobile"}
-        />
+        {PROJECT_TAGS.map((projectTag) => (
+          <ProjectTag
+            key={projectTag}
+            onClick={() => handleTagChange(projectTag)}
+            name={dict.tags[projectTag]}
+            isSelected={tag === projectTag}
+          />
+        ))}
       </div>
       <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">
         {filteredProjects.map((project, index) => (
@@ -113,7 +107,7 @@ const ProjectsSection = () => {
             <ProjectCard
               key={project.id}
               title={project.title}
-              description={project.description}
+              description={dict.descriptions[String(project.id) as keyof typeof dict.descriptions]}
               imgUrl={project.image}
               gitUrl={project.gitUrl}
               previewUrl={project.previewUrl}

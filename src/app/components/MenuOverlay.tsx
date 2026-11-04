@@ -4,9 +4,10 @@ import type { NavLinkItem } from "./Navbar";
 
 type Props = {
   links: NavLinkItem[];
+  languageToggle: React.ReactNode;
 };
 
-const MenuOverlay = ({ links }: Props) => {
+const MenuOverlay = ({ links, languageToggle }: Props) => {
   return (
     <ul className="flex flex-col py-4 items-center">
       {links.map((link, index) => (
@@ -14,6 +15,7 @@ const MenuOverlay = ({ links }: Props) => {
           <NavLink href={link.path} title={link.title} />
         </li>
       ))}
+      <li>{languageToggle}</li>
       <li><ModeToggle /></li>
     </ul>
   );
