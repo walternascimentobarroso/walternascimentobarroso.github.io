@@ -6,6 +6,8 @@ import EmailSection from "../components/EmailSection";
 import Footer from "../components/Footer";
 import AchievementsSection from "../components/AchievementsSection";
 import { getDictionary, type Locale } from "../dictionaries";
+import profile from "../profile.json";
+import { siteUrl } from "../site";
 
 type Props = {
   params: Promise<{ lang: string }>;
@@ -14,9 +16,20 @@ type Props = {
 export default async function Home({ params }: Props) {
   const lang = (await params).lang as Locale;
   const dict = getDictionary(lang);
+  const person = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    name: dict.metadata.title,
+    url: `${siteUrl}/${lang}`,
+    sameAs: [profile.social.github, profile.social.linkedin],
+  };
 
   return (
     <main className="flex min-h-screen flex-col bg-white dark:bg-[#121212]">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(person) }}
+      />
       <Navbar lang={lang} dict={dict} />
       <div className="container mt-24 mx-auto px-12 py-4">
         <HeroSection dict={dict.hero} />

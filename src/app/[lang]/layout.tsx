@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import RootHtml from "../components/RootHtml";
 import { getDictionary, locales, type Locale } from "../dictionaries";
+import { siteUrl } from "../site";
 
 type Props = {
   children: React.ReactNode;
@@ -15,7 +16,26 @@ export function generateStaticParams() {
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const lang = (await params).lang as Locale;
-  return getDictionary(lang).metadata;
+  const { title, description } = getDictionary(lang).metadata;
+  const image = "/images/hero-image.png";
+  return {
+    metadataBase: new URL(siteUrl),
+    title,
+    description,
+    alternates: {
+      canonical: `/${lang}`,
+      languages: { en: "/en", pt: "/pt" },
+    },
+    openGraph: {
+      type: "website",
+      url: `/${lang}`,
+      title,
+      description,
+      locale: lang === "pt" ? "pt_BR" : "en_US",
+      images: [image],
+    },
+    twitter: { card: "summary_large_image", title, description, images: [image] },
+  };
 }
 
 export default async function LangLayout({ children, params }: Props) {

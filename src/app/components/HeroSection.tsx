@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import Image from "next/image";
-import { motion } from "motion/react";
+import { motion, useReducedMotion } from "motion/react";
 import { TypeAnimation } from "react-type-animation";
 import type { Dictionary } from "../dictionaries";
 
@@ -10,6 +10,7 @@ type Props = {
 };
 
 const HeroSection = ({ dict }: Props) => {
+  const reduceMotion = useReducedMotion();
   return (
     <section className="lg:py-16">
       <div className="grid grid-cols-1 sm:grid-cols-12">
@@ -24,12 +25,16 @@ const HeroSection = ({ dict }: Props) => {
               {dict.greeting}{" "}
             </span>
             <br></br>
-            <TypeAnimation
-              sequence={dict.roles.flatMap((role) => [role, 1000])}
-              wrapper="span"
-              speed={50}
-              repeat={Infinity}
-            />
+            {reduceMotion ? (
+              <span>{dict.roles[0]}</span>
+            ) : (
+              <TypeAnimation
+                sequence={dict.roles.flatMap((role) => [role, 1000])}
+                wrapper="span"
+                speed={50}
+                repeat={Infinity}
+              />
+            )}
           </h1>
           <p className="text-gray-600 dark:text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
             {dict.intro}
@@ -62,7 +67,7 @@ const HeroSection = ({ dict }: Props) => {
             <Image
               src="/images/hero-image.png"
               alt={dict.imageAlt}
-              loading="eager"
+              priority
               className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
               width={300}
               height={300}

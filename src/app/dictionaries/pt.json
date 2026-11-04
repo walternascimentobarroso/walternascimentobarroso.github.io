@@ -70,7 +70,9 @@
     "messagePlaceholder": "Vamos falar sobre...",
     "send": "Enviar mensagem",
     "success": "E-mail enviado com sucesso!",
-    "failure": "Não foi possível enviar a mensagem. Tente novamente mais tarde."
+    "failure": "Não foi possível enviar a mensagem. Tente novamente mais tarde.",
+    "githubAlt": "Perfil no GitHub",
+    "linkedinAlt": "Perfil no LinkedIn"
   },
   "footer": {
     "rights": "Todos os direitos reservados."

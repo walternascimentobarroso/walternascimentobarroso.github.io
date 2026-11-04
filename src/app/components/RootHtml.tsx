@@ -1,5 +1,6 @@
 import { Inter } from "next/font/google";
 import "../globals.css";
+import { MotionConfig } from "motion/react";
 import { ThemeProvider } from "./theme-provider";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -20,7 +21,7 @@ export default function RootHtml({ lang, children }: Props) {
           enableSystem
           disableTransitionOnChange
         >
-          {children}
+          <MotionConfig reducedMotion="user">{children}</MotionConfig>
         </ThemeProvider>
       </body>
     </html>

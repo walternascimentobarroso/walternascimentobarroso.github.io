@@ -51,10 +51,10 @@ const EmailSection = ({ dict }: Props) => {
         </p>
         <div className="socials flex flex-row gap-2">
           <Link href={profile.social.github} target="_blank" rel="noopener noreferrer">
-            <Image src={GithubIcon} alt="Github Icon" />
+            <Image src={GithubIcon} alt={dict.githubAlt} />
           </Link>
           <Link href={profile.social.linkedin} target="_blank" rel="noopener noreferrer">
-            <Image src={LinkedinIcon} alt="Linkedin Icon" />
+            <Image src={LinkedinIcon} alt={dict.linkedinAlt} />
           </Link>
         </div>
       </div>
