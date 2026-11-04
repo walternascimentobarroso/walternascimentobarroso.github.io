@@ -1,14 +1,12 @@
 "use client";
 import { useEffect } from "react";
-import { useRouter } from "next/navigation";
 import { detectLocale } from "../components/LanguageToggle";
 
 export default function RootRedirect() {
-  const router = useRouter();
-
+  // Full load, not router.replace: [lang] has its own root layout, and rendering it client-side makes React warn about next-themes' inline script
   useEffect(() => {
-    router.replace(`/${detectLocale()}`);
-  }, [router]);
+    window.location.replace(`/${detectLocale()}`);
+  }, []);
 
   return null;
 }

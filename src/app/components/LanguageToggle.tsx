@@ -1,5 +1,4 @@
 "use client";
-import Link from "next/link";
 import { locales, type Dictionary, type Locale } from "../dictionaries";
 
 const STORAGE_KEY = "lang";
@@ -36,6 +35,7 @@ type Props = {
   labels: Dictionary["language"];
 };
 
+// Plain <a>: switching locale remounts the [lang] root layout; a client render of it makes React warn about next-themes' inline script
 export function LanguageToggle({ lang, labels }: Props) {
   return (
     <div className="flex items-center gap-2 py-2 pl-3 pr-4 md:p-0">
@@ -43,7 +43,7 @@ export function LanguageToggle({ lang, labels }: Props) {
         const Flag = flags[locale];
         const isActive = locale === lang;
         return (
-          <Link
+          <a
             key={locale}
             href={`/${locale}`}
             aria-label={labels[locale]}
@@ -53,7 +53,7 @@ export function LanguageToggle({ lang, labels }: Props) {
             className={isActive ? "opacity-100" : "opacity-40 hover:opacity-100 transition-opacity"}
           >
             <Flag />
-          </Link>
+          </a>
         );
       })}
     </div>
