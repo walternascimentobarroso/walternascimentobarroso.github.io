@@ -7,9 +7,8 @@ const AnimatedNumbers = dynamic(
   () => {
     return import("react-animated-numbers");
   },
-  { ssr: false }
+  { ssr: false },
 );
-
 
 type Props = {
   dict: Dictionary["achievements"];
@@ -21,16 +20,16 @@ const AchievementsSection = ({ dict }: Props) => {
       <div className="grid grid-cols-2 md:grid-cols-4 gap-8 py-10">
         {profile.achievements.map((achievement) => {
           return (
-            <div
-              key={achievement.metric}
-              className="flex flex-col"
-            >
+            <div key={achievement.metric} className="flex flex-col">
               <span className="sr-only">
                 {"prefix" in achievement && achievement.prefix}
                 {achievement.value.toLocaleString(dict.locale)}
                 {"postfix" in achievement && achievement.postfix}
               </span>
-              <div aria-hidden="true" className="text-zinc-900 dark:text-zinc-50 text-3xl md:text-4xl font-semibold flex flex-row tabular-nums">
+              <div
+                aria-hidden="true"
+                className="text-zinc-900 dark:text-zinc-50 text-3xl md:text-4xl font-semibold flex flex-row tabular-nums"
+              >
                 {"prefix" in achievement && achievement.prefix}
                 <AnimatedNumbers
                   useThousandsSeparator
@@ -44,7 +43,9 @@ const AchievementsSection = ({ dict }: Props) => {
                 />
                 {"postfix" in achievement && achievement.postfix}
               </div>
-              <p className="text-zinc-600 dark:text-zinc-400 text-sm mt-1">{dict[achievement.metric as keyof typeof dict]}</p>
+              <p className="text-zinc-600 dark:text-zinc-400 text-sm mt-1">
+                {dict[achievement.metric as keyof typeof dict]}
+              </p>
             </div>
           );
         })}

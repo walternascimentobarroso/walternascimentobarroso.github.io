@@ -1,7 +1,7 @@
 "use client";
-import Link from "next/link";
-import Image from "next/image";
 import { motion, useReducedMotion } from "motion/react";
+import Image from "next/image";
+import Link from "next/link";
 import { TypeAnimation } from "react-type-animation";
 import type { Dictionary } from "../dictionaries";
 
@@ -27,7 +27,10 @@ const HeroSection = ({ dict }: Props) => {
           {dict.greeting}
           <br />
           <span className="sr-only">{dict.roles.join(", ")}</span>
-          <span aria-hidden="true" className="text-primary-600 dark:text-primary-400">
+          <span
+            aria-hidden="true"
+            className="text-primary-600 dark:text-primary-400"
+          >
             {reduceMotion ? (
               dict.roles[0]
             ) : (

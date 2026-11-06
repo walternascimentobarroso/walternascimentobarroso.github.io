@@ -1,14 +1,14 @@
 "use client";
-import { useState } from "react";
-import Image from "next/image";
-import TabButton from "./TabButton";
 import {
-  TrophyIcon,
   BookOpenIcon,
   CodeBracketIcon,
+  TrophyIcon,
 } from "@heroicons/react/24/solid";
+import Image from "next/image";
+import { useState } from "react";
 import type { Dictionary } from "../dictionaries";
 import profile from "../profile.json";
+import TabButton from "./TabButton";
 
 const listItems = (items: string[], Icon: typeof TrophyIcon) => (
   <ul className="grid sm:grid-cols-2 gap-x-6 gap-y-2">
@@ -45,7 +45,9 @@ const AboutSection = ({ dict }: Props) => {
           height={500}
         />
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
-          <h2 className="text-3xl md:text-4xl font-semibold tracking-tight text-zinc-900 dark:text-zinc-50 mb-4">{dict.title}</h2>
+          <h2 className="text-3xl md:text-4xl font-semibold tracking-tight text-zinc-900 dark:text-zinc-50 mb-4">
+            {dict.title}
+          </h2>
           <p className="text-base lg:text-lg leading-relaxed text-zinc-600 dark:text-zinc-400 max-w-[65ch] text-justify">
             {dict.text}
           </p>
@@ -60,9 +62,7 @@ const AboutSection = ({ dict }: Props) => {
               </TabButton>
             ))}
           </div>
-          <div className="mt-8">
-            {tabContent[tab]}
-          </div>
+          <div className="mt-8">{tabContent[tab]}</div>
         </div>
       </div>
     </section>

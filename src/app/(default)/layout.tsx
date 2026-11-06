@@ -7,6 +7,10 @@ export const metadata: Metadata = {
 };
 
 // Serves "/" (language redirect) and "/privacy" (Gruppy extension policy, Portuguese only)
-export default function DefaultLayout({ children }: { children: React.ReactNode }) {
+export default function DefaultLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return <RootHtml lang="pt-BR">{children}</RootHtml>;
 }

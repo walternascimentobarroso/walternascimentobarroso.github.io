@@ -1,10 +1,10 @@
-import HeroSection from "../components/HeroSection";
-import Navbar from "../components/Navbar";
 import AboutSection from "../components/AboutSection";
-import ProjectsSection from "../components/ProjectsSection";
+import AchievementsSection from "../components/AchievementsSection";
 import EmailSection from "../components/EmailSection";
 import Footer from "../components/Footer";
-import AchievementsSection from "../components/AchievementsSection";
+import HeroSection from "../components/HeroSection";
+import Navbar from "../components/Navbar";
+import ProjectsSection from "../components/ProjectsSection";
 import { getDictionary, type Locale } from "../dictionaries";
 import profile from "../profile.json";
 import { siteUrl } from "../site";
@@ -28,6 +28,7 @@ export default async function Home({ params }: Props) {
     <main className="flex min-h-screen flex-col bg-zinc-50 dark:bg-zinc-950">
       <script
         type="application/ld+json"
+        // biome-ignore lint/security/noDangerouslySetInnerHtml: JSON-LD estático gerado no build
         dangerouslySetInnerHTML={{ __html: JSON.stringify(person) }}
       />
       <a

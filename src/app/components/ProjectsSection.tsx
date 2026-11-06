@@ -1,9 +1,9 @@
 "use client";
-import { useState, useRef } from "react";
+import { motion, useInView } from "motion/react";
+import { useRef, useState } from "react";
+import type { Dictionary } from "../dictionaries";
 import ProjectCard from "./ProjectCard";
 import ProjectTag from "./ProjectTag";
-import { motion, useInView } from "motion/react";
-import type { Dictionary } from "../dictionaries";
 
 const projectsData = [
   {
@@ -68,7 +68,7 @@ const ProjectsSection = ({ dict }: Props) => {
   const isInView = useInView(ref, { once: true });
 
   const filteredProjects = projectsData.filter((project) =>
-    project.tag.includes(tag)
+    project.tag.includes(tag),
   );
 
   const cardVariants = {
@@ -98,11 +98,19 @@ const ProjectsSection = ({ dict }: Props) => {
             variants={cardVariants}
             initial="initial"
             animate={isInView ? "animate" : "initial"}
-            transition={{ duration: 0.3, delay: index * 0.06, ease: [0.16, 1, 0.3, 1] }}
+            transition={{
+              duration: 0.3,
+              delay: index * 0.06,
+              ease: [0.16, 1, 0.3, 1],
+            }}
           >
             <ProjectCard
               title={project.title}
-              description={dict.descriptions[String(project.id) as keyof typeof dict.descriptions]}
+              description={
+                dict.descriptions[
+                  String(project.id) as keyof typeof dict.descriptions
+                ]
+              }
               imgUrl={project.image}
               gitUrl={project.gitUrl}
               previewUrl={project.previewUrl}

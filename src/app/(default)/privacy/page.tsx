@@ -2,7 +2,9 @@ export default function PrivacyPolicies() {
   return (
     <main className="flex min-h-screen flex-col bg-zinc-50 dark:bg-zinc-950">
       <div className="container mt-24 mx-auto px-12 py-4 text-zinc-900 dark:text-white">
-        <h1 className="text-3xl font-bold mb-6">Política de Privacidade para a Extensão Gruppy</h1>
+        <h1 className="text-3xl font-bold mb-6">
+          Política de Privacidade para a Extensão Gruppy
+        </h1>
         <p>
           Esta Política de Privacidade descreve como as informações são
           coletadas, usadas e compartilhadas pela extensão Gruppy para Chrome.
@@ -45,14 +47,18 @@ export default function PrivacyPolicies() {
           implementação de práticas de segurança e a utilização de criptografia.
         </p>
 
-        <h2 className="text-xl font-bold mt-6 mb-2">Compartilhamento de Informações</h2>
+        <h2 className="text-xl font-bold mt-6 mb-2">
+          Compartilhamento de Informações
+        </h2>
 
         <p>
           A extensão Gruppy não compartilha informações pessoais com terceiros,
           exceto quando necessário para fornecer a funcionalidade da extensão.
         </p>
 
-        <h2 className="text-xl font-bold mt-6 mb-2">Cookies e Tecnologias Semelhantes</h2>
+        <h2 className="text-xl font-bold mt-6 mb-2">
+          Cookies e Tecnologias Semelhantes
+        </h2>
 
         <p>
           A extensão Gruppy pode usar cookies ou tecnologias semelhantes para
@@ -60,7 +66,9 @@ export default function PrivacyPolicies() {
           configurações relacionadas a essas tecnologias.
         </p>
 
-        <h2 className="text-xl font-bold mt-6 mb-2">Alterações na Política de Privacidade</h2>
+        <h2 className="text-xl font-bold mt-6 mb-2">
+          Alterações na Política de Privacidade
+        </h2>
 
         <p>
           Reservamo-nos o direito de fazer alterações nesta Política de
@@ -72,7 +80,8 @@ export default function PrivacyPolicies() {
 
         <p>
           Se você tiver dúvidas ou preocupações sobre esta Política de
-          Privacidade, entre em contato conosco em walter.nascimento@gruppy.com.br.
+          Privacidade, entre em contato conosco em
+          walter.nascimento@gruppy.com.br.
         </p>
 
         <h2 className="text-xl font-bold mt-6 mb-2">Data de Vigência</h2>

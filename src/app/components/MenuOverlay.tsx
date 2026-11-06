@@ -1,6 +1,6 @@
 import { ModeToggle } from "./ModeToggle";
-import NavLink from "./NavLink";
 import type { NavLinkItem } from "./Navbar";
+import NavLink from "./NavLink";
 
 type Props = {
   id: string;
@@ -10,7 +10,13 @@ type Props = {
   onNavigate: () => void;
 };
 
-const MenuOverlay = ({ id, links, languageToggle, themeLabel, onNavigate }: Props) => {
+const MenuOverlay = ({
+  id,
+  links,
+  languageToggle,
+  themeLabel,
+  onNavigate,
+}: Props) => {
   return (
     <ul id={id} className="flex flex-col py-4 items-center">
       {links.map((link) => (
@@ -19,7 +25,9 @@ const MenuOverlay = ({ id, links, languageToggle, themeLabel, onNavigate }: Prop
         </li>
       ))}
       <li>{languageToggle}</li>
-      <li><ModeToggle label={themeLabel} /></li>
+      <li>
+        <ModeToggle label={themeLabel} />
+      </li>
     </ul>
   );
 };

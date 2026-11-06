@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import RootHtml from "../components/RootHtml";
-import { getDictionary, locales, type Locale } from "../dictionaries";
+import { getDictionary, type Locale, locales } from "../dictionaries";
 import { siteUrl } from "../site";
 
 type Props = {
@@ -34,7 +34,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       locale: lang === "pt" ? "pt_BR" : "en_US",
       images: [image],
     },
-    twitter: { card: "summary_large_image", title, description, images: [image] },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+      images: [image],
+    },
   };
 }
 

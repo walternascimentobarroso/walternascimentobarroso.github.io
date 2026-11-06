@@ -8,13 +8,15 @@ Portfólio pessoal de Walter Nascimento Barroso, publicado no GitHub Pages.
 - Tailwind CSS 4 (tokens do design system em `src/app/design-system.json`, carregados por `tailwind.config.mjs` via `@config` no `globals.css`) com dark mode por classe via `next-themes` (`ThemeProvider` + `ModeToggle`)
 - Animações: `motion` (`motion/react`), `react-type-animation`, `react-animated-numbers`
 - Ícones: `@heroicons/react`
+- Lint e formatação: Biome (`biome.json`)
 
 ## Comandos
 
 ```bash
 npm run dev     # servidor local em http://localhost:3000
 npm run build   # build estático para ./out
-npm run lint    # eslint .
+npm run lint    # biome check .
+npm run format  # biome check --write . (formata e organiza imports)
 ```
 
 Não há testes.
@@ -37,5 +39,5 @@ Push para `main` dispara `.github/workflows/nextjs.yml`, que faz `next build` e 
 
 ## Convenções
 
-- 2 espaços, LF (`.editorconfig`)
+- 2 espaços, LF, aspas duplas (`.editorconfig` + `biome.json`)
 - Commits com gitmoji: `:sparkles:` feature, `:bug:` fix, `:rocket:` deploy, `:lock:` privacidade/segurança
