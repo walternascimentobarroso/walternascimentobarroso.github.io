@@ -5,6 +5,7 @@ import Footer from "../components/Footer";
 import HeroSection from "../components/HeroSection";
 import Navbar from "../components/Navbar";
 import ProjectsSection from "../components/ProjectsSection";
+import Reveal from "../components/Reveal";
 import { getDictionary, type Locale } from "../dictionaries";
 import profile from "../profile.json";
 import { siteUrl } from "../site";
@@ -40,10 +41,18 @@ export default async function Home({ params }: Props) {
       <Navbar lang={lang} dict={dict} />
       <div id="content" className="w-full max-w-6xl mt-16 mx-auto px-6">
         <HeroSection dict={dict.hero} />
-        <AchievementsSection dict={dict.achievements} />
-        <AboutSection dict={dict.about} />
-        <ProjectsSection dict={dict.projects} />
-        <EmailSection dict={dict.contact} />
+        <Reveal>
+          <AchievementsSection dict={dict.achievements} />
+        </Reveal>
+        <Reveal>
+          <AboutSection dict={dict.about} />
+        </Reveal>
+        <Reveal>
+          <ProjectsSection dict={dict.projects} />
+        </Reveal>
+        <Reveal>
+          <EmailSection dict={dict.contact} />
+        </Reveal>
       </div>
       <Footer dict={dict.footer} />
     </main>

@@ -1,0 +1,10 @@
+.project-card .overlay {
+  transition-duration: var(--duration-fast);
+  transition-timing-function: var(--ease-smooth-out);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .project-card .overlay {
+    transition-duration: 0ms;
+  }
+}

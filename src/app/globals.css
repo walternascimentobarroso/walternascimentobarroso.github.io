@@ -1,4 +1,14 @@
 @import "tailwindcss";
+@import "./transitions/root.css";
+@import "./transitions/hero.css";
+@import "./transitions/about.css";
+@import "./transitions/projects.css";
+@import "./transitions/project-card.css";
+@import "./transitions/achievements.css";
+@import "./transitions/email.css";
+@import "./transitions/mode-toggle.css";
+@import "./transitions/navbar.css";
+@import "./transitions/reveal.css";
 
 @custom-variant dark (&:is(.dark *));
 
@@ -24,6 +34,8 @@
 
 :root {
   color-scheme: light;
+  /* biome-ignore lint/correctness/noMissingVarFunction: Tailwind --theme() inlines the config color so var(--color-primary-500) exists at runtime */
+  --color-primary-500: --theme(--color-primary-500);
 }
 
 .dark {
@@ -31,6 +43,6 @@
 }
 
 :focus-visible {
-  outline: 2px solid var(--color-primary-500, currentcolor);
+  outline: 2px solid var(--color-primary-500);
   outline-offset: 2px;
 }

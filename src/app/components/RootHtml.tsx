@@ -1,6 +1,5 @@
 import { Geist } from "next/font/google";
 import "../globals.css";
-import { MotionConfig } from "motion/react";
 import { ThemeProvider } from "next-themes";
 
 const geist = Geist({ subsets: ["latin"] });
@@ -21,7 +20,7 @@ export default function RootHtml({ lang, children }: Props) {
           enableSystem
           disableTransitionOnChange
         >
-          <MotionConfig reducedMotion="user">{children}</MotionConfig>
+          {children}
         </ThemeProvider>
       </body>
     </html>

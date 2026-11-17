@@ -27,11 +27,14 @@ export function ModeToggle({ label }: Props) {
       className="block py-2 pl-3 pr-4 text-zinc-600 dark:text-zinc-400 rounded-sm md:p-0 hover:text-zinc-900 dark:hover:text-white"
       onClick={() => (theme === "dark" ? setTheme("light") : setTheme("dark"))}
     >
-      {theme === "light" ? (
-        <MoonIcon className="h-5 w-5 text-zinc-600 dark:text-zinc-400" />
-      ) : (
-        <SunIcon className="h-5 w-5 text-zinc-600 dark:text-zinc-400" />
-      )}
+      <span className="t-icon-swap" data-state={theme === "light" ? "a" : "b"}>
+        <span className="t-icon" data-icon="a">
+          <MoonIcon className="h-5 w-5 text-zinc-600 dark:text-zinc-400" />
+        </span>
+        <span className="t-icon" data-icon="b">
+          <SunIcon className="h-5 w-5 text-zinc-600 dark:text-zinc-400" />
+        </span>
+      </span>
     </button>
   );
 }

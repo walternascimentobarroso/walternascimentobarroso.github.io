@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import type { Dictionary } from "../dictionaries";
 import profile from "../profile.json";
 
@@ -11,10 +11,47 @@ type Props = {
   dict: Dictionary["contact"];
 };
 
+const fieldClass =
+  "t-field bg-white dark:bg-zinc-900 border border-zinc-300 dark:border-zinc-800 placeholder-zinc-500 text-zinc-900 dark:text-zinc-100 text-sm rounded-lg block w-full p-2.5";
+
+const shakeInvalidField = (e: React.FormEvent<HTMLFormElement>) => {
+  const field = e.target as HTMLElement;
+  field.classList.remove("is-shaking");
+  void field.offsetWidth;
+  field.classList.add("is-shaking");
+};
+
 const EmailSection = ({ dict }: Props) => {
   const [emailSubmitted, setEmailSubmitted] = useState(false);
   const [sendFailed, setSendFailed] = useState(false);
   const [sending, setSending] = useState(false);
+  const buttonLabel = sending ? dict.sending : dict.send;
+  const [shownLabel, setShownLabel] = useState(buttonLabel);
+  const [swapPhase, setSwapPhase] = useState("");
+  const errorClass = sendFailed ? "t-input-wrap is-error" : "t-input-wrap";
+
+  useEffect(() => {
+    if (buttonLabel === shownLabel) return;
+    setSwapPhase("is-exit");
+    const timer = setTimeout(() => {
+      setShownLabel(buttonLabel);
+      setSwapPhase("is-enter-start");
+      // Two frames so the "below" position paints before transitioning back.
+      requestAnimationFrame(() =>
+        requestAnimationFrame(() => setSwapPhase("")),
+      );
+    }, 150);
+    return () => clearTimeout(timer);
+  }, [buttonLabel, shownLabel]);
+
+  const revealCheck = (check: HTMLSpanElement | null) => {
+    const path = check?.querySelector("path");
+    if (!check || !path) return;
+    const length = String(Math.ceil(path.getTotalLength()));
+    path.style.strokeDasharray = length;
+    path.style.strokeDashoffset = length;
+    check.dataset.state = "in";
+  };
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -92,11 +129,37 @@ const EmailSection = ({ dict }: Props) => {
       </div>
       <div aria-live="polite">
         {emailSubmitted ? (
-          <p className="text-primary-700 dark:text-primary-400 text-sm mt-2">
+          <p className="t-fade-in flex items-center gap-2 text-primary-700 dark:text-primary-400 text-sm mt-2">
+            <span
+              ref={revealCheck}
+              className="t-success-check"
+              data-state="out"
+              aria-hidden="true"
+            >
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth={2.5}
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="size-5"
+                aria-hidden="true"
+              >
+                <path d="M5 12.5l4.5 4.5L19 7.5" />
+              </svg>
+            </span>
             {dict.success}
           </p>
         ) : (
-          <form className="flex flex-col" onSubmit={handleSubmit}>
+          <form
+            className="flex flex-col"
+            onSubmit={handleSubmit}
+            onInvalidCapture={shakeInvalidField}
+            onAnimationEnd={(e) =>
+              (e.target as HTMLElement).classList.remove("is-shaking")
+            }
+          >
             <div className="mb-6">
               <label
                 htmlFor="email"
@@ -111,7 +174,7 @@ const EmailSection = ({ dict }: Props) => {
                 required
                 autoComplete="email"
                 spellCheck={false}
-                className="bg-white dark:bg-zinc-900 border border-zinc-300 dark:border-zinc-800 placeholder-zinc-500 text-zinc-900 dark:text-zinc-100 text-sm rounded-lg block w-full p-2.5"
+                className={fieldClass}
                 placeholder={dict.emailPlaceholder}
               />
             </div>
@@ -127,7 +190,7 @@ const EmailSection = ({ dict }: Props) => {
                 type="text"
                 id="subject"
                 required
-                className="bg-white dark:bg-zinc-900 border border-zinc-300 dark:border-zinc-800 placeholder-zinc-500 text-zinc-900 dark:text-zinc-100 text-sm rounded-lg block w-full p-2.5"
+                className={fieldClass}
                 placeholder={dict.subjectPlaceholder}
               />
             </div>
@@ -142,25 +205,33 @@ const EmailSection = ({ dict }: Props) => {
                 name="message"
                 id="message"
                 required
-                className="bg-white dark:bg-zinc-900 border border-zinc-300 dark:border-zinc-800 placeholder-zinc-500 text-zinc-900 dark:text-zinc-100 text-sm rounded-lg block w-full p-2.5"
+                className={fieldClass}
                 placeholder={dict.messagePlaceholder}
               />
             </div>
-            <button
-              type="submit"
-              disabled={sending}
-              className="bg-primary-700 hover:bg-primary-800 text-white active:scale-[0.98] transition-transform font-medium py-2.5 px-5 rounded-lg w-full disabled:opacity-50 disabled:cursor-not-allowed"
-            >
-              {sending ? dict.sending : dict.send}
-            </button>
-            {sendFailed && (
+            <div className={errorClass}>
+              <div
+                className={
+                  sendFailed ? "t-input is-error is-shaking" : "t-input"
+                }
+              >
+                <button
+                  type="submit"
+                  disabled={sending}
+                  className="bg-primary-700 hover:bg-primary-800 text-white active:scale-[0.98] transition-transform font-medium py-2.5 px-5 rounded-lg w-full disabled:opacity-50 disabled:cursor-not-allowed"
+                >
+                  <span className={`t-text-swap ${swapPhase}`}>
+                    {shownLabel}
+                  </span>
+                </button>
+              </div>
               <p
                 role="alert"
-                className="text-red-600 dark:text-red-400 text-sm mt-2"
+                className="t-error-msg text-red-600 dark:text-red-400 text-sm mt-2"
               >
-                {dict.failure}
+                {sendFailed && dict.failure}
               </p>
-            )}
+            </div>
           </form>
         )}
       </div>

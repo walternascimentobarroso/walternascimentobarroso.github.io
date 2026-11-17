@@ -1,6 +1,5 @@
 "use client";
-import { motion, useInView } from "motion/react";
-import { useRef, useState } from "react";
+import { useEffect, useLayoutEffect, useRef, useState } from "react";
 import type { Dictionary } from "../dictionaries";
 import ProjectCard from "./ProjectCard";
 import ProjectTag from "./ProjectTag";
@@ -58,51 +57,88 @@ const projectsData = [
 
 const PROJECT_TAGS = ["All", "Web", "Mobile"] as const;
 
+function movePill(
+  tabs: HTMLElement | null,
+  pill: HTMLElement | null,
+  animate: boolean,
+) {
+  const activeTab = tabs?.querySelector<HTMLElement>('[aria-selected="true"]');
+  if (!pill || !activeTab) return;
+  // Snap without tweening on first paint and resize, as the snippet requires.
+  if (!animate) pill.style.transition = "none";
+  pill.style.transform = `translateX(${activeTab.offsetLeft}px)`;
+  pill.style.width = `${activeTab.offsetWidth}px`;
+  if (animate) return;
+  void pill.offsetWidth;
+  pill.style.transition = "";
+}
+
 type Props = {
   dict: Dictionary["projects"];
 };
 
 const ProjectsSection = ({ dict }: Props) => {
   const [tag, setTag] = useState<string>("All");
-  const ref = useRef<HTMLUListElement>(null);
-  const isInView = useInView(ref, { once: true });
+  const [isShown, setIsShown] = useState(false);
+  const listRef = useRef<HTMLUListElement>(null);
+  const tabsRef = useRef<HTMLDivElement>(null);
+  const pillRef = useRef<HTMLSpanElement>(null);
+  const hasPlacedPill = useRef(false);
 
   const filteredProjects = projectsData.filter((project) =>
     project.tag.includes(tag),
   );
 
-  const cardVariants = {
-    initial: { y: 50, opacity: 0 },
-    animate: { y: 0, opacity: 1 },
-  };
+  useEffect(() => {
+    const list = listRef.current;
+    if (!list) return;
+    const observer = new IntersectionObserver(([entry]) => {
+      if (!entry.isIntersecting) return;
+      setIsShown(true);
+      observer.disconnect();
+    });
+    observer.observe(list);
+    return () => observer.disconnect();
+  }, []);
+
+  useLayoutEffect(() => {
+    movePill(tabsRef.current, pillRef.current, hasPlacedPill.current);
+    hasPlacedPill.current = true;
+  });
+
+  useEffect(() => {
+    const snapPill = () => movePill(tabsRef.current, pillRef.current, false);
+    window.addEventListener("resize", snapPill);
+    return () => window.removeEventListener("resize", snapPill);
+  }, []);
 
   return (
     <section id="projects" className="scroll-mt-28 py-16">
       <h2 className="text-3xl md:text-4xl font-semibold tracking-tight text-zinc-900 dark:text-zinc-50 mb-6">
         {dict.title}
       </h2>
-      <div className="text-zinc-900 dark:text-white flex flex-wrap gap-2 pb-8">
-        {PROJECT_TAGS.map((projectTag) => (
-          <ProjectTag
-            key={projectTag}
-            onClick={() => setTag(projectTag)}
-            name={dict.tags[projectTag]}
-            isSelected={tag === projectTag}
-          />
-        ))}
+      <div className="pb-8">
+        <div ref={tabsRef} className="t-tabs" role="tablist">
+          <span ref={pillRef} className="t-tabs-pill" aria-hidden="true" />
+          {PROJECT_TAGS.map((projectTag) => (
+            <ProjectTag
+              key={projectTag}
+              onClick={() => setTag(projectTag)}
+              name={dict.tags[projectTag]}
+              isSelected={tag === projectTag}
+            />
+          ))}
+        </div>
       </div>
-      <ul ref={ref} className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      <ul
+        ref={listRef}
+        className={`t-stagger grid sm:grid-cols-2 lg:grid-cols-3 gap-8${isShown ? " is-shown" : ""}`}
+      >
         {filteredProjects.map((project, index) => (
-          <motion.li
+          <li
             key={project.id}
-            variants={cardVariants}
-            initial="initial"
-            animate={isInView ? "animate" : "initial"}
-            transition={{
-              duration: 0.3,
-              delay: index * 0.06,
-              ease: [0.16, 1, 0.3, 1],
-            }}
+            className="t-stagger-line"
+            style={{ "--stagger-index": index } as React.CSSProperties}
           >
             <ProjectCard
               title={project.title}
@@ -117,7 +153,7 @@ const ProjectsSection = ({ dict }: Props) => {
               codeLabel={dict.codeLabel}
               previewLabel={dict.previewLabel}
             />
-          </motion.li>
+          </li>
         ))}
       </ul>
     </section>
