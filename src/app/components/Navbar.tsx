@@ -1,5 +1,6 @@
 "use client";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
+import Image from "next/image";
 import Link from "next/link";
 import { useRef, useState } from "react";
 import type { Dictionary, Locale } from "../dictionaries";
@@ -52,11 +53,21 @@ const Navbar = ({ lang, dict }: Props) => {
   return (
     <nav className="fixed top-0 left-0 right-0 z-10 border-b border-zinc-200 dark:border-zinc-800 bg-zinc-50/90 dark:bg-zinc-950/90 backdrop-blur">
       <div className="flex max-w-6xl min-h-16 flex-wrap items-center justify-between mx-auto px-6">
-        <Link
-          href={`/${lang}`}
-          className="text-xl font-semibold tracking-tight text-zinc-900 dark:text-zinc-50"
-        >
-          {"<W />"}
+        <Link href={`/${lang}`} aria-label="Home">
+          <Image
+            src="/logo-light.svg"
+            alt=""
+            width={40}
+            height={40}
+            className="dark:hidden"
+          />
+          <Image
+            src="/logo-dark.svg"
+            alt=""
+            width={40}
+            height={40}
+            className="hidden dark:block"
+          />
         </Link>
         <div className="mobile-menu block md:hidden">
           <button
