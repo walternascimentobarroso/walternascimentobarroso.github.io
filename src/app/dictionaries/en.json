@@ -53,15 +53,13 @@
     "tags": {
       "All": "All",
       "Web": "Web",
+      "Games": "Games",
       "Mobile": "Mobile"
     },
     "descriptions": {
-      "1": "Project 1 description",
-      "2": "Project 2 description",
-      "3": "Project 3 description",
-      "4": "Project 4 description",
-      "5": "Authentication and CRUD operations",
-      "6": "Project 5 description"
+      "1": "Website for a Portuguese IT services company. Static Next.js in English and Portuguese, with dark mode and a contact form.",
+      "2": "This portfolio. Next.js statically exported to GitHub Pages, in English and Portuguese, with dark mode.",
+      "3": "Free online sudoku, no sign-up. Four difficulty levels, a Journey mode and lessons on solving techniques."
     },
     "codeLabel": "Source code",
     "previewLabel": "Live preview"

@@ -7,55 +7,31 @@ import ProjectTag from "./ProjectTag";
 const projectsData = [
   {
     id: 1,
-    title: "React Portfolio Website",
-    image: "/images/projects/1.webp",
+    title: "Fulgor Abstracto",
+    image: "/images/projects/fulgor-abstracto.webp",
     tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    gitUrl: "https://github.com/walternascimentobarroso/fulgorAbstracto",
+    previewUrl: "https://fulgorabstracto.vercel.app/",
   },
   {
     id: 2,
-    title: "Potography Portfolio Website",
-    image: "/images/projects/2.webp",
+    title: "Portfolio",
+    image: "/images/projects/portfolio.webp",
     tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    gitUrl:
+      "https://github.com/walternascimentobarroso/walternascimentobarroso.github.io",
+    previewUrl: "https://walternascimentobarroso.github.io/en",
   },
   {
     id: 3,
-    title: "E-commerce Application",
-    image: "/images/projects/3.webp",
-    tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
-  },
-  {
-    id: 4,
-    title: "Food Ordering Application",
-    image: "/images/projects/4.webp",
-    tag: ["All", "Mobile"],
-    gitUrl: "/",
-    previewUrl: "/",
-  },
-  {
-    id: 5,
-    title: "React Firebase Template",
-    image: "/images/projects/5.webp",
-    tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
-  },
-  {
-    id: 6,
-    title: "Full-stack Roadmap",
-    image: "/images/projects/6.webp",
-    tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    title: "WSudoku",
+    image: "/images/projects/wsudoku.webp",
+    tag: ["All", "Web", "Games"],
+    previewUrl: "https://wsudoku.fun/",
   },
 ];
 
-const PROJECT_TAGS = ["All", "Web", "Mobile"] as const;
+const PROJECT_TAGS = ["All", "Web", "Games", "Mobile"] as const;
 
 function movePill(
   tabs: HTMLElement | null,

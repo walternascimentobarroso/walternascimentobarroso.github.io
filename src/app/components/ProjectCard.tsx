@@ -11,7 +11,7 @@ type Props = {
   imgUrl: string;
   title: string;
   description: string;
-  gitUrl: string;
+  gitUrl?: string;
   previewUrl: string;
   codeLabel: string;
   previewLabel: string;
@@ -42,7 +42,7 @@ const ProjectCard = ({
       intensity={0.12}
       borderGlow={0.4}
       style={{ "--spotlight-card-surface": "transparent" } as CSSProperties}
-      className="project-card p-3! rounded-xl!"
+      className="project-card h-full p-3! rounded-xl!"
     >
       <div className="aspect-4/3 rounded-lg border border-zinc-200 dark:border-zinc-800 relative overflow-hidden group">
         <Image
@@ -54,15 +54,21 @@ const ProjectCard = ({
         />
         {/* Hidden only where hover exists; touch screens always show the links */}
         <div className="overlay flex items-center justify-center absolute inset-0 bg-zinc-100/80 dark:bg-zinc-900/80 transition-opacity [@media(hover:hover)]:opacity-0 group-hover:opacity-100 group-focus-within:opacity-100">
-          <Link
-            href={gitUrl}
-            aria-label={`${codeLabel}: ${title}`}
-            className={linkClass}
-          >
-            <CodeBracketIcon className="h-6 w-6" aria-hidden="true" />
-          </Link>
+          {gitUrl && (
+            <Link
+              href={gitUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={`${codeLabel}: ${title}`}
+              className={linkClass}
+            >
+              <CodeBracketIcon className="h-6 w-6" aria-hidden="true" />
+            </Link>
+          )}
           <Link
             href={previewUrl}
+            target="_blank"
+            rel="noopener noreferrer"
             aria-label={`${previewLabel}: ${title}`}
             className={linkClass}
           >

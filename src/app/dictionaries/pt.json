@@ -53,15 +53,13 @@
     "tags": {
       "All": "Todos",
       "Web": "Web",
+      "Games": "Jogos",
       "Mobile": "Mobile"
     },
     "descriptions": {
-      "1": "Descrição do projeto 1",
-      "2": "Descrição do projeto 2",
-      "3": "Descrição do projeto 3",
-      "4": "Descrição do projeto 4",
-      "5": "Autenticação e operações CRUD",
-      "6": "Descrição do projeto 5"
+      "1": "Site de uma empresa portuguesa de serviços de TI. Next.js estático, em pt e en, com modo escuro e formulário de contacto.",
+      "2": "Este portfólio. Next.js com exportação estática para o GitHub Pages, em pt e en, com modo escuro.",
+      "3": "Sudoku online grátis e sem cadastro. Quatro níveis, modo Jornada e lições de técnicas."
     },
     "codeLabel": "Código-fonte",
     "previewLabel": "Ver demo"

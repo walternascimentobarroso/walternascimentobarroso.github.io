@@ -59,6 +59,7 @@ const Navbar = ({ lang, dict }: Props) => {
             alt=""
             width={40}
             height={40}
+            loading="eager"
             className="dark:hidden"
           />
           <Image
@@ -66,6 +67,7 @@ const Navbar = ({ lang, dict }: Props) => {
             alt=""
             width={40}
             height={40}
+            loading="eager"
             className="hidden dark:block"
           />
         </Link>
